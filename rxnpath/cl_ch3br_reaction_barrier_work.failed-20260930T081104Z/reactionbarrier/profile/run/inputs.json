@@ -1,0 +1,27 @@
+{
+  "mep_energies": {
+    "node": "reactionbarrier/neb",
+    "quantity": "mep_energies",
+    "result": "../../neb/results/result.json"
+  },
+  "mep_coordinate": {
+    "node": "reactionbarrier/neb",
+    "quantity": "mep_coordinate",
+    "result": "../../neb/results/result.json"
+  },
+  "gibbs_react": {
+    "node": "reactionbarrier/thermo/react/hess",
+    "quantity": "gibbs_free_energy",
+    "result": "../../thermo/react/hess/results/result.json"
+  },
+  "gibbs_prod": {
+    "node": "reactionbarrier/thermo/prod/hess",
+    "quantity": "gibbs_free_energy",
+    "result": "../../thermo/prod/hess/results/result.json"
+  },
+  "gibbs_ts": {
+    "node": "reactionbarrier/thermo/ts",
+    "quantity": "gibbs_free_energy",
+    "result": "../../thermo/ts/results/result.json"
+  }
+}

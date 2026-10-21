@@ -1,0 +1,7 @@
+{
+  "system.geometry": {
+    "node": "reactionbarrier/ts",
+    "quantity": "ts_geometry",
+    "result": "../../../ts/results/result.json"
+  }
+}

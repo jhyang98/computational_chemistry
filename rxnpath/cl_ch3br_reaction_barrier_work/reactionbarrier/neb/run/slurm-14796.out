@@ -1,0 +1,27 @@
+load orca module
+<frozen runpy>:130: RuntimeWarning: 'maestro.players.entry' found in sys.modules after import of package 'maestro.players', but prior to execution of 'maestro.players.entry'; this may result in unpredictable behaviour
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/appl/share/maestro/maestro/src/maestro/players/entry.py", line 209, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/appl/share/maestro/maestro/src/maestro/players/entry.py", line 204, in main
+    execute(Path(ns.rundir), backend=ns.backend, job_id=ns.job_id or None)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/appl/share/maestro/maestro/src/maestro/players/entry.py", line 175, in execute
+    dump_result(task, output, rundir.parent)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/appl/share/maestro/maestro/src/maestro/conductor/results.py", line 321, in dump_result
+    _copy_stored(Path(obj.result), dest)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/appl/share/maestro/maestro/src/maestro/conductor/results.py", line 242, in _copy_stored
+    shutil.copy2(src, dest)
+    ~~~~~~~~~~~~^^^^^^^^^^^
+  File "/appl/share/anaconda3/envs/py314/lib/python3.14/shutil.py", line 529, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/appl/share/anaconda3/envs/py314/lib/python3.14/shutil.py", line 313, in copyfile
+    with open(src, 'rb') as fsrc:
+         ~~~~^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/acc-2026-37074/computational_chemistry/rxnpath/cl_ch3br_reaction_barrier_work/reactionbarrier/neb/run/job_NEB-CI_converged.xyz'

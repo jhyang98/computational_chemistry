@@ -1,0 +1,33 @@
+maestro stopped: a wave did not complete.
+
+when:  2026-09-23T17:29:14+09:00
+wave:  wave 1
+failed nodes: 3 (3 with attempts exhausted)
+
+node waterformationthermo/h2/hess -- attempts exhausted
+  rundir:   /home/acc-2026-37074/computational_chemistry/water_formation_gibbs_work/waterformationthermo/h2/hess/run
+  attempts: 5 this run (5 total)
+  error:    EngineError: Command failed (returncode=25): /appl/share/orca_6_0_1_linux_x86-64_shared_openmpi416/orca job.inp
+See log: /home/acc-2026-37074/computational_chemistry/water_formation_gibbs_work/waterformationthermo/h2/hess/run/job.out
+  stdout:   /home/acc-2026-37074/computational_chemistry/water_formation_gibbs_work/waterformationthermo/h2/hess/run/job.out
+  slurm log: /home/acc-2026-37074/computational_chemistry/water_formation_gibbs_work/waterformationthermo/h2/hess/run/slurm-*.out
+
+node waterformationthermo/h2o/hess -- attempts exhausted
+  rundir:   /home/acc-2026-37074/computational_chemistry/water_formation_gibbs_work/waterformationthermo/h2o/hess/run
+  attempts: 5 this run (5 total)
+  error:    EngineError: Command failed (returncode=25): /appl/share/orca_6_0_1_linux_x86-64_shared_openmpi416/orca job.inp
+See log: /home/acc-2026-37074/computational_chemistry/water_formation_gibbs_work/waterformationthermo/h2o/hess/run/job.out
+  stdout:   /home/acc-2026-37074/computational_chemistry/water_formation_gibbs_work/waterformationthermo/h2o/hess/run/job.out
+  slurm log: /home/acc-2026-37074/computational_chemistry/water_formation_gibbs_work/waterformationthermo/h2o/hess/run/slurm-*.out
+
+node waterformationthermo/o2/hess -- attempts exhausted
+  rundir:   /home/acc-2026-37074/computational_chemistry/water_formation_gibbs_work/waterformationthermo/o2/hess/run
+  attempts: 5 this run (5 total)
+  error:    EngineError: Command failed (returncode=25): /appl/share/orca_6_0_1_linux_x86-64_shared_openmpi416/orca job.inp
+See log: /home/acc-2026-37074/computational_chemistry/water_formation_gibbs_work/waterformationthermo/o2/hess/run/job.out
+  stdout:   /home/acc-2026-37074/computational_chemistry/water_formation_gibbs_work/waterformationthermo/o2/hess/run/job.out
+  slurm log: /home/acc-2026-37074/computational_chemistry/water_formation_gibbs_work/waterformationthermo/o2/hess/run/slurm-*.out
+
+There are no later waves; this was the last one.
+
+Fix the cause and re-run the same call. Completed work is reused; only the outstanding tasks run again, and re-running grants a fresh attempt budget for that invocation.

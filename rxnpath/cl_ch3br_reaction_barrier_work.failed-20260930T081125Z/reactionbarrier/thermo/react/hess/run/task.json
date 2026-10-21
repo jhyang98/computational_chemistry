@@ -1,0 +1,32 @@
+{
+  "system": {
+    "geometry": {
+      "quantity": "geometry_qm",
+      "source": "reactionbarrier/thermo/react/opt",
+      "value": null,
+      "__type__": "Edge"
+    },
+    "charge": -1,
+    "spin": 0,
+    "__type__": "SystemQM"
+  },
+  "theory": {
+    "conv_tol": null,
+    "max_cycle": null,
+    "reference": "auto",
+    "relativity": null,
+    "basis": "aug-cc-pVDZ",
+    "spherical": null,
+    "density_fit": null,
+    "solvent": null,
+    "functional": "PBE0",
+    "dispersion": null,
+    "grid": null,
+    "__type__": "DFT"
+  },
+  "numerical": false,
+  "raman": false,
+  "temperature": 298.15,
+  "pressure": 1.0,
+  "__type__": "HessTask"
+}

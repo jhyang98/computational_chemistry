@@ -1,0 +1,59 @@
+{
+  "jobname": "waterformationthermo-o2-hess",
+  "rundir": "/home/acc-2026-37074/computational_chemistry/water_formation_gibbs_work/waterformationthermo/o2/hess/run",
+  "job": {
+    "cwd": "/home/acc-2026-37074/computational_chemistry/water_formation_gibbs_work/waterformationthermo/o2/hess/run",
+    "stdout": "/home/acc-2026-37074/computational_chemistry/water_formation_gibbs_work/waterformationthermo/o2/hess/run/job.out",
+    "env": {
+      "kind": "module",
+      "modules": [
+        "orca/v6.0.1"
+      ],
+      "conda_env": null,
+      "pre": [],
+      "exports": {
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "__type__": "EnvInfo"
+    },
+    "command": "/appl/share/orca_6_0_1_linux_x86-64_shared_openmpi416/orca job.inp",
+    "__type__": "ShellJob"
+  },
+  "outputs": {
+    "rundir": "/home/acc-2026-37074/computational_chemistry/water_formation_gibbs_work/waterformationthermo/o2/hess/run",
+    "outfile": "/home/acc-2026-37074/computational_chemistry/water_formation_gibbs_work/waterformationthermo/o2/hess/run/job.out",
+    "engradfile": null,
+    "hessfile": "/home/acc-2026-37074/computational_chemistry/water_formation_gibbs_work/waterformationthermo/o2/hess/run/job.hess",
+    "gbwfile": "/home/acc-2026-37074/computational_chemistry/water_formation_gibbs_work/waterformationthermo/o2/hess/run/job.gbw",
+    "propertyfile": "/home/acc-2026-37074/computational_chemistry/water_formation_gibbs_work/waterformationthermo/o2/hess/run/job.property.txt",
+    "xyzfile": null,
+    "trjfile": null,
+    "__type__": "OrcaOutputInfo"
+  },
+  "resources": {
+    "job_name": "waterformationthermo-o2-hess",
+    "time": "24:00:00",
+    "partition": null,
+    "constraint": null,
+    "nodes": 1,
+    "cores": 1,
+    "ntasks": 1,
+    "cpus_per_task": 1,
+    "mem": null,
+    "gres": null,
+    "nodelist": null,
+    "exclude": null,
+    "extra_directives": [
+      "#SBATCH --export=ALL,OMPI_MCA_plm=slurm"
+    ],
+    "__type__": "Resources"
+  },
+  "version": "6.0.1",
+  "profile_matches": "6.0.*",
+  "executable": "/appl/share/orca_6_0_1_linux_x86-64_shared_openmpi416/orca",
+  "sub_versions": {},
+  "__type__": "RunPlan"
+}

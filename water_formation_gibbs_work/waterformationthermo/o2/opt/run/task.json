@@ -1,0 +1,41 @@
+{
+  "system": {
+    "geometry": {
+      "elements": [
+        "O",
+        "O"
+      ],
+      "coordinates": [
+        [
+          0.0,
+          0.0,
+          -0.604
+        ],
+        [
+          0.0,
+          0.0,
+          0.604
+        ]
+      ],
+      "name": "o2",
+      "__type__": "GeometryQM"
+    },
+    "charge": 0,
+    "spin": 2,
+    "__type__": "SystemQM"
+  },
+  "theory": {
+    "conv_tol": null,
+    "max_cycle": null,
+    "reference": "auto",
+    "relativity": null,
+    "basis": "6-31G(d)",
+    "spherical": null,
+    "density_fit": null,
+    "solvent": null,
+    "frozen": null,
+    "__type__": "MP2"
+  },
+  "constraints": [],
+  "__type__": "OptTask"
+}

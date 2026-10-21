@@ -1,0 +1,7 @@
+{
+  "system.geometry": {
+    "node": "waterformationthermo/h2o/opt",
+    "quantity": "geometry_qm",
+    "result": "../../opt/results/result.json"
+  }
+}

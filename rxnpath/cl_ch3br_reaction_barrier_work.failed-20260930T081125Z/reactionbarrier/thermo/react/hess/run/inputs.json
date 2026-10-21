@@ -1,0 +1,7 @@
+{
+  "system.geometry": {
+    "node": "reactionbarrier/thermo/react/opt",
+    "quantity": "geometry_qm",
+    "result": "../../opt/results/result.json"
+  }
+}

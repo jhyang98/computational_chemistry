@@ -1,0 +1,6 @@
+{
+  "orca|/appl/share/orca_6_0_1_linux_x86-64_shared_openmpi416/orca|040404d076cb": {
+    "source": "/appl/share/orca_6_0_1_linux_x86-64_shared_openmpi416/orca /nonexistent/maestro-version-probe.inp",
+    "version": "6.0.1"
+  }
+}

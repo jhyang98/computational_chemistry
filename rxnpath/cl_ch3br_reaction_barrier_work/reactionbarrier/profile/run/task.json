@@ -1,0 +1,34 @@
+{
+  "figure": true,
+  "mep_energies": {
+    "quantity": "mep_energies",
+    "source": "reactionbarrier/neb",
+    "value": null,
+    "__type__": "Edge"
+  },
+  "mep_coordinate": {
+    "quantity": "mep_coordinate",
+    "source": "reactionbarrier/neb",
+    "value": null,
+    "__type__": "Edge"
+  },
+  "gibbs_react": {
+    "quantity": "gibbs_free_energy",
+    "source": "reactionbarrier/thermo/react/hess",
+    "value": null,
+    "__type__": "Edge"
+  },
+  "gibbs_prod": {
+    "quantity": "gibbs_free_energy",
+    "source": "reactionbarrier/thermo/prod/hess",
+    "value": null,
+    "__type__": "Edge"
+  },
+  "gibbs_ts": {
+    "quantity": "gibbs_free_energy",
+    "source": "reactionbarrier/thermo/ts",
+    "value": null,
+    "__type__": "Edge"
+  },
+  "__type__": "ReactionProfileTask"
+}

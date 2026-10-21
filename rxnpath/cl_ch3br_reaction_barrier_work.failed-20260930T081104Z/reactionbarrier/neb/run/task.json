@@ -1,0 +1,120 @@
+{
+  "system_react": {
+    "geometry": {
+      "elements": [
+        "Cl",
+        "C",
+        "H",
+        "H",
+        "H",
+        "Br"
+      ],
+      "coordinates": [
+        [
+          0.0,
+          0.0,
+          -3.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0277,
+          0.0,
+          -0.363333
+        ],
+        [
+          -0.51385,
+          0.89,
+          -0.363333
+        ],
+        [
+          -0.51385,
+          -0.89,
+          -0.363333
+        ],
+        [
+          0.0,
+          0.0,
+          1.94
+        ]
+      ],
+      "name": "sn2_reactant_cl_ch3br_start",
+      "__type__": "GeometryQM"
+    },
+    "charge": -1,
+    "spin": 0,
+    "__type__": "SystemQM"
+  },
+  "system_prod": {
+    "geometry": {
+      "elements": [
+        "Cl",
+        "C",
+        "H",
+        "H",
+        "H",
+        "Br"
+      ],
+      "coordinates": [
+        [
+          0.0,
+          0.0,
+          -1.963333
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0277,
+          0.0,
+          -0.363333
+        ],
+        [
+          -0.51385,
+          0.89,
+          -0.363333
+        ],
+        [
+          -0.51385,
+          -0.89,
+          -0.363333
+        ],
+        [
+          0.0,
+          0.0,
+          3.563333
+        ]
+      ],
+      "name": "sn2_reactant_cl_ch3br_end",
+      "__type__": "GeometryQM"
+    },
+    "charge": -1,
+    "spin": 0,
+    "__type__": "SystemQM"
+  },
+  "nimages": 6,
+  "climbing_image": true,
+  "tol_maxfp": null,
+  "tol_rmsfp": null,
+  "system_ts": null,
+  "theory": {
+    "conv_tol": null,
+    "max_cycle": null,
+    "reference": "auto",
+    "relativity": null,
+    "basis": "aug-cc-pVDZ",
+    "spherical": null,
+    "density_fit": null,
+    "solvent": null,
+    "functional": "PBE0",
+    "dispersion": null,
+    "grid": null,
+    "__type__": "DFT"
+  },
+  "__type__": "NEBTask"
+}

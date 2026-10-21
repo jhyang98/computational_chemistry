@@ -1,0 +1,33 @@
+{
+  "strategy": "one-job-per-task",
+  "tasks": [
+    {
+      "node": "reactionbarrier/neb",
+      "job_id": "14796",
+      "attempts": 1,
+      "attempts_this_run": 1,
+      "identity": "e67c545f053c2bc276ec974eab6ea0d09c681a58e027353c421672dbf811bd09",
+      "submitted_at": "2026-09-30T17:13:34+09:00",
+      "__type__": "TaskSubmission"
+    },
+    {
+      "node": "reactionbarrier/thermo/prod/opt",
+      "job_id": "14797",
+      "attempts": 1,
+      "attempts_this_run": 1,
+      "identity": "4a93b2ac00afbc5d7520c8f346270bb47da4831aeac90f91a4be89ec27dbe2a0",
+      "submitted_at": "2026-09-30T17:13:34+09:00",
+      "__type__": "TaskSubmission"
+    },
+    {
+      "node": "reactionbarrier/thermo/react/opt",
+      "job_id": "14798",
+      "attempts": 1,
+      "attempts_this_run": 1,
+      "identity": "ef9cd4abab0a1eb6c0227d95be94f520636a945e17a7c8b408d87d7777d891bd",
+      "submitted_at": "2026-09-30T17:13:35+09:00",
+      "__type__": "TaskSubmission"
+    }
+  ],
+  "__type__": "SubmissionRecord"
+}

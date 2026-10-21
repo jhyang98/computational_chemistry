@@ -1,0 +1,533 @@
+{
+  "nodes": {
+    "reactionbarrier/neb": {
+      "id": "reactionbarrier/neb",
+      "task": {
+        "system_react": {
+          "geometry": {
+            "elements": [
+              "Cl",
+              "C",
+              "H",
+              "H",
+              "H",
+              "Br"
+            ],
+            "coordinates": [
+              [
+                0.0,
+                0.0,
+                -3.5
+              ],
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                1.0277,
+                0.0,
+                -0.363333
+              ],
+              [
+                -0.51385,
+                0.89,
+                -0.363333
+              ],
+              [
+                -0.51385,
+                -0.89,
+                -0.363333
+              ],
+              [
+                0.0,
+                0.0,
+                1.94
+              ]
+            ],
+            "name": "sn2_reactant_cl_ch3br_start",
+            "__type__": "GeometryQM"
+          },
+          "charge": -1,
+          "spin": 0,
+          "__type__": "SystemQM"
+        },
+        "system_prod": {
+          "geometry": {
+            "elements": [
+              "Cl",
+              "C",
+              "H",
+              "H",
+              "H",
+              "Br"
+            ],
+            "coordinates": [
+              [
+                0.0,
+                0.0,
+                -1.963333
+              ],
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                1.0277,
+                0.0,
+                -0.363333
+              ],
+              [
+                -0.51385,
+                0.89,
+                -0.363333
+              ],
+              [
+                -0.51385,
+                -0.89,
+                -0.363333
+              ],
+              [
+                0.0,
+                0.0,
+                3.563333
+              ]
+            ],
+            "name": "sn2_reactant_cl_ch3br_end",
+            "__type__": "GeometryQM"
+          },
+          "charge": -1,
+          "spin": 0,
+          "__type__": "SystemQM"
+        },
+        "nimages": 6,
+        "climbing_image": true,
+        "tol_maxfp": null,
+        "tol_rmsfp": null,
+        "system_ts": null,
+        "theory": {
+          "conv_tol": null,
+          "max_cycle": null,
+          "reference": "auto",
+          "relativity": null,
+          "basis": "aug-cc-pVDZ",
+          "spherical": null,
+          "density_fit": null,
+          "solvent": null,
+          "functional": "PBE0",
+          "dispersion": null,
+          "grid": null,
+          "__type__": "DFT"
+        },
+        "__type__": "NEBTask"
+      },
+      "inputs": {},
+      "outputs": false,
+      "role": "neb",
+      "__type__": "ExecNode"
+    },
+    "reactionbarrier/ts": {
+      "id": "reactionbarrier/ts",
+      "task": {
+        "system": {
+          "geometry": {
+            "quantity": "ts_geometry",
+            "source": "reactionbarrier/neb",
+            "value": null,
+            "__type__": "Edge"
+          },
+          "charge": -1,
+          "spin": 0,
+          "__type__": "SystemQM"
+        },
+        "theory": {
+          "conv_tol": null,
+          "max_cycle": null,
+          "reference": "auto",
+          "relativity": null,
+          "basis": "aug-cc-pVDZ",
+          "spherical": null,
+          "density_fit": null,
+          "solvent": null,
+          "functional": "PBE0",
+          "dispersion": null,
+          "grid": null,
+          "__type__": "DFT"
+        },
+        "recalc_hess": 5,
+        "__type__": "OptTSTask"
+      },
+      "inputs": {
+        "system.geometry": {
+          "quantity": "ts_geometry",
+          "source": "reactionbarrier/neb",
+          "value": null,
+          "__type__": "Edge"
+        }
+      },
+      "outputs": false,
+      "role": "optts",
+      "__type__": "ExecNode"
+    },
+    "reactionbarrier/thermo/react/opt": {
+      "id": "reactionbarrier/thermo/react/opt",
+      "task": {
+        "system": {
+          "geometry": {
+            "elements": [
+              "Cl",
+              "C",
+              "H",
+              "H",
+              "H",
+              "Br"
+            ],
+            "coordinates": [
+              [
+                0.0,
+                0.0,
+                -3.5
+              ],
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                1.0277,
+                0.0,
+                -0.363333
+              ],
+              [
+                -0.51385,
+                0.89,
+                -0.363333
+              ],
+              [
+                -0.51385,
+                -0.89,
+                -0.363333
+              ],
+              [
+                0.0,
+                0.0,
+                1.94
+              ]
+            ],
+            "name": "sn2_reactant_cl_ch3br_start",
+            "__type__": "GeometryQM"
+          },
+          "charge": -1,
+          "spin": 0,
+          "__type__": "SystemQM"
+        },
+        "theory": {
+          "conv_tol": null,
+          "max_cycle": null,
+          "reference": "auto",
+          "relativity": null,
+          "basis": "aug-cc-pVDZ",
+          "spherical": null,
+          "density_fit": null,
+          "solvent": null,
+          "functional": "PBE0",
+          "dispersion": null,
+          "grid": null,
+          "__type__": "DFT"
+        },
+        "constraints": [],
+        "__type__": "OptTask"
+      },
+      "inputs": {},
+      "outputs": false,
+      "role": "opt",
+      "__type__": "ExecNode"
+    },
+    "reactionbarrier/thermo/react/hess": {
+      "id": "reactionbarrier/thermo/react/hess",
+      "task": {
+        "system": {
+          "geometry": {
+            "quantity": "geometry_qm",
+            "source": "reactionbarrier/thermo/react/opt",
+            "value": null,
+            "__type__": "Edge"
+          },
+          "charge": -1,
+          "spin": 0,
+          "__type__": "SystemQM"
+        },
+        "theory": {
+          "conv_tol": null,
+          "max_cycle": null,
+          "reference": "auto",
+          "relativity": null,
+          "basis": "aug-cc-pVDZ",
+          "spherical": null,
+          "density_fit": null,
+          "solvent": null,
+          "functional": "PBE0",
+          "dispersion": null,
+          "grid": null,
+          "__type__": "DFT"
+        },
+        "numerical": false,
+        "raman": false,
+        "temperature": 298.15,
+        "pressure": 1.0,
+        "__type__": "HessTask"
+      },
+      "inputs": {
+        "system.geometry": {
+          "quantity": "geometry_qm",
+          "source": "reactionbarrier/thermo/react/opt",
+          "value": null,
+          "__type__": "Edge"
+        }
+      },
+      "outputs": false,
+      "role": "hessian",
+      "__type__": "ExecNode"
+    },
+    "reactionbarrier/thermo/prod/opt": {
+      "id": "reactionbarrier/thermo/prod/opt",
+      "task": {
+        "system": {
+          "geometry": {
+            "elements": [
+              "Cl",
+              "C",
+              "H",
+              "H",
+              "H",
+              "Br"
+            ],
+            "coordinates": [
+              [
+                0.0,
+                0.0,
+                -1.963333
+              ],
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                1.0277,
+                0.0,
+                -0.363333
+              ],
+              [
+                -0.51385,
+                0.89,
+                -0.363333
+              ],
+              [
+                -0.51385,
+                -0.89,
+                -0.363333
+              ],
+              [
+                0.0,
+                0.0,
+                3.563333
+              ]
+            ],
+            "name": "sn2_reactant_cl_ch3br_end",
+            "__type__": "GeometryQM"
+          },
+          "charge": -1,
+          "spin": 0,
+          "__type__": "SystemQM"
+        },
+        "theory": {
+          "conv_tol": null,
+          "max_cycle": null,
+          "reference": "auto",
+          "relativity": null,
+          "basis": "aug-cc-pVDZ",
+          "spherical": null,
+          "density_fit": null,
+          "solvent": null,
+          "functional": "PBE0",
+          "dispersion": null,
+          "grid": null,
+          "__type__": "DFT"
+        },
+        "constraints": [],
+        "__type__": "OptTask"
+      },
+      "inputs": {},
+      "outputs": false,
+      "role": "opt",
+      "__type__": "ExecNode"
+    },
+    "reactionbarrier/thermo/prod/hess": {
+      "id": "reactionbarrier/thermo/prod/hess",
+      "task": {
+        "system": {
+          "geometry": {
+            "quantity": "geometry_qm",
+            "source": "reactionbarrier/thermo/prod/opt",
+            "value": null,
+            "__type__": "Edge"
+          },
+          "charge": -1,
+          "spin": 0,
+          "__type__": "SystemQM"
+        },
+        "theory": {
+          "conv_tol": null,
+          "max_cycle": null,
+          "reference": "auto",
+          "relativity": null,
+          "basis": "aug-cc-pVDZ",
+          "spherical": null,
+          "density_fit": null,
+          "solvent": null,
+          "functional": "PBE0",
+          "dispersion": null,
+          "grid": null,
+          "__type__": "DFT"
+        },
+        "numerical": false,
+        "raman": false,
+        "temperature": 298.15,
+        "pressure": 1.0,
+        "__type__": "HessTask"
+      },
+      "inputs": {
+        "system.geometry": {
+          "quantity": "geometry_qm",
+          "source": "reactionbarrier/thermo/prod/opt",
+          "value": null,
+          "__type__": "Edge"
+        }
+      },
+      "outputs": false,
+      "role": "hessian",
+      "__type__": "ExecNode"
+    },
+    "reactionbarrier/thermo/ts": {
+      "id": "reactionbarrier/thermo/ts",
+      "task": {
+        "system": {
+          "geometry": {
+            "quantity": "ts_geometry",
+            "source": "reactionbarrier/ts",
+            "value": null,
+            "__type__": "Edge"
+          },
+          "charge": -1,
+          "spin": 0,
+          "__type__": "SystemQM"
+        },
+        "theory": {
+          "conv_tol": null,
+          "max_cycle": null,
+          "reference": "auto",
+          "relativity": null,
+          "basis": "aug-cc-pVDZ",
+          "spherical": null,
+          "density_fit": null,
+          "solvent": null,
+          "functional": "PBE0",
+          "dispersion": null,
+          "grid": null,
+          "__type__": "DFT"
+        },
+        "numerical": false,
+        "raman": false,
+        "temperature": 298.15,
+        "pressure": 1.0,
+        "__type__": "HessTask"
+      },
+      "inputs": {
+        "system.geometry": {
+          "quantity": "ts_geometry",
+          "source": "reactionbarrier/ts",
+          "value": null,
+          "__type__": "Edge"
+        }
+      },
+      "outputs": false,
+      "role": "hessian",
+      "__type__": "ExecNode"
+    },
+    "reactionbarrier/profile": {
+      "id": "reactionbarrier/profile",
+      "task": {
+        "figure": true,
+        "mep_energies": {
+          "quantity": "mep_energies",
+          "source": "reactionbarrier/neb",
+          "value": null,
+          "__type__": "Edge"
+        },
+        "mep_coordinate": {
+          "quantity": "mep_coordinate",
+          "source": "reactionbarrier/neb",
+          "value": null,
+          "__type__": "Edge"
+        },
+        "gibbs_react": {
+          "quantity": "gibbs_free_energy",
+          "source": "reactionbarrier/thermo/react/hess",
+          "value": null,
+          "__type__": "Edge"
+        },
+        "gibbs_prod": {
+          "quantity": "gibbs_free_energy",
+          "source": "reactionbarrier/thermo/prod/hess",
+          "value": null,
+          "__type__": "Edge"
+        },
+        "gibbs_ts": {
+          "quantity": "gibbs_free_energy",
+          "source": "reactionbarrier/thermo/ts",
+          "value": null,
+          "__type__": "Edge"
+        },
+        "__type__": "ReactionProfileTask"
+      },
+      "inputs": {
+        "mep_energies": {
+          "quantity": "mep_energies",
+          "source": "reactionbarrier/neb",
+          "value": null,
+          "__type__": "Edge"
+        },
+        "mep_coordinate": {
+          "quantity": "mep_coordinate",
+          "source": "reactionbarrier/neb",
+          "value": null,
+          "__type__": "Edge"
+        },
+        "gibbs_react": {
+          "quantity": "gibbs_free_energy",
+          "source": "reactionbarrier/thermo/react/hess",
+          "value": null,
+          "__type__": "Edge"
+        },
+        "gibbs_prod": {
+          "quantity": "gibbs_free_energy",
+          "source": "reactionbarrier/thermo/prod/hess",
+          "value": null,
+          "__type__": "Edge"
+        },
+        "gibbs_ts": {
+          "quantity": "gibbs_free_energy",
+          "source": "reactionbarrier/thermo/ts",
+          "value": null,
+          "__type__": "Edge"
+        }
+      },
+      "outputs": true,
+      "role": "python",
+      "__type__": "ExecNode"
+    }
+  },
+  "__type__": "ExecGraph"
+}

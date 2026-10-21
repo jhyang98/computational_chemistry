@@ -1,0 +1,20 @@
+load orca module
+<frozen runpy>:130: RuntimeWarning: 'maestro.players.entry' found in sys.modules after import of package 'maestro.players', but prior to execution of 'maestro.players.entry'; this may result in unpredictable behaviour
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/appl/share/maestro/maestro/src/maestro/players/entry.py", line 209, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/appl/share/maestro/maestro/src/maestro/players/entry.py", line 204, in main
+    execute(Path(ns.rundir), backend=ns.backend, job_id=ns.job_id or None)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/appl/share/maestro/maestro/src/maestro/players/entry.py", line 168, in execute
+    run_shell(plan.job)
+    ~~~~~~~~~^^^^^^^^^^
+  File "/appl/share/maestro/maestro/src/maestro/players/shell.py", line 57, in run_shell
+    raise EngineError(
+    ...<2 lines>...
+    )
+maestro.core.errors.EngineError: Command failed (returncode=25): /appl/share/orca_6_0_1_linux_x86-64_shared_openmpi416/orca job.inp
+See log: /home/acc-2026-37074/computational_chemistry/water_formation_gibbs_work/waterformationthermo/h2o/hess/run/job.out

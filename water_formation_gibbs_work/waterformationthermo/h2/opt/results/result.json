@@ -1,0 +1,96 @@
+{
+  "values": {
+    "qm_energy": {
+      "value": -1.144140850251,
+      "unit": "Hartree",
+      "__type__": "Value"
+    },
+    "meanfield_energy": {
+      "value": -1.1267864808865742,
+      "unit": "Hartree",
+      "__type__": "Value"
+    },
+    "electronic_energy": {
+      "value": -1.8442941329157,
+      "unit": "Hartree",
+      "__type__": "Value"
+    },
+    "nuclear_repulsion_energy": {
+      "value": 0.71750765202912,
+      "unit": "Hartree",
+      "__type__": "Value"
+    }
+  },
+  "files": {
+    "dipole_moment": {
+      "path": "results/dipole_moment.npy",
+      "format": "npy",
+      "unit": "e*Bohr",
+      "spec": {},
+      "__type__": "ResultFile"
+    },
+    "mulliken_charges": {
+      "path": "results/mulliken_charges.npy",
+      "format": "npy",
+      "unit": "e",
+      "spec": {},
+      "__type__": "ResultFile"
+    },
+    "loewdin_charges": {
+      "path": "results/loewdin_charges.npy",
+      "format": "npy",
+      "unit": "e",
+      "spec": {},
+      "__type__": "ResultFile"
+    },
+    "mayer_bond_orders": {
+      "path": "results/mayer_bond_orders.npy",
+      "format": "npy",
+      "unit": null,
+      "spec": {},
+      "__type__": "ResultFile"
+    },
+    "orbital_energies": {
+      "path": "results/orbital_energies.npy",
+      "format": "npy",
+      "unit": "Hartree",
+      "spec": {},
+      "__type__": "ResultFile"
+    },
+    "orbital_occupations": {
+      "path": "results/orbital_occupations.npy",
+      "format": "npy",
+      "unit": null,
+      "spec": {},
+      "__type__": "ResultFile"
+    },
+    "mo_coefficients": {
+      "path": "results/mo_coefficients.gbw",
+      "format": "gbw",
+      "unit": null,
+      "spec": {
+        "program": "orca",
+        "method": "MP2",
+        "basis": "6-31G(d)"
+      },
+      "__type__": "ResultFile"
+    },
+    "geometry_qm": {
+      "path": "results/geometry_qm.xyz",
+      "format": "xyz",
+      "unit": null,
+      "spec": {},
+      "__type__": "ResultFile"
+    },
+    "opt_trajectory": {
+      "path": "results/opt_trajectory.xyz",
+      "format": "xyz",
+      "unit": "Angstrom",
+      "spec": {},
+      "__type__": "ResultFile"
+    }
+  },
+  "info": {},
+  "version": "v1",
+  "__type__": "BaseResult"
+}

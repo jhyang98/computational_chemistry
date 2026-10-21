@@ -1,0 +1,59 @@
+{
+  "jobname": "reactionbarrier-thermo-ts",
+  "rundir": "/home/acc-2026-37074/computational_chemistry/rxnpath/cl_ch3br_reaction_barrier_work/reactionbarrier/thermo/ts/run",
+  "job": {
+    "cwd": "/home/acc-2026-37074/computational_chemistry/rxnpath/cl_ch3br_reaction_barrier_work/reactionbarrier/thermo/ts/run",
+    "stdout": "/home/acc-2026-37074/computational_chemistry/rxnpath/cl_ch3br_reaction_barrier_work/reactionbarrier/thermo/ts/run/job.out",
+    "env": {
+      "kind": "module",
+      "modules": [
+        "orca/v6.0.1"
+      ],
+      "conda_env": null,
+      "pre": [],
+      "exports": {
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "__type__": "EnvInfo"
+    },
+    "command": "/appl/share/orca_6_0_1_linux_x86-64_shared_openmpi416/orca job.inp",
+    "__type__": "ShellJob"
+  },
+  "outputs": {
+    "rundir": "/home/acc-2026-37074/computational_chemistry/rxnpath/cl_ch3br_reaction_barrier_work/reactionbarrier/thermo/ts/run",
+    "outfile": "/home/acc-2026-37074/computational_chemistry/rxnpath/cl_ch3br_reaction_barrier_work/reactionbarrier/thermo/ts/run/job.out",
+    "engradfile": null,
+    "hessfile": "/home/acc-2026-37074/computational_chemistry/rxnpath/cl_ch3br_reaction_barrier_work/reactionbarrier/thermo/ts/run/job.hess",
+    "gbwfile": "/home/acc-2026-37074/computational_chemistry/rxnpath/cl_ch3br_reaction_barrier_work/reactionbarrier/thermo/ts/run/job.gbw",
+    "propertyfile": "/home/acc-2026-37074/computational_chemistry/rxnpath/cl_ch3br_reaction_barrier_work/reactionbarrier/thermo/ts/run/job.property.txt",
+    "xyzfile": null,
+    "trjfile": null,
+    "__type__": "OrcaOutputInfo"
+  },
+  "resources": {
+    "job_name": "reactionbarrier-thermo-ts",
+    "time": "24:00:00",
+    "partition": null,
+    "constraint": null,
+    "nodes": 1,
+    "cores": 4,
+    "ntasks": 4,
+    "cpus_per_task": 1,
+    "mem": null,
+    "gres": null,
+    "nodelist": null,
+    "exclude": null,
+    "extra_directives": [
+      "#SBATCH --export=ALL,OMPI_MCA_plm=slurm"
+    ],
+    "__type__": "Resources"
+  },
+  "version": "6.0.1",
+  "profile_matches": "6.0.*",
+  "executable": "/appl/share/orca_6_0_1_linux_x86-64_shared_openmpi416/orca",
+  "sub_versions": {},
+  "__type__": "RunPlan"
+}

@@ -1,0 +1,3 @@
+! UHF MP2 6-31G(d) Printbasis PrintMOs
+! Freq
+* xyzfile 0 3 system.xyz

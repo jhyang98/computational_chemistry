@@ -1,0 +1,16 @@
+{
+  "engines": {
+    "*": {
+      "name": "orca",
+      "extra_keywords": [],
+      "blocks": [],
+      "extraline": "",
+      "__type__": "OrcaEngine"
+    },
+    "python": {
+      "name": "python",
+      "__type__": "PythonEngine"
+    }
+  },
+  "__type__": "Binding"
+}

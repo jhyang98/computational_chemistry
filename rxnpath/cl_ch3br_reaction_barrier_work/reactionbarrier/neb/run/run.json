@@ -1,0 +1,13 @@
+{
+  "state": "failed",
+  "returncode": 1,
+  "started_at": "2026-09-30T20:02:21+09:00",
+  "finished_at": "2026-09-30T22:22:28+09:00",
+  "hostname": "node6",
+  "stdout": "/home/acc-2026-37074/computational_chemistry/rxnpath/cl_ch3br_reaction_barrier_work/reactionbarrier/neb/run/job.out",
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/home/acc-2026-37074/computational_chemistry/rxnpath/cl_ch3br_reaction_barrier_work/reactionbarrier/neb/run/job_NEB-CI_converged.xyz'",
+  "backend": "slurm",
+  "job_id": "14796",
+  "symptom": null,
+  "__type__": "RunRecord"
+}

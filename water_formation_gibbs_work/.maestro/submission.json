@@ -1,0 +1,60 @@
+{
+  "strategy": "one-job-per-task",
+  "tasks": [
+    {
+      "node": "waterformationthermo/h2/opt",
+      "job_id": "14082",
+      "attempts": 1,
+      "attempts_this_run": 1,
+      "identity": "4a2f8790b685cf4bb85b6447a77eb495d6d03fc0980375378014a04dcf4ca4cf",
+      "submitted_at": "2026-09-23T16:31:11+09:00",
+      "__type__": "TaskSubmission"
+    },
+    {
+      "node": "waterformationthermo/h2o/opt",
+      "job_id": "14083",
+      "attempts": 1,
+      "attempts_this_run": 1,
+      "identity": "6a3514187c264a947a152c4251af9e0868a6460a38a1468f9a16f9318a18b70c",
+      "submitted_at": "2026-09-23T16:31:11+09:00",
+      "__type__": "TaskSubmission"
+    },
+    {
+      "node": "waterformationthermo/o2/opt",
+      "job_id": "14084",
+      "attempts": 1,
+      "attempts_this_run": 1,
+      "identity": "790d73a14d42f58f6f6c56162e6652fbed5e9d1c27ea1171e2bdbf81a80010c9",
+      "submitted_at": "2026-09-23T16:31:11+09:00",
+      "__type__": "TaskSubmission"
+    },
+    {
+      "node": "waterformationthermo/h2/hess",
+      "job_id": "14154",
+      "attempts": 5,
+      "attempts_this_run": 5,
+      "identity": "e9359dee382e995ae38fcf4f58f5c5b8f29cd3e2394e7efc1bd5f9573d0e9f57",
+      "submitted_at": "2026-09-23T17:28:14+09:00",
+      "__type__": "TaskSubmission"
+    },
+    {
+      "node": "waterformationthermo/h2o/hess",
+      "job_id": "14155",
+      "attempts": 5,
+      "attempts_this_run": 5,
+      "identity": "54d3de942ede6cabe9d7837be444e52901379a94f295a39e0189a603021edf5b",
+      "submitted_at": "2026-09-23T17:28:14+09:00",
+      "__type__": "TaskSubmission"
+    },
+    {
+      "node": "waterformationthermo/o2/hess",
+      "job_id": "14156",
+      "attempts": 5,
+      "attempts_this_run": 5,
+      "identity": "165d449ba42bb52ed955b20dda5853bb9394305731e0c90aaaca6eed6f048e7b",
+      "submitted_at": "2026-09-23T17:28:14+09:00",
+      "__type__": "TaskSubmission"
+    }
+  ],
+  "__type__": "SubmissionRecord"
+}

@@ -1,0 +1,287 @@
+{
+  "nodes": {
+    "waterformationthermo/h2/opt": {
+      "id": "waterformationthermo/h2/opt",
+      "task": {
+        "system": {
+          "geometry": {
+            "elements": [
+              "H",
+              "H"
+            ],
+            "coordinates": [
+              [
+                0.0,
+                0.0,
+                -0.3705
+              ],
+              [
+                0.0,
+                0.0,
+                0.3705
+              ]
+            ],
+            "name": "h2",
+            "__type__": "GeometryQM"
+          },
+          "charge": 0,
+          "spin": 0,
+          "__type__": "SystemQM"
+        },
+        "theory": {
+          "conv_tol": null,
+          "max_cycle": null,
+          "reference": "auto",
+          "relativity": null,
+          "basis": "6-31G(d)",
+          "spherical": null,
+          "density_fit": null,
+          "solvent": null,
+          "frozen": null,
+          "__type__": "MP2"
+        },
+        "constraints": [],
+        "__type__": "OptTask"
+      },
+      "inputs": {},
+      "outputs": false,
+      "role": "opt",
+      "__type__": "ExecNode"
+    },
+    "waterformationthermo/h2/hess": {
+      "id": "waterformationthermo/h2/hess",
+      "task": {
+        "system": {
+          "geometry": {
+            "quantity": "geometry_qm",
+            "source": "waterformationthermo/h2/opt",
+            "value": null,
+            "__type__": "Edge"
+          },
+          "charge": 0,
+          "spin": 0,
+          "__type__": "SystemQM"
+        },
+        "theory": {
+          "conv_tol": null,
+          "max_cycle": null,
+          "reference": "auto",
+          "relativity": null,
+          "basis": "6-31G(d)",
+          "spherical": null,
+          "density_fit": null,
+          "solvent": null,
+          "frozen": null,
+          "__type__": "MP2"
+        },
+        "numerical": false,
+        "raman": false,
+        "temperature": 298.15,
+        "pressure": 1.0,
+        "__type__": "HessTask"
+      },
+      "inputs": {
+        "system.geometry": {
+          "quantity": "geometry_qm",
+          "source": "waterformationthermo/h2/opt",
+          "value": null,
+          "__type__": "Edge"
+        }
+      },
+      "outputs": true,
+      "role": "hessian",
+      "__type__": "ExecNode"
+    },
+    "waterformationthermo/o2/opt": {
+      "id": "waterformationthermo/o2/opt",
+      "task": {
+        "system": {
+          "geometry": {
+            "elements": [
+              "O",
+              "O"
+            ],
+            "coordinates": [
+              [
+                0.0,
+                0.0,
+                -0.604
+              ],
+              [
+                0.0,
+                0.0,
+                0.604
+              ]
+            ],
+            "name": "o2",
+            "__type__": "GeometryQM"
+          },
+          "charge": 0,
+          "spin": 2,
+          "__type__": "SystemQM"
+        },
+        "theory": {
+          "conv_tol": null,
+          "max_cycle": null,
+          "reference": "auto",
+          "relativity": null,
+          "basis": "6-31G(d)",
+          "spherical": null,
+          "density_fit": null,
+          "solvent": null,
+          "frozen": null,
+          "__type__": "MP2"
+        },
+        "constraints": [],
+        "__type__": "OptTask"
+      },
+      "inputs": {},
+      "outputs": false,
+      "role": "opt",
+      "__type__": "ExecNode"
+    },
+    "waterformationthermo/o2/hess": {
+      "id": "waterformationthermo/o2/hess",
+      "task": {
+        "system": {
+          "geometry": {
+            "quantity": "geometry_qm",
+            "source": "waterformationthermo/o2/opt",
+            "value": null,
+            "__type__": "Edge"
+          },
+          "charge": 0,
+          "spin": 2,
+          "__type__": "SystemQM"
+        },
+        "theory": {
+          "conv_tol": null,
+          "max_cycle": null,
+          "reference": "auto",
+          "relativity": null,
+          "basis": "6-31G(d)",
+          "spherical": null,
+          "density_fit": null,
+          "solvent": null,
+          "frozen": null,
+          "__type__": "MP2"
+        },
+        "numerical": false,
+        "raman": false,
+        "temperature": 298.15,
+        "pressure": 1.0,
+        "__type__": "HessTask"
+      },
+      "inputs": {
+        "system.geometry": {
+          "quantity": "geometry_qm",
+          "source": "waterformationthermo/o2/opt",
+          "value": null,
+          "__type__": "Edge"
+        }
+      },
+      "outputs": true,
+      "role": "hessian",
+      "__type__": "ExecNode"
+    },
+    "waterformationthermo/h2o/opt": {
+      "id": "waterformationthermo/h2o/opt",
+      "task": {
+        "system": {
+          "geometry": {
+            "elements": [
+              "O",
+              "H",
+              "H"
+            ],
+            "coordinates": [
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.757,
+                0.0,
+                0.586
+              ],
+              [
+                -0.757,
+                0.0,
+                0.586
+              ]
+            ],
+            "name": "h2o",
+            "__type__": "GeometryQM"
+          },
+          "charge": 0,
+          "spin": 0,
+          "__type__": "SystemQM"
+        },
+        "theory": {
+          "conv_tol": null,
+          "max_cycle": null,
+          "reference": "auto",
+          "relativity": null,
+          "basis": "6-31G(d)",
+          "spherical": null,
+          "density_fit": null,
+          "solvent": null,
+          "frozen": null,
+          "__type__": "MP2"
+        },
+        "constraints": [],
+        "__type__": "OptTask"
+      },
+      "inputs": {},
+      "outputs": false,
+      "role": "opt",
+      "__type__": "ExecNode"
+    },
+    "waterformationthermo/h2o/hess": {
+      "id": "waterformationthermo/h2o/hess",
+      "task": {
+        "system": {
+          "geometry": {
+            "quantity": "geometry_qm",
+            "source": "waterformationthermo/h2o/opt",
+            "value": null,
+            "__type__": "Edge"
+          },
+          "charge": 0,
+          "spin": 0,
+          "__type__": "SystemQM"
+        },
+        "theory": {
+          "conv_tol": null,
+          "max_cycle": null,
+          "reference": "auto",
+          "relativity": null,
+          "basis": "6-31G(d)",
+          "spherical": null,
+          "density_fit": null,
+          "solvent": null,
+          "frozen": null,
+          "__type__": "MP2"
+        },
+        "numerical": false,
+        "raman": false,
+        "temperature": 298.15,
+        "pressure": 1.0,
+        "__type__": "HessTask"
+      },
+      "inputs": {
+        "system.geometry": {
+          "quantity": "geometry_qm",
+          "source": "waterformationthermo/h2o/opt",
+          "value": null,
+          "__type__": "Edge"
+        }
+      },
+      "outputs": true,
+      "role": "hessian",
+      "__type__": "ExecNode"
+    }
+  },
+  "__type__": "ExecGraph"
+}

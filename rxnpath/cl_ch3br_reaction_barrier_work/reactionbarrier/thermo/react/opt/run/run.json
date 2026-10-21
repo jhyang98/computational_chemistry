@@ -1,0 +1,13 @@
+{
+  "state": "ok",
+  "returncode": 0,
+  "started_at": "2026-09-30T20:02:21+09:00",
+  "finished_at": "2026-09-30T20:12:54+09:00",
+  "hostname": "node6",
+  "stdout": "/home/acc-2026-37074/computational_chemistry/rxnpath/cl_ch3br_reaction_barrier_work/reactionbarrier/thermo/react/opt/run/job.out",
+  "error": null,
+  "backend": "slurm",
+  "job_id": "14798",
+  "symptom": null,
+  "__type__": "RunRecord"
+}

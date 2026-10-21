@@ -1,0 +1,47 @@
+{
+  "system": {
+    "geometry": {
+      "elements": [
+        "O",
+        "H",
+        "H"
+      ],
+      "coordinates": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.757,
+          0.0,
+          0.586
+        ],
+        [
+          -0.757,
+          0.0,
+          0.586
+        ]
+      ],
+      "name": "h2o",
+      "__type__": "GeometryQM"
+    },
+    "charge": 0,
+    "spin": 0,
+    "__type__": "SystemQM"
+  },
+  "theory": {
+    "conv_tol": null,
+    "max_cycle": null,
+    "reference": "auto",
+    "relativity": null,
+    "basis": "6-31G(d)",
+    "spherical": null,
+    "density_fit": null,
+    "solvent": null,
+    "frozen": null,
+    "__type__": "MP2"
+  },
+  "constraints": [],
+  "__type__": "OptTask"
+}

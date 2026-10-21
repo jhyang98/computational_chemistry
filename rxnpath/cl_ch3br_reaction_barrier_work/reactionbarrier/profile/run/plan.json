@@ -1,0 +1,50 @@
+{
+  "jobname": "reactionbarrier-profile",
+  "rundir": "/home/acc-2026-37074/computational_chemistry/rxnpath/cl_ch3br_reaction_barrier_work/reactionbarrier/profile/run",
+  "job": {
+    "cwd": "/home/acc-2026-37074/computational_chemistry/rxnpath/cl_ch3br_reaction_barrier_work/reactionbarrier/profile/run",
+    "stdout": "/home/acc-2026-37074/computational_chemistry/rxnpath/cl_ch3br_reaction_barrier_work/reactionbarrier/profile/run/job.out",
+    "env": {
+      "kind": "shell",
+      "modules": [],
+      "conda_env": null,
+      "pre": [],
+      "exports": {
+        "OMP_NUM_THREADS": "4",
+        "MKL_NUM_THREADS": "4",
+        "OPENBLAS_NUM_THREADS": "4",
+        "NUMEXPR_NUM_THREADS": "4"
+      },
+      "__type__": "EnvInfo"
+    },
+    "__type__": "InProcessJob"
+  },
+  "outputs": {
+    "rundir": "/home/acc-2026-37074/computational_chemistry/rxnpath/cl_ch3br_reaction_barrier_work/reactionbarrier/profile/run",
+    "outfile": "/home/acc-2026-37074/computational_chemistry/rxnpath/cl_ch3br_reaction_barrier_work/reactionbarrier/profile/run/job.out",
+    "argsjson": "/home/acc-2026-37074/computational_chemistry/rxnpath/cl_ch3br_reaction_barrier_work/reactionbarrier/profile/run/args.json",
+    "normoutjson": "/home/acc-2026-37074/computational_chemistry/rxnpath/cl_ch3br_reaction_barrier_work/reactionbarrier/profile/run/normout.json",
+    "__type__": "PythonOutputInfo"
+  },
+  "resources": {
+    "job_name": "reactionbarrier-profile",
+    "time": "24:00:00",
+    "partition": null,
+    "constraint": null,
+    "nodes": 1,
+    "cores": 4,
+    "ntasks": 1,
+    "cpus_per_task": 4,
+    "mem": null,
+    "gres": null,
+    "nodelist": null,
+    "exclude": null,
+    "extra_directives": [],
+    "__type__": "Resources"
+  },
+  "version": null,
+  "profile_matches": null,
+  "executable": null,
+  "sub_versions": {},
+  "__type__": "RunPlan"
+}

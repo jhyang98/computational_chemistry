@@ -1,0 +1,7 @@
+{
+  "system.geometry": {
+    "node": "reactionbarrier/neb",
+    "quantity": "ts_geometry",
+    "result": "../../neb/results/result.json"
+  }
+}

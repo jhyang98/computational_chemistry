@@ -1,0 +1,2 @@
+{"event": "run_start", "knowledge_name": "LearnedKnowledge", "mode": "slurm", "run_id": "92c4787360fb4bfcbd079ec2e489b9bc", "ts": "2026-09-30T08:07:36.870358+00:00", "workdir": "/home/acc-2026-37074/computational_chemistry/rxnpath/cl_ch3br_reaction_barrier_work"}
+{"error": "resources.cores is unanswered: give Resources(cores=N) or a [resources.<engine>] cores in runinfo.toml (maestro-check shows the recommendation)", "event": "run_end", "run_id": "92c4787360fb4bfcbd079ec2e489b9bc", "state": "failed", "ts": "2026-09-30T08:07:38.306265+00:00"}
