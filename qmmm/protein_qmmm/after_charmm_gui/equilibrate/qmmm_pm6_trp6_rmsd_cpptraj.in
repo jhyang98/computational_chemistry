@@ -1,0 +1,7 @@
+parm /home/acc-2026-37074/computational_chemistry/qmmm/protein_qmmm/after_charmm_gui/step3_input.parm7
+trajin /home/acc-2026-37074/computational_chemistry/qmmm/protein_qmmm/after_charmm_gui/equilibrate/qmmm_pm6_100fs.nc
+reference /home/acc-2026-37074/computational_chemistry/qmmm/protein_qmmm/after_charmm_gui/equilibrate/equilibrated.pdb [qmmm_start]
+autoimage
+rms reference :1-20@CA,C,N,O
+rms reference nofit :6&!@H= out /home/acc-2026-37074/computational_chemistry/qmmm/protein_qmmm/after_charmm_gui/equilibrate/qmmm_pm6_trp6_heavy_atom_rmsd.dat
+run

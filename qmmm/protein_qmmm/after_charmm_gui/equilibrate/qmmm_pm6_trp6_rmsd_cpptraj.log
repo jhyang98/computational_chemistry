@@ -1,0 +1,89 @@
+
+CPPTRAJ: Trajectory Analysis. V7.6.2 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 11/04/26 16:33:50
+| Available memory: 31.148 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm /home/acc-2026-37074/computational_chemistry/qmmm/protein_qmmm/after_charmm_gui/step3_input.parm7]
+	Reading '/home/acc-2026-37074/computational_chemistry/qmmm/protein_qmmm/after_charmm_gui/step3_input.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin /home/acc-2026-37074/computational_chemistry/qmmm/protein_qmmm/after_charmm_gui/equilibrate/qmmm_pm6_100fs.nc]
+	Reading '/home/acc-2026-37074/computational_chemistry/qmmm/protein_qmmm/after_charmm_gui/equilibrate/qmmm_pm6_100fs.nc' as Amber NetCDF
+  [reference /home/acc-2026-37074/computational_chemistry/qmmm/protein_qmmm/after_charmm_gui/equilibrate/equilibrated.pdb [qmmm_start]]
+	Reading '/home/acc-2026-37074/computational_chemistry/qmmm/protein_qmmm/after_charmm_gui/equilibrate/equilibrated.pdb' as PDB
+	Read CRYST1 info from PDB: a=39.155 b=39.155 c=39.155 alpha=90 beta=90 gamma=90
+	Setting active reference for distance-based masks: 'equilibrated.pdb'
+  [autoimage]
+    AUTOIMAGE: To box center based on center of mass, anchor is first molecule.
+	Auto-imaging using molecule distances.
+  [rms reference :1-20@CA,C,N,O]
+    RMSD: (:1-20@CA,C,N,O), reference is "[qmmm_start]:1" (:1-20@CA,C,N,O).
+	Best-fit RMSD will be calculated, coords will be rotated and translated.
+  [rms reference nofit :6&!@H= out /home/acc-2026-37074/computational_chemistry/qmmm/protein_qmmm/after_charmm_gui/equilibrate/qmmm_pm6_trp6_heavy_atom_rmsd.dat]
+    RMSD: (:6&!@H*), reference is "[qmmm_start]:1" (:6&!@H*).
+	No fitting will be performed.
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: step3_input.parm7, 5975 atoms, 1911 res, box: Cubic, 1892 mol, 1890 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'qmmm_pm6_100fs.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm step3_input.parm7 (Cubic box) (reading 20 of 20)
+  Coordinate processing will occur on 20 frames.
+
+REFERENCE FRAMES (1 total):
+    0: [qmmm_start]:1
+	Active reference frame for distance-based masks is '[qmmm_start]:1'
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'step3_input.parm7' (3 actions):
+  0: [autoimage]
+	Using first molecule as anchor.
+	1891 molecules are mobile.
+  1: [rms reference :1-20@CA,C,N,O]
+	Target mask: [:1-20@CA,C,N,O](80)
+	Reference topology: step3_input.parm7
+	Reference mask: [:1-20@CA,C,N,O](80)
+  2: [rms reference nofit :6&!@H= out /home/acc-2026-37074/computational_chemistry/qmmm/protein_qmmm/after_charmm_gui/equilibrate/qmmm_pm6_trp6_heavy_atom_rmsd.dat]
+	Target mask: [:6&!@H*](14)
+	Reference topology: step3_input.parm7
+	Reference mask: [:6&!@H*](14)
+----- qmmm_pm6_100fs.nc (1-20, 1) -----
+ 0% 11% 21% 32% 42% 53% 63% 74% 84% 95% 100% Complete.
+
+Read 20 frames and processed 20 frames.
+TIME: Avg. throughput= 1669.5884 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+DATASETS (2 total):
+	RMSD_00002 "RMSD_00002" (double, rms), size is 20 (0.160 kB)
+	RMSD_00003 "RMSD_00003" (double, rms), size is 20 (0.160 kB)
+    Total data set memory usage is at least 0.320 kB
+
+DATAFILES (1 total):
+  qmmm_pm6_trp6_heavy_atom_rmsd.dat (Standard Data File):  RMSD_00003
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.12%)
+TIME:		Trajectory Process : 0.0120 s ( 97.95%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0002 s (  1.30%)
+TIME:		Other              : 0.0001 s (  0.01%)
+TIME:	Run Total 0.0122 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0690 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+

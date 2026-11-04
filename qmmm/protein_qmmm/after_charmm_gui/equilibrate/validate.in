@@ -1,0 +1,9 @@
+trajin equilibrate/eq_1000.nc
+trajin equilibrate/eq_250.nc
+trajin equilibrate/eq_50.nc
+trajin equilibrate/eq_0.nc
+reference heat/heat.rst7 [heated]
+volume out results/equilibration_volume_cpptraj.dat
+check reportfile results/equilibration_structure_check.dat
+rms reference :1-20@C,CA,N,O out results/equilibration_backbone_rmsd.dat
+run

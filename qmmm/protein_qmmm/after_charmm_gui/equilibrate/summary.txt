@@ -1,0 +1,18 @@
+NPT equilibration: PASS
+
+- simulated duration: 1000 ps
+- target: 300 K and 1 bar
+- restraint release: 1000 -> 250 -> 50 -> 0 kJ/mol/nm2
+- stage durations: 100 + 100 + 100 + 700 ps
+- timestep: 2 fs; SHAKE on bonds involving hydrogen
+- final 500 ps mean temperature: 300.46 K
+- final 500 ps mean density: 1.0019 g/cm3
+- final 500 ps mean pressure: -8.1 bar
+- final 500 ps mean volume: 60092.1 A3
+- final box: 39.155 x 39.155 x 39.155 A
+- final 500 ps mean backbone RMSD: 0.891 A
+- initial structure: ../heat/heated.pdb
+- trajectories: eq_1000.nc, eq_250.nc, eq_50.nc, eq_0.nc
+- final restart: eq_0.rst7
+- final PDB: equilibrated.pdb
+- SHAKE/fatal warnings: none

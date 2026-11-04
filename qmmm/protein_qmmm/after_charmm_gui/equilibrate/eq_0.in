@@ -1,0 +1,10 @@
+NPT equilibration stage 4: 700 ps unrestrained
+&cntrl
+ imin=0, irest=1, ntx=5,
+ ntb=2, ntp=1, barostat=1, taup=2.0, pres0=1.0,
+ ntc=2, ntf=2, cut=10.0,
+ ntt=3, gamma_ln=1.0, temp0=300.0, ig=-1,
+ nstlim=350000, dt=0.002,
+ ntpr=500, ntwx=500, ntwr=50000,
+ ioutfm=1, ntxo=1,
+/
