@@ -1,0 +1,11 @@
+[INFO] maestro.plan: 
+plan: QMTask   nodes: 1   waves: 1
+wave 1  (1 node)
+  qm  ->  gamess   [role '*']
+recovery: QMTask up to 5 attempts
+placement: 0 in the driver, 1 as slurm job(s)
+output: qm  produces ['mo_coefficients', 'qm_log']
+[INFO] maestro.driver: submitted qm (1 node(s)) as job 23485
+[INFO] maestro.archive: node qm already archived at /appl/share/maestro/archive/QMTask/success/1b8ec443362d; seen entry not recorded ([Errno 13] Permission denied: '/appl/share/maestro/archive/QMTask/success/1b8ec443362d/archive.json.sl5vdghm.tmp')
+[INFO] maestro.archive: node qm already archived at /appl/share/maestro/archive/QMTask/success/1b8ec443362d
+GAMESS output: None

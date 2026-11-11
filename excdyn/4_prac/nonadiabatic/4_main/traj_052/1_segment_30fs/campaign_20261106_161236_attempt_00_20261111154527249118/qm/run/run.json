@@ -1,0 +1,13 @@
+{
+  "state": "failed",
+  "returncode": 1,
+  "started_at": "2026-11-11T15:50:43+09:00",
+  "finished_at": "2026-11-11T15:51:36+09:00",
+  "hostname": "node3",
+  "stdout": "/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118/qm/run/job.out",
+  "error": "ScientificFailureError: GAMESS run terminated abnormally (/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118/qm/run/job.out)",
+  "backend": "slurm",
+  "job_id": "23474",
+  "symptom": "abnormal_termination",
+  "__type__": "RunRecord"
+}

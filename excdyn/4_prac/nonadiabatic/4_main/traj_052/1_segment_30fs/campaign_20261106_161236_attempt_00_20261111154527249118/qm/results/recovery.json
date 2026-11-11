@@ -1,0 +1,9 @@
+{
+  "state": "failed",
+  "attempts": 1,
+  "advisor": "mailbox",
+  "remedies": [],
+  "unavailable": "ontology advisor: this site has no ontology yet; configure [recovery] advisor = \"claude\" or \"codex\" in runinfo.toml",
+  "identity": null,
+  "__type__": "RecoveryRecord"
+}

@@ -1,0 +1,9 @@
+frames=60
+final_time_fs=30.0000
+final_r1_A=1.26497867
+final_r2_A=1.27950810
+final_angle_deg=137.29363251
+final_q_asym_A=-0.01027386
+final_active_state=S2
+maximum_bond_A=1.38251985
+dissociated_over_2p0A=False

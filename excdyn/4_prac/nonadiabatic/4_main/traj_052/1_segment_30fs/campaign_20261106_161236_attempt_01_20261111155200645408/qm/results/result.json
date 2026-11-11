@@ -1,0 +1,25 @@
+{
+  "state": "success",
+  "values": {
+    "qm_log": {
+      "path": "results/qm_log.out",
+      "fchk": null,
+      "format": "gamess",
+      "__type__": "QMLog"
+    },
+    "mo_coefficients": {
+      "path": "results/mo_coefficients.dat",
+      "program": "gamess",
+      "method": null,
+      "basis": null,
+      "geometry": null,
+      "__type__": "MOCoefficients"
+    },
+    "engine_log": {
+      "path": "run/job.out",
+      "format": "gamess",
+      "__type__": "EngineLog"
+    }
+  },
+  "info": {}
+}

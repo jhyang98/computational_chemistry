@@ -1,0 +1,1 @@
+{"schema": 1, "heartbeat_at": "2026-11-11T16:11:09+09:00", "started_at": "2026-11-11T15:52:40+09:00", "interval_s": 110.8341468368657, "pid": 498104, "hostname": "node3", "backend": "slurm", "job_id": "23485", "task_kind": "QMTask", "node_state": "ok", "stages": null, "finished_at": "2026-11-11T16:11:09+09:00"}

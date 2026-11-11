@@ -1,0 +1,16 @@
+run started   2026-11-11 15:45 +0900   id bdd4eb05
+task          QMTask                  scheduler slurm     advisor ontology
+rundir        /home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118   (paths below are relative to here)
+
+plan
+  qm   1 nodes, 1 waves   done 0 / failed 0 / pending 1
+  wave 1
+    qm   QMTask   gamess   todo
+      -> mo_coefficients, qm_log   [output]
+
+wave 1 done   15:52
+  qm   failed   0m 53s   slurm 23474      -> qm/results/   engine_log, mo_coefficients, qm_log
+
+run failed    15:52
+  not run     -
+

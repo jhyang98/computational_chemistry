@@ -1,0 +1,425 @@
+{
+  "version": 2,
+  "campaign_id": "20261106_161236",
+  "segment": 1,
+  "n_trajectories": 52,
+  "target_segments": 1,
+  "trajectories": {
+    "1": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793949553.754803,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_001/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106161913753749"
+    },
+    "2": {
+      "status": "complete",
+      "attempt": 0,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793949156.5758789,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_002/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236575076"
+    },
+    "3": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793950095.4861548,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_003/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106162815485435"
+    },
+    "4": {
+      "status": "failed",
+      "attempt": 10,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793951421.176915
+    },
+    "5": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793950168.3218265,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_005/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106162928320703"
+    },
+    "6": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793949806.169704,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_006/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106162326168442"
+    },
+    "7": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793950135.1348608,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_007/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106162855134009"
+    },
+    "8": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793950095.5022862,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_008/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106162815501501"
+    },
+    "9": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793949355.6510444,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_009/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106161555649828"
+    },
+    "10": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793949430.64543,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_010/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106161710644151"
+    },
+    "11": {
+      "status": "complete",
+      "attempt": 2,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793950095.5040696,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_011/1_segment_30fs/campaign_20261106_161236_attempt_02_20261106162815503347"
+    },
+    "12": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793949921.631513,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_012/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106162521630864"
+    },
+    "13": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793949430.6479614,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_013/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106161710646771"
+    },
+    "14": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793949355.653529,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_014/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106161555652376"
+    },
+    "15": {
+      "status": "complete",
+      "attempt": 0,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793949156.6813724,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_015/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236645273"
+    },
+    "16": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793949391.5026212,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_016/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106161631501802"
+    },
+    "17": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793949391.5040839,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_017/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106161631503248"
+    },
+    "18": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793949616.904756,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_018/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106162016903854"
+    },
+    "19": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793949355.6558754,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_019/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106161555654824"
+    },
+    "20": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793949355.6572297,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_020/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106161555656445"
+    },
+    "21": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793950055.5545132,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_021/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106162735553551"
+    },
+    "22": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793950018.7735436,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_022/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106162658772680"
+    },
+    "23": {
+      "status": "complete",
+      "attempt": 0,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793949156.953559,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_023/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236937989"
+    },
+    "24": {
+      "status": "complete",
+      "attempt": 2,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793950135.136691,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_024/1_segment_30fs/campaign_20261106_161236_attempt_02_20261106162855135857"
+    },
+    "25": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793950435.152952,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_025/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106163355151958"
+    },
+    "26": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793949310.3342845,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_026/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106161510333387"
+    },
+    "27": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793949683.0172317,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_027/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106162123016048"
+    },
+    "28": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793949355.6585956,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_028/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106161555657812"
+    },
+    "29": {
+      "status": "complete",
+      "attempt": 0,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793949157.1332977,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_029/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161237101860"
+    },
+    "30": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793949430.6504824,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_030/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106161710649303"
+    },
+    "31": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793952617.1982052,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_031/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106171017197388"
+    },
+    "32": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793952520.6577406,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_032/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106170840656507"
+    },
+    "33": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793953253.31292,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_033/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106172053312059"
+    },
+    "34": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793953056.9940422,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_034/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106171736993102"
+    },
+    "35": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793952773.8028245,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_035/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106171253801930"
+    },
+    "36": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793953156.93771,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_036/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106171916936787"
+    },
+    "37": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793952993.6906626,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_037/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106171633689737"
+    },
+    "38": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793952520.6593,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_038/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106170840658471"
+    },
+    "39": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793953190.1439734,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_039/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106171950143136"
+    },
+    "40": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793952710.4657576,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_040/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106171150464872"
+    },
+    "41": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793952520.660828,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_041/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106170840659986"
+    },
+    "42": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793953532.9553769,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_042/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106172532954474"
+    },
+    "43": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793953120.4482012,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_043/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106171840447275"
+    },
+    "44": {
+      "status": "complete",
+      "attempt": 2,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793952897.1139348,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_044/1_segment_30fs/campaign_20261106_161236_attempt_02_20261106171457113012"
+    },
+    "45": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793952520.663678,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_045/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106170840662427"
+    },
+    "46": {
+      "status": "complete",
+      "attempt": 0,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793952354.6413803,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_046/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106170554614113"
+    },
+    "47": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793953156.9394295,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_047/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106171916938776"
+    },
+    "48": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793952520.666412,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_048/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106170840665293"
+    },
+    "49": {
+      "status": "complete",
+      "attempt": 2,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793953379.599996,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_049/1_segment_30fs/campaign_20261106_161236_attempt_02_20261106172259598905"
+    },
+    "50": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793952930.470539,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_050/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106171530469756"
+    },
+    "51": {
+      "status": "complete",
+      "attempt": 0,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1793954882.8898787,
+      "completed_work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_051/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106174802889001"
+    },
+    "52": {
+      "status": "complete",
+      "attempt": 1,
+      "work": null,
+      "job_id": null,
+      "submitted_at": 1794379920.6466382,
+      "completed_work": "/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_01_20261111155200645408"
+    }
+  },
+  "analysis_output": "3_add2"
+}

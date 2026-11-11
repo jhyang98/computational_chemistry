@@ -1,0 +1,15 @@
+{
+  "state": "failed",
+  "values": {
+    "mo_coefficients": null,
+    "qm_log": null,
+    "engine_log": {
+      "path": "run/job.out",
+      "format": "gamess",
+      "__type__": "EngineLog"
+    }
+  },
+  "info": {
+    "engine_symptom": "abnormal_termination"
+  }
+}

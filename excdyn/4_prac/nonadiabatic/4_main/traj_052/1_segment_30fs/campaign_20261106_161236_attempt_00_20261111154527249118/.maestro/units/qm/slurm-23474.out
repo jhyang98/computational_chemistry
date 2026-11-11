@@ -1,0 +1,40 @@
+<frozen runpy>:130: RuntimeWarning: 'maestro.players.entry' found in sys.modules after import of package 'maestro.players', but prior to execution of 'maestro.players.entry'; this may result in unpredictable behaviour
+[WARNING] maestro.recovery: qm: failed after 1 attempt(s) -- ontology advisor: this site has no ontology yet; configure [recovery] advisor = "claude" or "codex" in runinfo.toml
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/appl/share/maestro/maestro/src/maestro/players/entry.py", line 340, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/appl/share/maestro/maestro/src/maestro/players/entry.py", line 330, in main
+    return _run_subgraph(Path(ns.graph), nodes, cores=ns.cores,
+                         backend=ns.backend, job_id=ns.job_id or None)
+  File "/appl/share/maestro/maestro/src/maestro/players/entry.py", line 299, in _run_subgraph
+    run_graph_local(
+    ~~~~~~~~~~~~~~~^
+        arr=arr, backend=LocalBackend(backend_name=backend, job_id=job_id),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        review_groups=False, runlog=None,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/appl/share/maestro/maestro/src/maestro/conductor/driver.py", line 158, in run_graph_local
+    run_one(nid, caps.get(nid), wave_index)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/appl/share/maestro/maestro/src/maestro/conductor/driver.py", line 104, in run_one
+    run_attempts_local(
+    ~~~~~~~~~~~~~~~~~~^
+        arr=arr, nid=nid, backend=backend, advisor=advisor,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        journal=journal, archive=archive,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        engine_for_name=engine_for_name, scope=scope,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        thread_cap=cap, inside_job=inside_job)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/appl/share/maestro/maestro/src/maestro/conductor/recover/attempts.py", line 649, in run_attempts_local
+    raise ExecutionError(
+    ...<3 lines>...
+        + f"; see {arr.task_dir(nid)}/{RESULTS_DIR}/{RECOVERY_JSON}")
+maestro.core.errors.ExecutionError: qm: failed after 1 attempt(s) -- ontology advisor: this site has no ontology yet; configure [recovery] advisor = "claude" or "codex" in runinfo.toml; last error: ScientificFailureError: GAMESS run terminated abnormally (/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118/qm/run/job.out); see /home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118/qm/results/recovery.json

@@ -1,0 +1,143 @@
+{
+  "graph": {
+    "nodes": {
+      "qm": {
+        "id": "qm",
+        "task": {
+          "batch": null,
+          "recovery": {
+            "max_attempts": 5,
+            "adjustable": [],
+            "enabled_engine": [],
+            "__type__": "RecoveryPolicy"
+          },
+          "qm_input": {
+            "path": "/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/traj_052_segment_1_attempt_01.inp",
+            "format": "",
+            "__type__": "QMInput"
+          },
+          "mo_coefficients": null,
+          "qm_log": null,
+          "__type__": "QMTask"
+        },
+        "outputs": true,
+        "role": "qm",
+        "__type__": "TaskNode"
+      }
+    },
+    "groups": {},
+    "__type__": "TaskGraph"
+  },
+  "scheduler": "slurm",
+  "advisor": {
+    "kind": "ontology"
+  },
+  "archive": "/appl/share/maestro/archive",
+  "root": "qm",
+  "records": {
+    "qm": {
+      "engine": {
+        "name": "gamess",
+        "extra_groups": [],
+        "verno": "00",
+        "__type__": "GamessEngine",
+        "env": {
+          "kind": "shell",
+          "modules": [],
+          "conda_env": null,
+          "pre": [],
+          "exports": {
+            "MAESTRO_GAMESS_SCRATCH": "/scratch/acc-2026-37074"
+          },
+          "__type__": "EnvInfo"
+        },
+        "exec": {
+          "exec_cmd": null,
+          "exec_dir": "/appl/share/gamess",
+          "__type__": "ExecInfo"
+        },
+        "resources": {
+          "job_name": "maestro",
+          "time": "24:00:00",
+          "partition": null,
+          "constraint": null,
+          "nodes": 1,
+          "cores": 1,
+          "ntasks": 1,
+          "cpus_per_task": 1,
+          "mem": null,
+          "gres": null,
+          "nodelist": "node3",
+          "exclude": null,
+          "extra_directives": [],
+          "__type__": "Resources"
+        }
+      },
+      "parts": {},
+      "placement": "job",
+      "batch": true,
+      "why": "role '*'",
+      "recovery": {
+        "max_attempts": 5,
+        "adjustable": [],
+        "enabled_engine": [],
+        "__type__": "RecoveryPolicy"
+      },
+      "identity": "1b8ec443362d3edb7dc9c2f11f900aa6585100090fd55f0e28b0de63df4ef02d",
+      "state": "done",
+      "attempts": 1,
+      "started_at": "2026-11-11T15:52:40+09:00",
+      "finished_at": "2026-11-11T16:11:09+09:00",
+      "job_id": "23485",
+      "backend": "slurm",
+      "results_dir": "qm/results",
+      "names": [
+        "engine_log",
+        "mo_coefficients",
+        "qm_log"
+      ],
+      "task": null,
+      "assigned": {
+        "name": "gamess",
+        "extra_groups": [],
+        "verno": "00",
+        "__type__": "GamessEngine",
+        "env": {
+          "kind": "shell",
+          "modules": [],
+          "conda_env": null,
+          "pre": [],
+          "exports": {
+            "MAESTRO_GAMESS_SCRATCH": "/scratch/acc-2026-37074"
+          },
+          "__type__": "EnvInfo"
+        },
+        "exec": {
+          "exec_cmd": null,
+          "exec_dir": "/appl/share/gamess",
+          "__type__": "ExecInfo"
+        },
+        "resources": {
+          "job_name": "maestro",
+          "time": "24:00:00",
+          "partition": null,
+          "constraint": null,
+          "nodes": 1,
+          "cores": 1,
+          "ntasks": 1,
+          "cpus_per_task": 1,
+          "mem": null,
+          "gres": null,
+          "nodelist": "node3",
+          "exclude": null,
+          "extra_directives": [],
+          "__type__": "Resources"
+        }
+      },
+      "assigned_parts": {},
+      "__type__": "NodeRecord"
+    }
+  },
+  "origin": "/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main",
+  "__type__": "Arrangement"
+}

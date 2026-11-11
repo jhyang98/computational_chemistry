@@ -1,0 +1,9 @@
+{
+  "state": "success",
+  "attempts": 1,
+  "advisor": "ontology",
+  "remedies": [],
+  "unavailable": null,
+  "identity": null,
+  "__type__": "RecoveryRecord"
+}

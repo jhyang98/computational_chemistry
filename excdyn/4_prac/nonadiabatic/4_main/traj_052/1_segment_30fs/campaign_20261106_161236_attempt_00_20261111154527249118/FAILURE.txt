@@ -1,0 +1,16 @@
+maestro stopped: a wave did not complete.
+
+when:  2026-11-11T15:52:29+09:00
+wave:  wave 1
+failed nodes: 1 (0 with attempts exhausted)
+
+node qm -- failed after 1 attempts: ontology advisor: this site has no ontology yet; configure [recovery] advisor = "claude" or "codex" in runinfo.toml
+  rundir:   /home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118/qm/run
+  error:    ScientificFailureError: GAMESS run terminated abnormally (/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118/qm/run/job.out)
+  symptom:  abnormal_termination
+  stdout:   /home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118/qm/run/job.out
+  slurm log: /home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118/qm/run/slurm-*.out
+
+Every other node of this run finished.
+
+Fix the cause and re-run the same call. Completed work is reused; only the outstanding tasks run again. Re-running the same call continues from the recorded attempts; raise the task's RecoveryPolicy(max_attempts=) to allow more.

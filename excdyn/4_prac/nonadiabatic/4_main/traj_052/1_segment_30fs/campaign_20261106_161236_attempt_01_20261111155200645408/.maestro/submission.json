@@ -1,0 +1,15 @@
+{
+  "strategy": "one-job-per-task",
+  "tasks": [
+    {
+      "node": "qm",
+      "job_id": "23485",
+      "attempts": 1,
+      "attempts_this_run": 1,
+      "identity": "1b8ec443362d3edb7dc9c2f11f900aa6585100090fd55f0e28b0de63df4ef02d",
+      "submitted_at": "2026-11-11T15:52:02+09:00",
+      "__type__": "TaskSubmission"
+    }
+  ],
+  "__type__": "SubmissionRecord"
+}

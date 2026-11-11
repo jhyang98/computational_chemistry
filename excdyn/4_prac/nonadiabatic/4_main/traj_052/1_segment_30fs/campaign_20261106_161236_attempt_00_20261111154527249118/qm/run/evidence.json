@@ -1,0 +1,111 @@
+{
+  "node": "qm",
+  "attempt": 1,
+  "task": {
+    "batch": null,
+    "recovery": {
+      "max_attempts": 5,
+      "adjustable": [],
+      "enabled_engine": [],
+      "__type__": "RecoveryPolicy"
+    },
+    "qm_input": {
+      "path": "/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/traj_052_segment_1.inp",
+      "format": "",
+      "__type__": "QMInput"
+    },
+    "mo_coefficients": null,
+    "qm_log": null,
+    "__type__": "QMTask"
+  },
+  "engine": {
+    "name": "gamess",
+    "extra_groups": [],
+    "verno": "00",
+    "__type__": "GamessEngine"
+  },
+  "inputs": {},
+  "result": {
+    "state": "failed",
+    "values": {
+      "mo_coefficients": null,
+      "qm_log": null,
+      "engine_log": {
+        "path": "/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118/qm/run/job.out",
+        "format": "gamess",
+        "__type__": "EngineLog"
+      }
+    },
+    "info": {
+      "engine_symptom": "abnormal_termination"
+    },
+    "__type__": "Result"
+  },
+  "run_record": {
+    "state": "failed",
+    "returncode": 1,
+    "started_at": "2026-11-11T15:50:43+09:00",
+    "finished_at": "2026-11-11T15:51:36+09:00",
+    "hostname": "node3",
+    "stdout": "/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118/qm/run/job.out",
+    "error": "ScientificFailureError: GAMESS run terminated abnormally (/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118/qm/run/job.out)",
+    "backend": "slurm",
+    "job_id": "23474",
+    "symptom": "abnormal_termination",
+    "__type__": "RunRecord"
+  },
+  "engine_log": "/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118/qm/run/job.out",
+  "engine_symptom": "abnormal_termination",
+  "must_produce": [
+    "qm_log"
+  ],
+  "missing": [
+    "qm_log"
+  ],
+  "history": [],
+  "adjustables": {
+    "items": [
+      {
+        "name": "env.exports",
+        "side": "engine",
+        "type": {
+          "type": "object"
+        },
+        "current": {
+          "MAESTRO_GAMESS_SCRATCH": "/scratch/acc-2026-37074"
+        },
+        "description": "environment variables exported in the job shell, merged into the ones already set; the thread counts are the driver's and cannot be set here",
+        "restore": null,
+        "__type__": "Adjustable"
+      },
+      {
+        "name": "resources.mem",
+        "side": "engine",
+        "type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "current": null,
+        "description": "memory per node the job asks for (8G, 512M)",
+        "restore": null,
+        "__type__": "Adjustable"
+      },
+      {
+        "name": "resources.time",
+        "side": "engine",
+        "type": {
+          "type": "string"
+        },
+        "current": "24:00:00",
+        "description": "walltime the scheduler gives the job (D-HH:MM:SS or HH:MM:SS)",
+        "restore": null,
+        "__type__": "Adjustable"
+      }
+    ],
+    "engines": [],
+    "__type__": "Adjustables"
+  },
+  "__type__": "Evidence"
+}

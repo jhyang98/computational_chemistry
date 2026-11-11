@@ -1,0 +1,635 @@
+maestro-gamess: scratch HOME=/scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567 (explicitly configured scratch: /scratch/acc-2026-37074)
+1 : traj_052_segment_1.inp
+2 : 00
+3 : 1
+----- GAMESS execution script 'rungms' -----
+This job is running on host node3
+under operating system Linux at Wed Nov 11 15:50:48 KST 2026
+Available scratch disk space (Kbyte units) at beginning of the job is
+Filesystem      1K-blocks     Used  Available Use% Mounted on
+/dev/sdb1      3690723176 17007520 3486162480   1% /scratch
+GAMESS temporary binary files will be written to /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr
+GAMESS supplementary output files will be written to /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr
+Copying input file /home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118/qm/run/traj_052_segment_1.inp to your run's scratch directory...
+cp /home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118/qm/run/traj_052_segment_1.inp /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F05
+unset echo
+setenv NO_STOP_MESSAGE 1
+setenv AUXDATA /appl/share/gamess/auxdata
+setenv EXTBAS /dev/null
+setenv NUCBAS /home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118/qm/run/traj_052_segment_1.nucbas
+setenv EXTCAB /appl/share/gamess/auxdata/AUXBAS/auxdef21
+setenv POSBAS /home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118/qm/run/traj_052_segment_1.posbas
+setenv DFTBPAR /appl/share/gamess/auxdata/DFTB
+setenv ERICFMT /appl/share/gamess/auxdata/ericfmt.dat
+setenv MCPPATH /appl/share/gamess/auxdata/MCP
+setenv BASPATH /appl/share/gamess/auxdata/BASES
+setenv QUANPOL /appl/share/gamess/auxdata/QUANPOL
+setenv MAKEFP /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.efp
+setenv GAMMA /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.gamma
+setenv TRAJECT /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.trj
+setenv RESTART /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.rst
+setenv QMWAVE /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.qmw
+setenv MDDIP /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.dip
+setenv OPTHES1 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.hs1
+setenv OPTHES2 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.hs2
+setenv FCIDUMP /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.FCIDUMP
+setenv XYZ /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.xyz
+setenv IRCDATA /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F04
+setenv INPUT /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F05
+setenv PUNCH /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.dat
+setenv NAMDRST /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.namdrst
+setenv AOINTS /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F08
+setenv MOINTS /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F09
+setenv DICTNRY /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F10
+setenv DRTFILE /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F11
+setenv CIVECTR /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F12
+setenv CASINTS /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F13
+setenv CIINTS /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F14
+setenv WORK15 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F15
+setenv WORK16 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F16
+setenv CSFSAVE /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F17
+setenv FOCKDER /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F18
+setenv WORK19 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F19
+setenv DASORT /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F20
+setenv DIABDAT /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F21
+setenv DFTINTS /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F21
+setenv DFTGRID /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F22
+setenv JKFILE /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F23
+setenv ORDINT /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F24
+setenv EFPIND /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F25
+setenv PCMDATA /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F26
+setenv PCMINTS /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F27
+setenv SVPWRK1 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F26
+setenv SVPWRK2 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F27
+setenv COSCAV /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F26
+setenv COSDATA /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.cosmo
+setenv COSPOT /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.pot
+setenv MLTPL /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F28
+setenv MLTPLT /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F29
+setenv DAFL30 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F30
+setenv SOINTX /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F31
+setenv SOINTY /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F32
+setenv SOINTZ /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F33
+setenv SORESC /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F34
+setenv RISM01 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F26R
+setenv RISM02 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F27R
+setenv QOPWRF /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.wrf
+setenv GCILIST /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F37
+setenv HESSIAN /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F38
+setenv QMMMTEI /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F39
+setenv SOCCDAT /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F40
+setenv AABB41 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F41
+setenv BBAA42 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F42
+setenv BBBB43 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F43
+setenv REMD /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F44
+setenv UNV /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F45
+setenv UNPV /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F46
+setenv MCQD50 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F50
+setenv MCQD51 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F51
+setenv MCQD52 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F52
+setenv MCQD53 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F53
+setenv MCQD54 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F54
+setenv MCQD55 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F55
+setenv MCQD56 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F56
+setenv MCQD57 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F57
+setenv MCQD58 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F58
+setenv MCQD59 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F59
+setenv MCQD60 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F60
+setenv MCQD61 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F61
+setenv MCQD62 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F62
+setenv MCQD63 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F63
+setenv MCQD64 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F64
+setenv NMRINT1 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F61
+setenv NMRINT2 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F62
+setenv NMRINT3 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F63
+setenv NMRINT4 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F64
+setenv NMRINT5 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F65
+setenv NMRINT6 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F66
+setenv DCPHFH2 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F67
+setenv DCPHF21 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F68
+setenv ELNUINT /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F67
+setenv NUNUINT /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F68
+setenv GVVPT /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F69
+setenv NUMOIN /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F69
+setenv NUMOCAS /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F70
+setenv NUELMO /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F71
+setenv NUELCAS /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F72
+setenv EPOVRLP /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F73
+setenv RIVMAT /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F51
+setenv RIT2A /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F52
+setenv RIT3A /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F53
+setenv RIT2B /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F54
+setenv RIT3B /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F55
+setenv KI /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F47
+setenv BI /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F48
+setenv PRMERI /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F49
+setenv TRSERI /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F50
+setenv PVP /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F51
+setenv TPVPI /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F52
+setenv TPVPJ /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F53
+setenv PPVPP /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F54
+setenv TPPVPP /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F55
+setenv DEN2P1 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F70
+setenv DEN2P2 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F71
+setenv DEN2P3 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F72
+setenv DEN2P4 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F73
+setenv DEN2NM /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F74
+setenv DEN2OPT /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F75
+setenv GMCREF /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F70
+setenv GMCO2R /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F71
+setenv GMCROC /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F72
+setenv GMCOOC /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F73
+setenv GMCCC0 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F74
+setenv GMCHMA /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F75
+setenv GMCEI1 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F76
+setenv GMCEI2 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F77
+setenv GMCEOB /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F78
+setenv GMCEDT /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F79
+setenv GMCERF /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F80
+setenv GMCHCR /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F81
+setenv GMCGJK /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F82
+setenv GMCGAI /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F83
+setenv GMCGEO /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F84
+setenv GMCTE1 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F85
+setenv GMCTE2 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F86
+setenv GMCHEF /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F87
+setenv GMCMOL /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F88
+setenv GMCMOS /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F89
+setenv GMCWGT /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F90
+setenv GMCRM2 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F91
+setenv GMCRM1 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F92
+setenv GMCR00 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F93
+setenv GMCRP1 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F94
+setenv GMCRP2 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F95
+setenv GMCVEF /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F96
+setenv GMCDIN /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F97
+setenv GMC2SZ /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F98
+setenv GMCCCS /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F99
+unset echo
+/appl/share/gamess/ddikick.x /appl/share/gamess/gamess.00.x traj_052_segment_1 -ddi 1 1 node3 -scr /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr
+
+ Distributed Data Interface kickoff program.
+ Initiating 1 compute processes on 1 nodes to run the following command:
+ /appl/share/gamess/gamess.00.x traj_052_segment_1 
+
+          *******************************************************
+          *                                                     *
+          *          GAMESS VERSION = 30 SEP 2023 (R2)          *
+          *                                                     *
+          *              doi.org/10.1063/5.0005188              *
+          *                                                     *
+          **************** 64 BIT LINUX VERSION *****************
+
+  GAMESS HAS BEEN MADE POSSIBLE WITH IMPORTANT CONTRIBUTIONS FROM
+  THE FOLLOWING INDIVIDUALS (IN ALPHABETICAL ORDER):
+
+     IVANA ADAMOVIC, CHRISTINE AIKENS, TOMOKO AKAMA,
+     MELISA ALKAN, YURI ALEXEEV, YURIKO AOKI, POOJA ARORA,
+     TOSHIO ASADA, ANDREY ASADCHEV, KIM K. BALDRIDGE,
+     PRADIPTA BANDYOPADHYAY, TAYLOR A. BARNES, MARIA BARYSZ,
+     ROB BELL, JONATHAN BENTZ, COLLEEN BERTONI,
+     JERRY A. BOATZ, BRETT BODE, KURT BRORSEN, KURT R. BRORSEN,
+     LAIMUTIS BYTAUTAS, CALEB CARLIN, LAURA CARRINGTON,
+     GALINA CHABAN, BENOIT CHAMPAGNE, WEI CHEN, MAHITO CHIBA,
+     DAN CHIPMAN, CHEOL HO CHOI, TANNER CULPITT,
+     DIPAYAN DATTA, PAUL DAY, ALBERT DEFUSCO,
+     NUWAN DESILVA, J. EMILIANO DEUSTUA,
+     TIM DUDLEY, MICHEL DUPUIS, STEVEN T. ELBERT,
+     DMITRI FEDOROV, KATHERINE FERRERAS, MICHAEL FILATOV,
+     ALEX FINDLATER,GRAHAM FLETCHER, MARK FREITAG,
+     CHRISTIAN FRIEDL, DAVID GARMER, 
+     IGOR S. GERASIMOV, KURT GLAESEMANN,
+     MARK S. GORDON, JEFFREY R. GOUR, FENG LONG GU,
+     EMILIE B. GUIDEZ, ANASTASIA GUNINA, SHARON HAMMES-SCHIFFER,
+     MASATAKE HARUTA, KIMIHIKO HIRAO, YASUHIRO IKABATA,
+     TZVETELIN IORDANOV, STEPHAN IRLE, KAZUYA ISHIMURA,
+     JOE IVANIC, FRANK JENSEN, JAN H. JENSEN, VISVALDAS KAIRYS,
+     MUNEAKI KAMIYA, MICHIO KATOUDA, NAOAKI KAWAKAMI, DAN KEMP,
+     BERNARD KIRTMAN, KAZUO KITAURA, MARIUSZ KLOBUKOWSKI,
+     MASATO KOBAYASHI, KONSTANTIN KOMAROV, PRAKASHAN KORAMBATH,
+     JACEK KORCHOWIEC, SHIRO KOSEKI, KAROL KOWALSKI,
+     JIMMY KROMANN, STANISLAW A. KUCHARSKI, HENRY KURTZ,
+     SAROM SOK LEANG, SEUNGHOON LEE, HUI LI, SHUHUA LI, WEI LI,
+     JESSE J. LUTZ, ALEKSANDR O. LYKHIN,
+     ILIAS MAGOULAS, MARCIN MAKOWSKI,
+     JOANI MATO, NIKITA MATSUNAGA, BENEDETTA MENNUCCI,
+     GRANT MERRILL, NORIYUKI MINEZAWA, VLADIMIR MIRONOV,
+     EISAKU MIYOSHI, JOHN A. MONTGOMERY JR., HIROTOSHI MORI,
+     JONATHAN MULLIN, MONIKA MUSIAL, SHIGERU NAGASE,
+     TAKESHI NAGATA, HIROMI NAKAI, TAKAHITO NAKAJIMA,
+     YUYA NAKAJIMA, HARUYUKI NAKANO, HIROYA NAKATA, SEAN NEDD,
+     HEATHER NETZLOFF, KIET A. NGUYEN, YOSHIO NISHIMOTO,
+     BOSILJKA NJEGIC, RYAN OLSON, MIKE PAK, ROBERTO PEVERATI,
+     BUU PHAM, PIOTR PIECUCH, ANNA POMOGAEVA, DAVID POOLE,
+     SPENCER PRUITT, OLIVIER QUINET, LUKE ROSKOP,
+     KLAUS RUEDENBERG, ANDREW SAND, TOSAPORN SATTASATHUCHANA,
+     NOZOMI SAWADA, MICHAEL W. SCHMIDT, PATRICK E. SCHNEIDER,
+     JUNJI SEINO, PRACHI SHARMA, JUN SHEN, JIM SHOEMAKER,
+     GEORGE SCHOENDORFF, YINAN SHU, DEJUN SI, JONATHAN SKONE,
+     LYUDMILA SLIPCHENKO, TONY SMITH, JIE SONG, MARK SPACKMAN,
+     CASPER STEINMANN, WALT STEVENS, PEIFENG SU, SHUJUN SU,
+     CHET SWALINA, CHINAMI TAKASHIMA, TETSUYA TAKETSUGU,
+     ZHEN TAO, NANDUN THELLAMUREGE, SEIKEN TOKURA,
+     JACOPO TOMASI, TSUGUKI TOUMA, TAKAO TSUNEDA, HIROAKI UMEDA,
+     JORGE LUIS GALVEZ VALLEJO, YALI WANG, SIMON WEBB,
+     AARON WEST, THERESA L. WINDUS, MARTA WLOCH,
+     PENG XU, KIYOSHI YAGI, SUSUMU YANAGISAWA, YANG YANG,
+     SOOHAENG YOO, TAKESHI YOSHIKAWA, FEDERICO ZAHARIEV,
+     TOBY ZENG
+
+  WHO ARE SUPPORTED BY THEIR INSTITUTION/UNIVERSITY/COMPANY/GROUP
+  (IN ALPHABETICAL ORDER):
+
+     EP ANALYTICS,
+     FACULTES UNIVERSITAIRES NOTRE-DAME DE LA PAIX,
+     INSTITUTE FOR MOLECULAR SCIENCE, IOWA STATE UNIVERSITY,
+     JACKSON STATE UNIVERSITY, JOHANNES KEPLER UNIVERSITY LINZ,
+     KYUNGPOOK NATIONAL UNIVERSITY
+     KYUSHU UNIVERSITY, MICHIGAN STATE UNIVERSITY,
+     MIE UNIVERSITY, THE MOLECULAR SCIENCES SOFTWARE INSTITUTE,
+     MOSCOW STATE UNIVERSITY,
+     N. COPERNICUS UNIVERSITY, NAGOYA UNIVERSITY,
+     NANJING UNIVERSITY, NAT. INST. OF ADVANCED INDUSTRIAL
+     SCIENCE AND TECHNOLOGY, NATIONAL INST. OF STANDARDS AND
+     TECHNOLOGY, NESMEYANOV INSTITUTE OF ORGANOELEMENT COMPOUNDS
+     OF RUSSIAN ACADEMY OF SCIENCES, OSAKA PREFECTURE UNIVERSITY,
+     PENNSYLVANIA STATE UNIVERSITY, TOKYO INSTITUTE OF TECHNOLOGY,
+     UNIVERSITY OF AARHUS, UNIVERSITY OF ALBERTA,
+     UNIVERSITY OF CALIFORNIA AT SANTA BARBARA,
+     UNIVERSITY OF COPENHAGEN, UNIVERSITY OF IOWA,
+     UNIVERSITY OF MEMPHIS, UNIVERSITY OF MINNESOTA,
+     UNIVERSITY OF NEBRASKA, UNIVERSITY OF NEW ENGLAND,
+     UNIVERSITY OF NOTRE DAME, UNIVERSITY OF PISA,
+     UNIVERSITY OF SILESIA, UNIVERSITY OF TOKYO,
+     UNIVERSITY OF ZURICH, WASEDA UNIVERSITY,
+     YALE UNIVERSITY
+
+  GAMESS SOFTWARE MANAGEMENT TEAM FOR THIS RELEASE:
+     MARK S. GORDON (TEAM LEAD),
+     BRETT BODE (SENIOR ADVISOR),
+     GIUSEPPE BARCA,
+     COLLEEN BERTONI,
+     KRISTOPHER KEIPERT (ADVISOR),
+     SAROM S. LEANG (DEVELOPMENT LEAD),
+     BUU PHAM,
+     JACKSON HAYES (WEBSITE ADMINISTRATOR),
+     PENG XU
+
+ EXECUTION OF GAMESS BEGUN 15:51:16 11-NOV-2026    
+
+            ECHO OF THE FIRST FEW INPUT CARDS -
+ INPUT CARD> $CONTRL SCFTYP=ROHF RUNTYP=MD DFTTYP=B3LYP TDDFT=MRSF                          
+ INPUT CARD>  MULT=3 COORD=UNIQUE MAXIT=200 $END                                            
+ INPUT CARD> $SYSTEM MWORDS=500 $END                                                        
+ INPUT CARD> $BASIS GBASIS=N31 NGAUSS=6 NDFUNC=1 DIFFSP=.TRUE. $END                         
+ INPUT CARD> $SCF DIRSCF=.TRUE. DIIS=.TRUE. $END                                            
+ INPUT CARD> $TDDFT NSTATE=5 MULT=1 IROOT=3 $END                                            
+ INPUT CARD> $MD READ=.TRUE. MBT=.FALSE. MBR=.FALSE. TTOTAL=0.0                             
+ INPUT CARD>  MDINT=VVERLET DT=5.0D-16 NSTEPS=60                                            
+ INPUT CARD>  KEVERY=1 JEVERY=1 TRJFMT=F10o5 NAMD=.TRUE. NDTLF=2                            
+ INPUT CARD>  NDRST=.FALSE. NEWRND=.FALSE.                                                  
+ INPUT CARD>TVELQM(1)=                                                                      
+ INPUT CARD>   4.103663364829E+00 -2.275004275098E+00  7.271130395461E-08                   
+ INPUT CARD>  -8.309310578020E+00  2.629138403242E-01 -1.454226079092E-07                   
+ INPUT CARD>   4.205647213191E+00  2.012090434774E+00  7.271130395461E-08                   
+ INPUT CARD> $END                                                                           
+ INPUT CARD> $DATA                                                                          
+ INPUT CARD>O3 Wigner sample 52; MRSF-TDDFT FSSH from S3                                    
+ INPUT CARD>C1                                                                              
+ INPUT CARD>O  8.0  -0.456323506630 -0.113402268174  0.000000000000                         
+ INPUT CARD>O  8.0   1.707926405954 -0.096265935354 -0.000000001473                         
+ INPUT CARD>O  8.0   0.668397000764  0.603368230226  0.000000000000                         
+ INPUT CARD> $END                                                                           
+    500000000 WORDS OF MEMORY AVAILABLE
+
+ WARNING: LARGE MAXIT:      200
+
+     BASIS OPTIONS
+     -------------
+     GBASIS=N31          IGAUSS=       6      POLAR=POPN31  
+     NDFUNC=       1     NFFUNC=       0     DIFFSP=       T
+     NPFUNC=       0      DIFFS=       F     BASNAM=        
+
+
+     RUN TITLE
+     ---------
+ O3 Wigner sample 52; MRSF-TDDFT FSSH from S3                                    
+
+ THE POINT GROUP OF THE MOLECULE IS C1      
+ THE ORDER OF THE PRINCIPAL AXIS IS     0
+
+ ATOM      ATOMIC                      COORDINATES (BOHR)
+           CHARGE         X                   Y                   Z
+ O           8.0    -0.8623263893       -0.2142992132        0.0000000000
+ O           8.0     3.2275129144       -0.1819162398       -0.0000000028
+ O           8.0     1.2630871825        1.1402006248        0.0000000000
+
+          INTERNUCLEAR DISTANCES (ANGS.)
+          ------------------------------
+
+                1 O          2 O          3 O     
+
+   1 O       0.0000000    2.1643178 *  1.3337002 *
+   2 O       2.1643178 *  0.0000000    1.2530400 *
+   3 O       1.3337002 *  1.2530400 *  0.0000000  
+
+  * ... LESS THAN  3.000
+
+
+     ATOMIC BASIS SET
+     ----------------
+ THE CONTRACTED PRIMITIVE FUNCTIONS HAVE BEEN UNNORMALIZED
+ THE CONTRACTED BASIS FUNCTIONS ARE NOW NORMALIZED TO UNITY
+
+  SHELL TYPE  PRIMITIVE        EXPONENT          CONTRACTION COEFFICIENT(S)
+
+ O         
+
+      1   S       1          5484.6716600    0.001831074430
+      1   S       2           825.2349460    0.013950172200
+      1   S       3           188.0469580    0.068445078098
+      1   S       4            52.9645000    0.232714335992
+      1   S       5            16.8975704    0.470192897984
+      1   S       6             5.7996353    0.358520852987
+
+      2   L       7            15.5396162   -0.110777549525    0.070874268231
+      2   L       8             3.5999336   -0.148026262701    0.339752839147
+      2   L       9             1.0137618    1.130767015354    0.727158577316
+
+      3   L      10             0.2700058    1.000000000000    1.000000000000
+
+      4   L      11             0.0845000    1.000000000000    1.000000000000
+
+      5   D      12             0.8000000    1.000000000000
+
+ O         
+
+      6   S      13          5484.6716600    0.001831074430
+      6   S      14           825.2349460    0.013950172200
+      6   S      15           188.0469580    0.068445078098
+      6   S      16            52.9645000    0.232714335992
+      6   S      17            16.8975704    0.470192897984
+      6   S      18             5.7996353    0.358520852987
+
+      7   L      19            15.5396162   -0.110777549525    0.070874268231
+      7   L      20             3.5999336   -0.148026262701    0.339752839147
+      7   L      21             1.0137618    1.130767015354    0.727158577316
+
+      8   L      22             0.2700058    1.000000000000    1.000000000000
+
+      9   L      23             0.0845000    1.000000000000    1.000000000000
+
+     10   D      24             0.8000000    1.000000000000
+
+ O         
+
+     11   S      25          5484.6716600    0.001831074430
+     11   S      26           825.2349460    0.013950172200
+     11   S      27           188.0469580    0.068445078098
+     11   S      28            52.9645000    0.232714335992
+     11   S      29            16.8975704    0.470192897984
+     11   S      30             5.7996353    0.358520852987
+
+     12   L      31            15.5396162   -0.110777549525    0.070874268231
+     12   L      32             3.5999336   -0.148026262701    0.339752839147
+     12   L      33             1.0137618    1.130767015354    0.727158577316
+
+     13   L      34             0.2700058    1.000000000000    1.000000000000
+
+     14   L      35             0.0845000    1.000000000000    1.000000000000
+
+     15   D      36             0.8000000    1.000000000000
+
+ TOTAL NUMBER OF BASIS SET SHELLS             =   15
+ NUMBER OF CARTESIAN GAUSSIAN BASIS FUNCTIONS =   57
+ NUMBER OF ELECTRONS                          =   24
+ CHARGE OF MOLECULE                           =    0
+ SPIN MULTIPLICITY                            =    3
+ NUMBER OF OCCUPIED ORBITALS (ALPHA)          =   13
+ NUMBER OF OCCUPIED ORBITALS (BETA )          =   11
+ TOTAL NUMBER OF ATOMS                        =    3
+ THE NUCLEAR REPULSION ENERGY IS       68.0697092104
+
+ SELECTED MURRAY-HANDY-LAMING RADIAL GRID
+
+ LEGACY BECKE'S FUZZY CELL METHOD
+
+ SELECTED ORIGINAL BECKE'S PARTITION FUNCTION
+
+     LEBEDEV GRID-BASED DFT OPTIONS
+     ------------------------------
+     DFTTYP=B3LYP   
+     NRAD  =      96     NLEB  =     302
+     NRAD0 =      24     NLEB0 =     110
+     SWOFF =    5.00E-03 (PURE SCF -> DFT)
+     SWITCH=    3.00E-04 (COARSE -> TIGHT GRID)
+     THRESH=    0.00E+00 GTHRE=    1.00E+00
+
+ GRIMME'S EMPIRICAL DISPERSION CORRECTION= F
+
+     $CONTRL OPTIONS
+     ---------------
+ SCFTYP=ROHF         RUNTYP=MD           EXETYP=RUN     
+ MPLEVL=       0     CITYP =NONE         CCTYP =NONE         VBTYP =NONE    
+ DFTTYP=B3LYP        TDDFT =MRSF    
+ MULT  =       3     ICHARG=       0     NZVAR =       0     COORD =UNIQUE  
+ PP    =NONE         RELWFN=NONE         LOCAL =NONE         NUMGRD=       F
+ ISPHER=      -1     NOSYM =       0     MAXIT =     200     UNITS =ANGS    
+ PLTORB=       F     MOLPLT=       F     AIMPAC=       F     FRIEND=        
+ NPRINT=       7     IREST =       0     GEOM  =INPUT   
+ NORMF =       0     NORMP =       0     ITOL  =      20     ICUT  =       9
+ INTTYP=BEST         GRDTYP=BEST         QMTTOL= 1.0E-06
+
+     $SYSTEM OPTIONS
+     ---------------
+  REPLICATED MEMORY=   500000000 WORDS (ON EVERY NODE).
+ DISTRIBUTED MEMDDI=           0 MILLION WORDS IN AGGREGATE,
+ MEMDDI DISTRIBUTED OVER   1 PROCESSORS IS           0 WORDS/PROCESSOR.
+ TOTAL MEMORY REQUESTED ON EACH PROCESSOR=   500000000 WORDS.
+ TIMLIM=      525600.00 MINUTES, OR     365.0 DAYS.
+ PARALL= F  BALTYP=  DLB     KDIAG=    0  COREFL= F
+ MXSEQ2=     300 MXSEQ3=     150  mem10=         0  mem22=         0
+
+          ----------------
+          PROPERTIES INPUT
+          ----------------
+
+     MOMENTS            FIELD           POTENTIAL          DENSITY
+ IEMOM =       1   IEFLD =       0   IEPOT =       0   IEDEN =       0
+ WHERE =COMASS     WHERE =NUCLEI     WHERE =NUCLEI     WHERE =NUCLEI  
+ OUTPUT=BOTH       OUTPUT=BOTH       OUTPUT=BOTH       OUTPUT=BOTH    
+ IEMINT=       0   IEFINT=       0                     IEDINT=       0
+                                                       MORB  =       0
+          EXTRAPOLATION IN EFFECT
+          DIIS IN EFFECT
+ ORBITAL PRINTING OPTION: NPREO=     1    57     2     1
+
+     -------------------------------
+     INTEGRAL TRANSFORMATION OPTIONS
+     -------------------------------
+     NWORD  =            0
+     CUTTRF = 1.0E-09     MPTRAN =       0
+     DIRTRF =       T     AOINTS =DUP     
+
+          ----------------------
+          INTEGRAL INPUT OPTIONS
+          ----------------------
+ NOPK  =       1 NORDER=       0 SCHWRZ=       T
+
+          ----------------------
+          TDDFT INPUT PARAMETERS
+          ----------------------
+ NSTATE=       5 IROOT =       3 MULT  =       1
+ MAXVEC=      50 NTRIAL=       5 CNVTOL=  1.00E-07
+ TDPRP =       F TRNSD =       F UNRLX =       F
+ ALTRN =       F FED   =       F
+ IFEDAT=       0       0       0       0
+ TAMMD =       T TPA   =       F
+ ALPHA =       F BETA  =       F
+ PFREQ =    0.00    0.00
+   NRAD=      48   NLEB=     110
+
+     ------------------------------------------
+     THE POINT GROUP IS C1 , NAXIS= 0, ORDER= 1
+     ------------------------------------------
+
+     DIMENSIONS OF THE SYMMETRY SUBSPACES ARE
+ A   =   57
+
+ ..... DONE SETTING UP THE RUN .....
+ STEP CPU TIME =     0.01 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.90%
+
+          $MD INPUT OPTIONS
+          -----------------
+     MDINT = VVERLET          NVTNH =       0
+     DT    = 5.00E-16         NSTEPS=      60         TTOTAL=    0.00E+00 SEC.
+     BATHT =   300.00
+     JEVERY=        1         KEVERY=       1
+     READ  =        T         MODFLU=       0
+     MBT   =        F         MBR   =       F         QRAND =       F
+     PROD  =        F         DELR  =    0.02         PBCOUT=       F
+     NVTOFF=        0         NPROP =       0
+     SSBP  =        F         SForce=    0.00         DROFF = 0.10E+11 0.10E+11
+     CCMS  =        F         CForce=    0.00
+     USAMP =        F         UForce=    0.00    0.00    0.00    0.00
+     IUSTYP=        0         Rzero =    0.00    0.00    0.00    0.00
+     --------------------------------------------
+     RATTLE Bond Constraint Options (C-H/N-H/O-H)
+     --------------------------------------------
+     IRATTL(1)=  0 0 0
+     RATTOL(1)= 0.10E-04 0.10E-04 0.10E-04
+     IRATIT(1)= 2000 2000 2000
+     RATLEN(1)= 1.117 1.037 1.020
+     ---------------------------------------------
+     TULLY SURFACE HOPPING NONADIABATIC MD OPTIONS
+     ---------------------------------------------
+     NAMD=        T         NDTLF =       2
+
+     NVE ENSEMBLE CHOSEN
+     THIS MD SIMULATION HAS       3 QM ATOMS, AND    0 EFFECTIVE FRAGMENTS
+
+ *** NO $RDF GROUP FOUND. CONTINUE...***
+
+     PROPERTY EVALUATIONS IN MOLECULAR DYNAMICS
+     ------------------------------------------
+     PRESSURE= F          DIFFUSION= F
+     DIPOLE PROPERTIES= F      ROT. RELAXATION= F
+     HEAT OF VAPORIZATION= F
+     COORDINATION # / G(R)#= F/ 0
+
+                    --------------------------------
+                    SINGLE POINT ENERGY AND GRADIENT
+                    --------------------------------
+ ...... END OF ONE-ELECTRON INTEGRALS ......
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.91%
+
+          -------------
+          GUESS OPTIONS
+          -------------
+          GUESS =HUCKEL            NORB  =       0          NORDER=       0
+          MIX   =       F          PRTMO =       F          PUNMO =       F
+          TOLZ  = 1.0E-08          TOLE  = 1.0E-05
+          SYMDEN=       F          PURIFY=       F
+
+ INITIAL GUESS ORBITALS GENERATED BY HUCKEL   ROUTINE.
+ HUCKEL GUESS REQUIRES     27150 WORDS.
+
+ SYMMETRIES FOR INITIAL GUESS ORBITALS FOLLOW.  ALPHA SET(S).
+    13 ORBITALS ARE OCCUPIED (    3 CORE ORBITALS).
+     4=A        5=A        6=A        7=A        8=A        9=A       10=A   
+    11=A       12=A       13=A       14=A       15=A       16=A       17=A   
+    18=A       19=A       20=A       21=A       22=A       23=A   
+
+ SYMMETRIES FOR INITIAL GUESS ORBITALS FOLLOW.   BETA SET(S).
+    11 ORBITALS ARE OCCUPIED (    3 CORE ORBITALS).
+     4=A        5=A        6=A        7=A        8=A        9=A       10=A   
+    11=A       12=A       13=A       14=A       15=A       16=A       17=A   
+    18=A       19=A       20=A       21=A   
+ ...... END OF INITIAL ORBITAL SELECTION ......
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.93%
+
+                    ----------------------
+                    AO INTEGRAL TECHNOLOGY
+                    ----------------------
+     S,P,L SHELL ROTATED AXIS INTEGRALS, REPROGRAMMED BY
+        KAZUYA ISHIMURA (IMS) AND JOSE SIERRA (SYNSTAR).
+     S,P,D,L SHELL ROTATED AXIS INTEGRALS PROGRAMMED BY
+        KAZUYA ISHIMURA (INSTITUTE FOR MOLECULAR SCIENCE).
+     S,P,D,F,G SHELL TO TOTAL QUARTET ANGULAR MOMENTUM SUM 5,
+        ERIC PROGRAM BY GRAHAM FLETCHER (ELORET AND NASA ADVANCED
+        SUPERCOMPUTING DIVISION, AMES RESEARCH CENTER).
+     S,P,D,F,G,L SHELL GENERAL RYS QUADRATURE PROGRAMMED BY
+        MICHEL DUPUIS (PACIFIC NORTHWEST NATIONAL LABORATORY).
+  ...... END OF TWO-ELECTRON INTEGRALS .....
+ STEP CPU TIME =     0.01 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    89.47%
+
+     EXCHANGE FUNCTIONAL   =B88&HFX   
+     CORRELATION FUNCTIONAL=LYP88&VWN5
+     DFT THRESHOLD         =.460E-07
+     GRID CHANGE THRESHOLD =.300E-03
+ FOR AN EULER-MACLAURIN QUADRATURE USING  96 RADIAL POINTS:
+ SMALLEST GAUSSIAN PRIMITIVE EXPONENT=        0.0845000000 OF TYPE -P-
+ ON ATOM NUMBER   1 HAS RADIAL NORMALIZATION=  1.000000
+  LARGEST GAUSSIAN PRIMITIVE EXPONENT=     5484.6716600000 OF TYPE -S-
+ ON ATOM NUMBER   1 HAS RADIAL NORMALIZATION=  1.000000
+ DFT IS SWITCHED OFF, PERFORMING PURE SCF UNTIL SWOFF THRESHOLD IS REACHED.
+          * * *   INITIATING DIIS PROCEDURE   * * *
+ CONVERGED TO SWOFF, SO DFT CALCULATION IS NOW SWITCHED ON.
+          * * *   INITIATING DIIS PROCEDURE   * * *
+ STEP CPU TIME =    15.86 TOTAL CPU TIME =         15.9 (      0.3 MIN)
+ TOTAL WALL CLOCK TIME=         15.9 SECONDS, CPU UTILIZATION IS    99.96%
+
+ SCF DID NOT CONVERGE...NO TDDFT=MRSF     CALCULATION
+ EXECUTION OF GAMESS TERMINATED -ABNORMALLY- AT 15:51:32 11-NOV-2026    
+               580000  WORDS OF DYNAMIC MEMORY USED
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =         15.9 (      0.3 MIN)
+ TOTAL WALL CLOCK TIME=         15.9 SECONDS, CPU UTILIZATION IS    99.96%
+ DDI Process 0: error code 911
+ ddikick.x: application process 0 quit unexpectedly.
+ ddikick.x: Fatal error detected.
+ The error is most likely to be in the application, so check for
+ input errors, disk space, memory needs, application bugs, etc.
+ ddikick.x will now clean up all processes, and exit...
+ ddikick.x: Sending kill signal to DDI processes.
+ ddikick.x: Execution terminated due to error(s).
+unset echo
+----- accounting info -----
+Files used on the parent node node3 were:
+-rw-rw-r-- 1 acc-2026-37074 acc-2026-37074     852 Nov 11 15:50 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F05
+-rw-rw-r-- 1 acc-2026-37074 acc-2026-37074 1766880 Nov 11 15:51 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F10
+-rw-rw-r-- 1 acc-2026-37074 acc-2026-37074  130880 Nov 11 15:51 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F26R
+-rw-rw-r-- 1 acc-2026-37074 acc-2026-37074       0 Nov 11 15:51 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.F27R
+-rw-rw-r-- 1 acc-2026-37074 acc-2026-37074     876 Nov 11 15:51 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.dat
+-rw-rw-r-- 1 acc-2026-37074 acc-2026-37074       0 Nov 11 15:51 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.namdrst
+-rw-rw-r-- 1 acc-2026-37074 acc-2026-37074       0 Nov 11 15:51 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.rst
+-rw-rw-r-- 1 acc-2026-37074 acc-2026-37074       0 Nov 11 15:51 /scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1-494567/scr/traj_052_segment_1.trj
+ls: No match.
+ls: No match.
+ls: No match.
+Wed Nov 11 15:51:34 KST 2026
+0.0u 0.0s 0:46.83 0.2% 0+0k 0+1456io 0pf+0w
+maestro-gamess: recovered punch -> traj_052_segment_1.dat

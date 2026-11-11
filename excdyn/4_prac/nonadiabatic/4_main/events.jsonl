@@ -1,0 +1,246 @@
+{"time": "2026-11-06T16:12:36", "event": "controller_start", "campaign_id": "20261106_161236", "segment": 1, "phase": "production"}
+{"time": "2026-11-06T16:12:36", "event": "submit", "trajectory": 1, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_001/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236567895"}
+{"time": "2026-11-06T16:12:36", "event": "submit", "trajectory": 2, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_002/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236575076"}
+{"time": "2026-11-06T16:12:36", "event": "submit", "trajectory": 3, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_003/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236576222"}
+{"time": "2026-11-06T16:12:36", "event": "submit", "trajectory": 4, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_004/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236577409"}
+{"time": "2026-11-06T16:12:36", "event": "submit", "trajectory": 5, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_005/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236578577"}
+{"time": "2026-11-06T16:12:36", "event": "submit", "trajectory": 6, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_006/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236579777"}
+{"time": "2026-11-06T16:12:36", "event": "submit", "trajectory": 7, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_007/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236581500"}
+{"time": "2026-11-06T16:12:36", "event": "submit", "trajectory": 8, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_008/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236583387"}
+{"time": "2026-11-06T16:12:36", "event": "submit", "trajectory": 9, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_009/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236585226"}
+{"time": "2026-11-06T16:12:36", "event": "submit", "trajectory": 10, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_010/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236586599"}
+{"time": "2026-11-06T16:12:36", "event": "submit", "trajectory": 11, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_011/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236587735"}
+{"time": "2026-11-06T16:12:36", "event": "submit", "trajectory": 12, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_012/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236588761"}
+{"time": "2026-11-06T16:12:36", "event": "submit", "trajectory": 13, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_013/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236592056"}
+{"time": "2026-11-06T16:12:36", "event": "submit", "trajectory": 14, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_014/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236625888"}
+{"time": "2026-11-06T16:12:36", "event": "submit", "trajectory": 15, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_015/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236645273"}
+{"time": "2026-11-06T16:12:36", "event": "submit", "trajectory": 16, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_016/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236681873"}
+{"time": "2026-11-06T16:12:36", "event": "submit", "trajectory": 17, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_017/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236717883"}
+{"time": "2026-11-06T16:12:36", "event": "submit", "trajectory": 18, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_018/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236765869"}
+{"time": "2026-11-06T16:12:36", "event": "submit", "trajectory": 19, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_019/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236790086"}
+{"time": "2026-11-06T16:12:36", "event": "submit", "trajectory": 20, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_020/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236833880"}
+{"time": "2026-11-06T16:12:36", "event": "submit", "trajectory": 21, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_021/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236869800"}
+{"time": "2026-11-06T16:12:36", "event": "submit", "trajectory": 22, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_022/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236893841"}
+{"time": "2026-11-06T16:12:36", "event": "submit", "trajectory": 23, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_023/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236937989"}
+{"time": "2026-11-06T16:12:36", "event": "submit", "trajectory": 24, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_024/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236954069"}
+{"time": "2026-11-06T16:12:37", "event": "submit", "trajectory": 25, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_025/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161236985890"}
+{"time": "2026-11-06T16:12:37", "event": "submit", "trajectory": 26, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_026/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161237013909"}
+{"time": "2026-11-06T16:12:37", "event": "submit", "trajectory": 27, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_027/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161237041880"}
+{"time": "2026-11-06T16:12:37", "event": "submit", "trajectory": 28, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_028/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161237074079"}
+{"time": "2026-11-06T16:12:37", "event": "submit", "trajectory": 29, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_029/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161237101860"}
+{"time": "2026-11-06T16:12:37", "event": "submit", "trajectory": 30, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_030/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106161237133826"}
+{"time": "2026-11-06T16:15:10", "event": "retry_queued", "trajectory": 26, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:15:10", "event": "submit", "trajectory": 26, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_026/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106161510333387"}
+{"time": "2026-11-06T16:15:43", "event": "retry_queued", "trajectory": 9, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:15:46", "event": "retry_queued", "trajectory": 14, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:15:49", "event": "retry_queued", "trajectory": 19, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:15:52", "event": "retry_queued", "trajectory": 20, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:15:55", "event": "retry_queued", "trajectory": 28, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:15:55", "event": "submit", "trajectory": 9, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_009/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106161555649828"}
+{"time": "2026-11-06T16:15:55", "event": "submit", "trajectory": 14, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_014/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106161555652376"}
+{"time": "2026-11-06T16:15:55", "event": "submit", "trajectory": 19, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_019/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106161555654824"}
+{"time": "2026-11-06T16:15:55", "event": "submit", "trajectory": 20, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_020/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106161555656445"}
+{"time": "2026-11-06T16:15:55", "event": "submit", "trajectory": 28, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_028/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106161555657812"}
+{"time": "2026-11-06T16:16:28", "event": "retry_queued", "trajectory": 16, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:16:31", "event": "retry_queued", "trajectory": 17, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:16:31", "event": "submit", "trajectory": 16, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_016/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106161631501802"}
+{"time": "2026-11-06T16:16:31", "event": "submit", "trajectory": 17, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_017/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106161631503248"}
+{"time": "2026-11-06T16:17:04", "event": "retry_queued", "trajectory": 10, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:17:07", "event": "retry_queued", "trajectory": 13, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:17:10", "event": "retry_queued", "trajectory": 30, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:17:10", "event": "submit", "trajectory": 10, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_010/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106161710644151"}
+{"time": "2026-11-06T16:17:10", "event": "submit", "trajectory": 13, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_013/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106161710646771"}
+{"time": "2026-11-06T16:17:10", "event": "submit", "trajectory": 30, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_030/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106161710649303"}
+{"time": "2026-11-06T16:19:13", "event": "retry_queued", "trajectory": 1, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:19:13", "event": "submit", "trajectory": 1, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_001/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106161913753749"}
+{"time": "2026-11-06T16:20:16", "event": "retry_queued", "trajectory": 18, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:20:16", "event": "submit", "trajectory": 18, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_018/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106162016903854"}
+{"time": "2026-11-06T16:21:19", "event": "retry_queued", "trajectory": 11, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:21:23", "event": "retry_queued", "trajectory": 27, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:21:23", "event": "submit", "trajectory": 11, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_011/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106162123013466"}
+{"time": "2026-11-06T16:21:23", "event": "submit", "trajectory": 27, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_027/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106162123016048"}
+{"time": "2026-11-06T16:23:26", "event": "retry_queued", "trajectory": 6, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:23:26", "event": "submit", "trajectory": 6, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_006/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106162326168442"}
+{"time": "2026-11-06T16:25:18", "event": "controller_start", "campaign_id": "20261106_161236", "segment": 1, "phase": "production"}
+{"time": "2026-11-06T16:25:21", "event": "retry_queued", "trajectory": 12, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:25:21", "event": "submit", "trajectory": 12, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_012/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106162521630864"}
+{"time": "2026-11-06T16:26:25", "event": "retry_queued", "trajectory": 4, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:26:25", "event": "submit", "trajectory": 4, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_004/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106162625389185"}
+{"time": "2026-11-06T16:26:58", "event": "retry_queued", "trajectory": 22, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:26:58", "event": "submit", "trajectory": 22, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_022/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106162658772680"}
+{"time": "2026-11-06T16:27:32", "event": "retry_queued", "trajectory": 21, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:27:35", "event": "retry_queued", "trajectory": 24, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:27:35", "event": "submit", "trajectory": 21, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_021/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106162735553551"}
+{"time": "2026-11-06T16:27:35", "event": "submit", "trajectory": 24, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_024/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106162735556155"}
+{"time": "2026-11-06T16:28:08", "event": "retry_queued", "trajectory": 3, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:28:12", "event": "retry_queued", "trajectory": 8, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:28:15", "event": "retry_queued", "trajectory": 11, "segment": 1, "attempt": 2}
+{"time": "2026-11-06T16:28:15", "event": "submit", "trajectory": 3, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_003/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106162815485435"}
+{"time": "2026-11-06T16:28:15", "event": "submit", "trajectory": 8, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_008/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106162815501501"}
+{"time": "2026-11-06T16:28:15", "event": "submit", "trajectory": 11, "segment": 1, "attempt": 2, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_011/1_segment_30fs/campaign_20261106_161236_attempt_02_20261106162815503347"}
+{"time": "2026-11-06T16:28:48", "event": "retry_queued", "trajectory": 4, "segment": 1, "attempt": 2}
+{"time": "2026-11-06T16:28:51", "event": "retry_queued", "trajectory": 7, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:28:55", "event": "retry_queued", "trajectory": 24, "segment": 1, "attempt": 2}
+{"time": "2026-11-06T16:28:55", "event": "submit", "trajectory": 4, "segment": 1, "attempt": 2, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_004/1_segment_30fs/campaign_20261106_161236_attempt_02_20261106162855131637"}
+{"time": "2026-11-06T16:28:55", "event": "submit", "trajectory": 7, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_007/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106162855134009"}
+{"time": "2026-11-06T16:28:55", "event": "submit", "trajectory": 24, "segment": 1, "attempt": 2, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_024/1_segment_30fs/campaign_20261106_161236_attempt_02_20261106162855135857"}
+{"time": "2026-11-06T16:29:28", "event": "retry_queued", "trajectory": 5, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:29:28", "event": "submit", "trajectory": 5, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_005/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106162928320703"}
+{"time": "2026-11-06T16:32:02", "event": "trajectory_complete", "trajectory": 23, "segment": 1, "attempt": 0}
+{"time": "2026-11-06T16:32:35", "event": "trajectory_complete", "trajectory": 2, "segment": 1, "attempt": 0}
+{"time": "2026-11-06T16:32:38", "event": "retry_queued", "trajectory": 4, "segment": 1, "attempt": 3}
+{"time": "2026-11-06T16:32:38", "event": "submit", "trajectory": 4, "segment": 1, "attempt": 3, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_004/1_segment_30fs/campaign_20261106_161236_attempt_03_20261106163238889100"}
+{"time": "2026-11-06T16:33:12", "event": "trajectory_complete", "trajectory": 15, "segment": 1, "attempt": 0}
+{"time": "2026-11-06T16:33:15", "event": "trajectory_complete", "trajectory": 26, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:33:48", "event": "trajectory_complete", "trajectory": 9, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:33:52", "event": "retry_queued", "trajectory": 25, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:33:55", "event": "trajectory_complete", "trajectory": 29, "segment": 1, "attempt": 0}
+{"time": "2026-11-06T16:33:55", "event": "submit", "trajectory": 25, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_025/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106163355151958"}
+{"time": "2026-11-06T16:34:28", "event": "retry_queued", "trajectory": 4, "segment": 1, "attempt": 4}
+{"time": "2026-11-06T16:34:31", "event": "trajectory_complete", "trajectory": 12, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:34:34", "event": "trajectory_complete", "trajectory": 17, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:34:38", "event": "trajectory_complete", "trajectory": 19, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:34:38", "event": "submit", "trajectory": 4, "segment": 1, "attempt": 4, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_004/1_segment_30fs/campaign_20261106_161236_attempt_04_20261106163438054571"}
+{"time": "2026-11-06T16:35:11", "event": "trajectory_complete", "trajectory": 7, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:35:14", "event": "trajectory_complete", "trajectory": 13, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:35:17", "event": "trajectory_complete", "trajectory": 14, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:35:21", "event": "trajectory_complete", "trajectory": 20, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:35:54", "event": "trajectory_complete", "trajectory": 3, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:35:57", "event": "trajectory_complete", "trajectory": 5, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:36:01", "event": "trajectory_complete", "trajectory": 8, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:36:04", "event": "trajectory_complete", "trajectory": 21, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:36:08", "event": "trajectory_complete", "trajectory": 28, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:36:41", "event": "trajectory_complete", "trajectory": 10, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:36:44", "event": "trajectory_complete", "trajectory": 16, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:36:47", "event": "trajectory_complete", "trajectory": 22, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:36:51", "event": "trajectory_complete", "trajectory": 24, "segment": 1, "attempt": 2}
+{"time": "2026-11-06T16:36:54", "event": "trajectory_complete", "trajectory": 30, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:37:58", "event": "trajectory_complete", "trajectory": 1, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:38:01", "event": "retry_queued", "trajectory": 4, "segment": 1, "attempt": 5}
+{"time": "2026-11-06T16:38:04", "event": "trajectory_complete", "trajectory": 25, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:38:04", "event": "submit", "trajectory": 4, "segment": 1, "attempt": 5, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_004/1_segment_30fs/campaign_20261106_161236_attempt_05_20261106163804566323"}
+{"time": "2026-11-06T16:39:07", "event": "trajectory_complete", "trajectory": 18, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:39:41", "event": "retry_queued", "trajectory": 4, "segment": 1, "attempt": 6}
+{"time": "2026-11-06T16:39:41", "event": "submit", "trajectory": 4, "segment": 1, "attempt": 6, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_004/1_segment_30fs/campaign_20261106_161236_attempt_06_20261106163941313710"}
+{"time": "2026-11-06T16:41:44", "event": "trajectory_complete", "trajectory": 11, "segment": 1, "attempt": 2}
+{"time": "2026-11-06T16:42:18", "event": "trajectory_complete", "trajectory": 6, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:42:51", "event": "retry_queued", "trajectory": 4, "segment": 1, "attempt": 7}
+{"time": "2026-11-06T16:42:51", "event": "submit", "trajectory": 4, "segment": 1, "attempt": 7, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_004/1_segment_30fs/campaign_20261106_161236_attempt_07_20261106164251378928"}
+{"time": "2026-11-06T16:44:25", "event": "trajectory_complete", "trajectory": 27, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T16:45:28", "event": "retry_queued", "trajectory": 4, "segment": 1, "attempt": 8}
+{"time": "2026-11-06T16:45:28", "event": "submit", "trajectory": 4, "segment": 1, "attempt": 8, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_004/1_segment_30fs/campaign_20261106_161236_attempt_08_20261106164528865765"}
+{"time": "2026-11-06T16:49:17", "event": "controller_start", "campaign_id": "20261106_161236", "segment": 1, "phase": "production"}
+{"time": "2026-11-06T16:50:21", "event": "retry_queued", "trajectory": 4, "segment": 1, "attempt": 9}
+{"time": "2026-11-06T16:50:21", "event": "submit", "trajectory": 4, "segment": 1, "attempt": 9, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/5_main/traj_004/1_segment_30fs/campaign_20261106_161236_attempt_09_20261106165021175788"}
+{"time": "2026-11-06T16:54:54", "event": "trajectory_failed", "trajectory": 4, "segment": 1, "attempts": 10}
+{"time": "2026-11-06T16:58:25", "event": "analysis_complete", "segment": 1, "output": "/home/acc-2025-21091/ACC-Practice/4_prac/analysis/5_main/total/1_segment_30fs"}
+{"time": "2026-11-06T16:59:06", "event": "analysis_complete", "segment": 1, "output": "/home/acc-2025-21091/ACC-Practice/4_prac/analysis/5_main/total/1_segment_30fs"}
+{"time": "2026-11-06T17:05:54", "event": "trajectories_added", "first": 31, "count": 20, "total": 50}
+{"time": "2026-11-06T17:05:54", "event": "controller_start", "campaign_id": "20261106_161236", "segment": 1, "phase": "production"}
+{"time": "2026-11-06T17:05:54", "event": "submit", "trajectory": 31, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_031/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106170554515939"}
+{"time": "2026-11-06T17:05:54", "event": "submit", "trajectory": 32, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_032/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106170554517812"}
+{"time": "2026-11-06T17:05:54", "event": "submit", "trajectory": 33, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_033/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106170554519366"}
+{"time": "2026-11-06T17:05:54", "event": "submit", "trajectory": 34, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_034/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106170554520846"}
+{"time": "2026-11-06T17:05:54", "event": "submit", "trajectory": 35, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_035/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106170554522384"}
+{"time": "2026-11-06T17:05:54", "event": "submit", "trajectory": 36, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_036/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106170554523895"}
+{"time": "2026-11-06T17:05:54", "event": "submit", "trajectory": 37, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_037/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106170554525401"}
+{"time": "2026-11-06T17:05:54", "event": "submit", "trajectory": 38, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_038/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106170554526916"}
+{"time": "2026-11-06T17:05:54", "event": "submit", "trajectory": 39, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_039/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106170554528229"}
+{"time": "2026-11-06T17:05:54", "event": "submit", "trajectory": 40, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_040/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106170554529453"}
+{"time": "2026-11-06T17:05:54", "event": "submit", "trajectory": 41, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_041/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106170554530478"}
+{"time": "2026-11-06T17:05:54", "event": "submit", "trajectory": 42, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_042/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106170554531528"}
+{"time": "2026-11-06T17:05:54", "event": "submit", "trajectory": 43, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_043/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106170554532452"}
+{"time": "2026-11-06T17:05:54", "event": "submit", "trajectory": 44, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_044/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106170554557575"}
+{"time": "2026-11-06T17:05:54", "event": "submit", "trajectory": 45, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_045/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106170554585962"}
+{"time": "2026-11-06T17:05:54", "event": "submit", "trajectory": 46, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_046/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106170554614113"}
+{"time": "2026-11-06T17:05:54", "event": "submit", "trajectory": 47, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_047/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106170554641966"}
+{"time": "2026-11-06T17:05:54", "event": "submit", "trajectory": 48, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_048/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106170554670050"}
+{"time": "2026-11-06T17:05:54", "event": "submit", "trajectory": 49, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_049/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106170554697934"}
+{"time": "2026-11-06T17:05:54", "event": "submit", "trajectory": 50, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_050/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106170554749437"}
+{"time": "2026-11-06T17:08:28", "event": "retry_queued", "trajectory": 32, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:08:31", "event": "retry_queued", "trajectory": 38, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:08:34", "event": "retry_queued", "trajectory": 41, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:08:37", "event": "retry_queued", "trajectory": 45, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:08:40", "event": "retry_queued", "trajectory": 48, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:08:40", "event": "submit", "trajectory": 32, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_032/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106170840656507"}
+{"time": "2026-11-06T17:08:40", "event": "submit", "trajectory": 38, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_038/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106170840658471"}
+{"time": "2026-11-06T17:08:40", "event": "submit", "trajectory": 41, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_041/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106170840659986"}
+{"time": "2026-11-06T17:08:40", "event": "submit", "trajectory": 45, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_045/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106170840662427"}
+{"time": "2026-11-06T17:08:40", "event": "submit", "trajectory": 48, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_048/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106170840665293"}
+{"time": "2026-11-06T17:09:43", "event": "retry_queued", "trajectory": 44, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:09:43", "event": "submit", "trajectory": 44, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_044/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106170943965809"}
+{"time": "2026-11-06T17:10:17", "event": "retry_queued", "trajectory": 31, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:10:17", "event": "submit", "trajectory": 31, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_031/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106171017197388"}
+{"time": "2026-11-06T17:11:50", "event": "retry_queued", "trajectory": 40, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:11:50", "event": "submit", "trajectory": 40, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_040/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106171150464872"}
+{"time": "2026-11-06T17:12:53", "event": "retry_queued", "trajectory": 35, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:12:53", "event": "submit", "trajectory": 35, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_035/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106171253801930"}
+{"time": "2026-11-06T17:14:57", "event": "retry_queued", "trajectory": 44, "segment": 1, "attempt": 2}
+{"time": "2026-11-06T17:14:57", "event": "submit", "trajectory": 44, "segment": 1, "attempt": 2, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_044/1_segment_30fs/campaign_20261106_161236_attempt_02_20261106171457113012"}
+{"time": "2026-11-06T17:15:30", "event": "retry_queued", "trajectory": 50, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:15:30", "event": "submit", "trajectory": 50, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_050/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106171530469756"}
+{"time": "2026-11-06T17:16:33", "event": "retry_queued", "trajectory": 37, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:16:33", "event": "submit", "trajectory": 37, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_037/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106171633689737"}
+{"time": "2026-11-06T17:17:36", "event": "retry_queued", "trajectory": 34, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:17:36", "event": "submit", "trajectory": 34, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_034/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106171736993102"}
+{"time": "2026-11-06T17:18:40", "event": "retry_queued", "trajectory": 43, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:18:40", "event": "submit", "trajectory": 43, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_043/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106171840447275"}
+{"time": "2026-11-06T17:19:13", "event": "retry_queued", "trajectory": 36, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:19:16", "event": "retry_queued", "trajectory": 47, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:19:16", "event": "submit", "trajectory": 36, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_036/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106171916936787"}
+{"time": "2026-11-06T17:19:16", "event": "submit", "trajectory": 47, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_047/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106171916938776"}
+{"time": "2026-11-06T17:19:50", "event": "retry_queued", "trajectory": 39, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:19:50", "event": "submit", "trajectory": 39, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_039/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106171950143136"}
+{"time": "2026-11-06T17:20:53", "event": "retry_queued", "trajectory": 33, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:20:53", "event": "submit", "trajectory": 33, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_033/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106172053312059"}
+{"time": "2026-11-06T17:21:26", "event": "retry_queued", "trajectory": 49, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:21:26", "event": "submit", "trajectory": 49, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_049/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106172126498662"}
+{"time": "2026-11-06T17:22:59", "event": "retry_queued", "trajectory": 49, "segment": 1, "attempt": 2}
+{"time": "2026-11-06T17:22:59", "event": "submit", "trajectory": 49, "segment": 1, "attempt": 2, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_049/1_segment_30fs/campaign_20261106_161236_attempt_02_20261106172259598905"}
+{"time": "2026-11-06T17:25:32", "event": "retry_queued", "trajectory": 42, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:25:32", "event": "submit", "trajectory": 42, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_042/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106172532954474"}
+{"time": "2026-11-06T17:26:06", "event": "trajectory_complete", "trajectory": 46, "segment": 1, "attempt": 0}
+{"time": "2026-11-06T17:26:39", "event": "trajectory_complete", "trajectory": 38, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:27:12", "event": "trajectory_complete", "trajectory": 41, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:27:46", "event": "trajectory_complete", "trajectory": 34, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:27:49", "event": "trajectory_complete", "trajectory": 36, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:27:52", "event": "trajectory_complete", "trajectory": 39, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:27:56", "event": "trajectory_complete", "trajectory": 42, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:27:59", "event": "trajectory_complete", "trajectory": 43, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:28:02", "event": "trajectory_complete", "trajectory": 44, "segment": 1, "attempt": 2}
+{"time": "2026-11-06T17:28:06", "event": "trajectory_complete", "trajectory": 47, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:28:09", "event": "trajectory_complete", "trajectory": 50, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:28:42", "event": "trajectory_complete", "trajectory": 31, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:28:46", "event": "trajectory_complete", "trajectory": 32, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:28:49", "event": "trajectory_complete", "trajectory": 33, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:28:52", "event": "trajectory_complete", "trajectory": 35, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:28:56", "event": "trajectory_complete", "trajectory": 37, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:28:59", "event": "trajectory_complete", "trajectory": 40, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:29:03", "event": "trajectory_complete", "trajectory": 45, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:29:06", "event": "trajectory_complete", "trajectory": 48, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:30:10", "event": "trajectory_complete", "trajectory": 49, "segment": 1, "attempt": 2}
+{"time": "2026-11-06T17:31:50", "event": "analysis_complete", "segment": 1, "output": "/home/acc-2025-21091/ACC-Practice/4_prac/analysis/4_main/total/1_segment_30fs"}
+{"time": "2026-11-06T17:31:50", "event": "campaign_partial_complete", "segment": 1}
+{"time": "2026-11-06T17:31:50", "event": "campaign_blocked", "segment": 1}
+{"time": "2026-11-06T17:46:22", "event": "trajectories_added", "first": 51, "count": 1, "total": 51}
+{"time": "2026-11-06T17:46:22", "event": "controller_start", "campaign_id": "20261106_161236", "segment": 1, "phase": "production"}
+{"time": "2026-11-06T17:46:22", "event": "submit", "trajectory": 51, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_051/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106174622173355"}
+{"time": "2026-11-06T17:46:52", "event": "retry_queued", "trajectory": 51, "segment": 1, "attempt": 1}
+{"time": "2026-11-06T17:46:52", "event": "submit", "trajectory": 51, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_051/1_segment_30fs/campaign_20261106_161236_attempt_01_20261106174652178412"}
+{"time": "2026-11-06T17:47:22", "event": "retry_queued", "trajectory": 51, "segment": 1, "attempt": 2}
+{"time": "2026-11-06T17:47:22", "event": "submit", "trajectory": 51, "segment": 1, "attempt": 2, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_051/1_segment_30fs/campaign_20261106_161236_attempt_02_20261106174722183481"}
+{"time": "2026-11-06T17:48:02", "event": "controller_start", "campaign_id": "20261106_161236", "segment": 1, "phase": "production"}
+{"time": "2026-11-06T17:48:02", "event": "submit", "trajectory": 51, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2025-21091/ACC-Practice/4_prac/nonadiabatic/4_main/traj_051/1_segment_30fs/campaign_20261106_161236_attempt_00_20261106174802889001"}
+{"time": "2026-11-06T18:06:06", "event": "trajectory_complete", "trajectory": 51, "segment": 1, "attempt": 0}
+{"time": "2026-11-06T18:07:50", "event": "analysis_complete", "segment": 1, "output": "/home/acc-2025-21091/ACC-Practice/4_prac/analysis/4_main/total/2_add1"}
+{"time": "2026-11-06T18:07:50", "event": "campaign_partial_complete", "segment": 1}
+{"time": "2026-11-06T18:07:50", "event": "campaign_blocked", "segment": 1}
+{"time": "2026-11-11T15:45:27", "event": "trajectories_added", "first": 52, "count": 1, "total": 52}
+{"time": "2026-11-11T15:45:27", "event": "controller_start", "campaign_id": "20261106_161236", "segment": 1, "phase": "production"}
+{"time": "2026-11-11T15:45:27", "event": "submit", "trajectory": 52, "segment": 1, "attempt": 0, "run_mode": "segment", "work": "/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118"}
+{"time": "2026-11-11T15:52:00", "event": "retry_queued", "trajectory": 52, "segment": 1, "attempt": 1}
+{"time": "2026-11-11T15:52:00", "event": "submit", "trajectory": 52, "segment": 1, "attempt": 1, "run_mode": "segment", "work": "/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_01_20261111155200645408"}
+{"time": "2026-11-11T16:11:03", "event": "trajectory_complete", "trajectory": 52, "segment": 1, "attempt": 1}
+{"time": "2026-11-11T16:12:53", "event": "analysis_complete", "segment": 1, "output": "/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/analysis/4_main/total/3_add2"}
+{"time": "2026-11-11T16:12:53", "event": "campaign_partial_complete", "segment": 1}
+{"time": "2026-11-11T16:12:53", "event": "campaign_blocked", "segment": 1}

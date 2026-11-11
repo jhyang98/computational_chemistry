@@ -1,0 +1,6 @@
+{
+  "gamess|/appl/share/gamess/rungms|6e3bca91062c": {
+    "source": "d=\"$(dirname \"$(readlink -f \"$(command -v /appl/share/gamess/rungms)\")\")\" ; grep -aoh -m1 \"GAMESS VERSION = [A-Z0-9 ()]*\" \"$d\"/gamess.*.x | head -n 1",
+    "version": "2023.R2"
+  }
+}

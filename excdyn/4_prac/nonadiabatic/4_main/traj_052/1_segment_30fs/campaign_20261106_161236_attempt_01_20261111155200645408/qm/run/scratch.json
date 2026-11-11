@@ -1,0 +1,10 @@
+{
+  "scratch_base": "/scratch/acc-2026-37074",
+  "scratch_home": "/scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1_attempt_01-498560",
+  "userscr": "/scratch/acc-2026-37074/maestro-gamess-traj_052_segment_1_attempt_01-498560/scr",
+  "reason": "explicitly configured scratch: /scratch/acc-2026-37074",
+  "node_id": "traj_052_segment_1_attempt_01",
+  "hostname": "node3",
+  "pid": 498560,
+  "home_override_note": "GAMESS scratch relocated by overriding HOME for the rungms call: rungms hardcodes `set SCR=~/scr` / `set USERSCR=~/scr` as csh `set` statements, which no environment variable can override, but csh expands `~` from HOME. rungms runs under `csh -f`, so it never reads .cshrc and the override has no other effect."
+}

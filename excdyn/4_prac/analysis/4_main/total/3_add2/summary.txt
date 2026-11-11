@@ -1,0 +1,10 @@
+n_trajectories=52
+n_complete=51
+n_failed=1
+final_time_fs=30.0000
+n_available_at_final=51
+final_mean_r1_A=1.30250439
+final_mean_r2_A=1.33986625
+final_mean_angle_deg=125.26249644
+final_mean_q_asym_A=-0.02641882
+warning=means after attrition are survivor-only and may underestimate dissociation

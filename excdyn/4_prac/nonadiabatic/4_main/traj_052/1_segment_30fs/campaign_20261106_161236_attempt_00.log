@@ -1,0 +1,55 @@
+[INFO] maestro.plan: 
+plan: QMTask   nodes: 1   waves: 1
+wave 1  (1 node)
+  qm  ->  gamess   [role '*']
+recovery: QMTask up to 5 attempts
+placement: 0 in the driver, 1 as slurm job(s)
+output: qm  produces ['mo_coefficients', 'qm_log']
+[INFO] maestro.driver: submitted qm (1 node(s)) as job 23474
+Traceback (most recent call last):
+  File "/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/run_segment.py", line 32, in <module>
+    main()
+    ~~~~^^
+  File "/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/run_segment.py", line 23, in main
+    result = Maestro(scheduler="slurm", workdir=".").run(
+        rundir=args.rundir,
+        task=QMTask(qm_input=args.input_file),
+        engines=engine,
+    )
+  File "/appl/share/maestro/maestro/src/maestro/run.py", line 258, in run
+    _drive()
+    ~~~~~~^^
+  File "/appl/share/maestro/maestro/src/maestro/run.py", line 228, in _drive
+    run_graph(arr=arr, backend=SlurmBackend(),
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              advisor=self._advisor(), journal=journal,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              archive=self.archive,
+              ^^^^^^^^^^^^^^^^^^^^^
+              engine_for_name=self._engine_for_name,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              runlog=runlog, lock=False)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/appl/share/maestro/maestro/src/maestro/conductor/driver.py", line 220, in run_graph
+    run_wave(
+    ~~~~~~~~^
+        wave_index=w,
+        ^^^^^^^^^^^^^
+    ...<11 lines>...
+        runlog=runlog,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/appl/share/maestro/maestro/src/maestro/conductor/driver.py", line 300, in run_wave
+    watch_jobs(
+    ~~~~~~~~~~^
+        flights, driving=driving, arr=arr, record=record,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        report=report, journal=journal, archive=archive,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        engine_for_name=engine_for_name, runlog=runlog)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/appl/share/maestro/maestro/src/maestro/conductor/watch/poll.py", line 124, in watch_jobs
+    raise report([nid])
+maestro.core.errors.ExecutionError: wave 1 failed: 1 node(s) gave up. See /home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118/FAILURE.txt

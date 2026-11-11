@@ -1,0 +1,3 @@
+{"advisor": "ontology", "event": "run_start", "run_id": "d0ee8f7dbe51415f990c07671bde5285", "scheduler": "slurm", "ts": "2026-11-11T06:52:01.917737+00:00", "workdir": "/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_01_20261111155200645408"}
+{"attempt": 1, "engine_name": "gamess", "event": "node_success", "node": "qm", "run_id": "d0ee8f7dbe51415f990c07671bde5285", "task_kind": "QMTask", "ts": "2026-11-11T07:11:02.840853+00:00", "wall_time_s": 1109.0}
+{"error": null, "event": "run_end", "run_id": "d0ee8f7dbe51415f990c07671bde5285", "state": "ok", "ts": "2026-11-11T07:11:03.188336+00:00"}

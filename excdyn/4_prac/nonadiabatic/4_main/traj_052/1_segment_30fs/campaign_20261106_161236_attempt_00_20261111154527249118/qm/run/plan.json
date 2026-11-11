@@ -1,0 +1,56 @@
+{
+  "jobname": "qm",
+  "rundir": "/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118/qm/run",
+  "steps": [
+    {
+      "cwd": "/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118/qm/run",
+      "stdout": "/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118/qm/run/job.out",
+      "env": {
+        "kind": "shell",
+        "modules": [],
+        "conda_env": null,
+        "pre": [],
+        "exports": {
+          "MAESTRO_GAMESS_SCRATCH": "/scratch/acc-2026-37074",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1"
+        },
+        "__type__": "EnvInfo"
+      },
+      "command": "PYTHONPATH=/appl/share/maestro/maestro/src /appl/share/maestro/maestro/.venv/bin/python -m maestro.engines.gamess.scratch_cli prepare --node-id traj_052_segment_1 --out .maestro-gamess-home --rundir . && HOME=\"$(cat .maestro-gamess-home)\" /appl/share/gamess/rungms traj_052_segment_1.inp 00 1 && PYTHONPATH=/appl/share/maestro/maestro/src /appl/share/maestro/maestro/.venv/bin/python -m maestro.engines.gamess.scratch_cli recover --home \"$(cat .maestro-gamess-home)\" --jobname traj_052_segment_1 --rundir .",
+      "__type__": "ShellJob"
+    }
+  ],
+  "outputs": {
+    "rundir": "/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118/qm/run",
+    "outfile": "/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118/qm/run/job.out",
+    "engradfile": null,
+    "hessfile": null,
+    "deckfile": "/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118/qm/run/traj_052_segment_1.inp",
+    "geometryfile": null,
+    "punchfile": "/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/campaign_20261106_161236_attempt_00_20261111154527249118/qm/run/traj_052_segment_1.dat",
+    "__type__": "GamessOutputInfo"
+  },
+  "resources": {
+    "job_name": "qm",
+    "time": "24:00:00",
+    "partition": null,
+    "constraint": null,
+    "nodes": 1,
+    "cores": 1,
+    "ntasks": 1,
+    "cpus_per_task": 1,
+    "mem": null,
+    "gres": null,
+    "nodelist": "node3",
+    "exclude": null,
+    "extra_directives": [],
+    "__type__": "Resources"
+  },
+  "version": "2023.R2",
+  "profile_matches": "2023.R2",
+  "executable": "/appl/share/gamess/rungms",
+  "__type__": "RunPlan"
+}

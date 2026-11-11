@@ -1,0 +1,11 @@
+{
+  "kind": "mailbox",
+  "executable": null,
+  "version": null,
+  "model_requested": null,
+  "model_reported": null,
+  "usage": {},
+  "wall_time_s": 30.436851649079472,
+  "rounds": 1,
+  "__type__": "AdvisorRecord"
+}

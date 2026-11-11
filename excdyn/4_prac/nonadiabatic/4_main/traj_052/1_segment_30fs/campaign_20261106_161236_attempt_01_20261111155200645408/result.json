@@ -1,0 +1,30 @@
+{
+  "outputs": {
+    "qm": {
+      "state": "success",
+      "values": {
+        "qm_log": {
+          "path": "qm/results/qm_log.out",
+          "fchk": null,
+          "format": "gamess",
+          "__type__": "QMLog"
+        },
+        "mo_coefficients": {
+          "path": "qm/results/mo_coefficients.dat",
+          "program": "gamess",
+          "method": null,
+          "basis": null,
+          "geometry": null,
+          "__type__": "MOCoefficients"
+        },
+        "engine_log": {
+          "path": "qm/run/job.out",
+          "format": "gamess",
+          "__type__": "EngineLog"
+        }
+      },
+      "units": {},
+      "info": {}
+    }
+  }
+}

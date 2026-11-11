@@ -1,0 +1,17 @@
+{
+  "batch": null,
+  "recovery": {
+    "max_attempts": 5,
+    "adjustable": [],
+    "enabled_engine": [],
+    "__type__": "RecoveryPolicy"
+  },
+  "qm_input": {
+    "path": "/home/acc-2026-37074/computational_chemistry/excdyn/4_prac/nonadiabatic/4_main/traj_052/1_segment_30fs/traj_052_segment_1.inp",
+    "format": "",
+    "__type__": "QMInput"
+  },
+  "mo_coefficients": null,
+  "qm_log": null,
+  "__type__": "QMTask"
+}
