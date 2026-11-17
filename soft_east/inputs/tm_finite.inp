@@ -1,0 +1,10 @@
+# east_tm input: exact finite-tobs moments for the TPS ensemble (small L)
+mode    finite
+L       8
+T       1
+eps     0.01
+s       0.0:0.005:0.04
+g       0.0
+tobs    40
+basis   k0
+output  tm_finite.dat

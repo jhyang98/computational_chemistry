@@ -1,0 +1,17 @@
+# east_ed 0.1.0
+# command: ./bin/east_ed strict -L 18 --g -0.15:0.05:0.15 --out results/tmp_ed_fine/strict_L18.dat
+# T = 1, c = 0.26894142137, basis = k0 (zero-momentum sector)
+# weight exp(-s K - g E); theta = largest eigenvalue (whole system, per unit time)
+# k = -(1/L) dtheta/ds, e = -(1/L) dtheta/dg, chi_XY = (1/L) d2theta/dXdY
+# coexistence with the empty state (eigenvalue 0): theta_nonempty(s*, g) = 0
+# active branch at s*: k, e; inactive (empty) branch has k = e = 0
+# slope = -e/k = ds*/dg (Clausius-Clapeyron-like relation with k = e = 0 inactive)
+# s_exact: product-state solution, exp(-2s*) = [(1+2g)^2 - (1-2c)^2] / [4c(1-c)]
+#   L            g           s_star          s_exact         k_active         e_active          slope   gap_nonempty     resid  ok
+   18        -0.15     0.5227522464     0.5227522464 3.4769410653e-02 1.7608093361e-01    -5.06424844   9.596998e-04   2.6e-15   1
+   18         -0.1     0.3060182272     0.3060182272 5.7083167522e-02 2.1417177528e-01    -3.75192521   2.087416e-03   3.2e-15   1
+   18        -0.05     0.1382673251     0.1382673251 8.1146640973e-02 2.4488977940e-01    -3.01786712   3.592114e-03   4.1e-15   1
+   18            0    -0.0000000000    -0.0000000000 1.0613174428e-01 2.6990158363e-01    -2.54308063   5.422667e-03   4.5e-15   1
+   18         0.05    -0.1183352113    -0.1183352113 1.3160282242e-01 2.9055835018e-01    -2.20784285   7.531502e-03   6.4e-15   1
+   18          0.1    -0.2221754915    -0.2221754915 1.5732497261e-01 3.0786467627e-01    -1.95687100   9.876967e-03   7.0e-15   1
+   18         0.15    -0.3149340181    -0.3149340181 1.8316822017e-01 3.2255620148e-01    -1.76098343   1.242371e-02   7.9e-15   1

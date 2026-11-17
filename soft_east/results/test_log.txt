@@ -1,0 +1,875 @@
+
+== 1. structure ==
+[PASS] k0 dimension L=6                                           got  1.400000000000e+01  expect  1.400000000000e+01  err 0.0e+00
+[PASS] A symmetric (k0, eps=0.01) L=6                             got  2.220446049250e-16  expect  0.000000000000e+00  err 2.2e-16
+[PASS] k0 dimension, empty excluded L=6                           got  1.300000000000e+01  expect  1.300000000000e+01  err 0.0e+00
+[PASS] A symmetric (k0, eps=0) L=6                                got  2.220446049250e-16  expect  0.000000000000e+00  err 2.2e-16
+[PASS] k0 dimension L=8                                           got  3.600000000000e+01  expect  3.600000000000e+01  err 0.0e+00
+[PASS] A symmetric (k0, eps=0.01) L=8                             got  0.000000000000e+00  expect  0.000000000000e+00  err 0.0e+00
+[PASS] k0 dimension, empty excluded L=8                           got  3.500000000000e+01  expect  3.500000000000e+01  err 0.0e+00
+[PASS] A symmetric (k0, eps=0) L=8                                got  0.000000000000e+00  expect  0.000000000000e+00  err 0.0e+00
+[PASS] k0 dimension L=10                                          got  1.080000000000e+02  expect  1.080000000000e+02  err 0.0e+00
+[PASS] A symmetric (k0, eps=0.01) L=10                            got  2.220446049250e-16  expect  0.000000000000e+00  err 2.2e-16
+[PASS] k0 dimension, empty excluded L=10                          got  1.070000000000e+02  expect  1.070000000000e+02  err 0.0e+00
+[PASS] A symmetric (k0, eps=0) L=10                               got  2.220446049250e-16  expect  0.000000000000e+00  err 2.2e-16
+[PASS] k0 dimension L=12                                          got  3.520000000000e+02  expect  3.520000000000e+02  err 0.0e+00
+[PASS] A symmetric (k0, eps=0.01) L=12                            got  2.220446049250e-16  expect  0.000000000000e+00  err 2.2e-16
+[PASS] k0 dimension, empty excluded L=12                          got  3.510000000000e+02  expect  3.510000000000e+02  err 0.0e+00
+[PASS] A symmetric (k0, eps=0) L=12                               got  2.220446049250e-16  expect  0.000000000000e+00  err 2.2e-16
+[PASS] k0 dimension L=14                                          got  1.182000000000e+03  expect  1.182000000000e+03  err 0.0e+00
+[PASS] A symmetric (k0, eps=0.01) L=14                            got  4.440892098501e-16  expect  0.000000000000e+00  err 4.4e-16
+[PASS] k0 dimension, empty excluded L=14                          got  1.181000000000e+03  expect  1.181000000000e+03  err 0.0e+00
+[PASS] A symmetric (k0, eps=0) L=14                               got  4.440892098501e-16  expect  0.000000000000e+00  err 4.4e-16
+
+== 2. equilibrium (s = g = 0) ==
+[PASS] theta(0,0)=0       L=6 eps=0                               got  4.807422464746e-17  expect  0.000000000000e+00  err 4.8e-17
+[PASS] k(0,0)             L=6 eps=0                               got  1.248066309997e-01  expect  1.248066309997e-01  err 5.6e-17
+[PASS] e(0,0)             L=6 eps=0                               got  3.173933263919e-01  expect  3.173933263919e-01  err 1.1e-16
+[PASS] theta(0,0)=0       L=6 eps=0.0003                          got -5.766369261115e-18  expect  0.000000000000e+00  err 5.8e-18
+[PASS] k(0,0)             L=6 eps=0.0003                          got  1.058404264728e-01  expect  1.058404264728e-01  err 2.0e-15
+[PASS] e(0,0)             L=6 eps=0.0003                          got  2.689414213700e-01  expect  2.689414213700e-01  err 5.2e-15
+[PASS] theta(0,0)=0       L=6 eps=0.003                           got  1.364153988327e-17  expect  0.000000000000e+00  err 1.4e-17
+[PASS] k(0,0)             L=6 eps=0.003                           got  1.066165946113e-01  expect  1.066165946113e-01  err 1.4e-15
+[PASS] e(0,0)             L=6 eps=0.003                           got  2.689414213700e-01  expect  2.689414213700e-01  err 3.6e-15
+[PASS] theta(0,0)=0       L=6 eps=0.01                            got  5.558563708033e-17  expect  0.000000000000e+00  err 5.6e-17
+[PASS] k(0,0)             L=6 eps=0.01                            got  1.086288823777e-01  expect  1.086288823777e-01  err 4.7e-16
+[PASS] e(0,0)             L=6 eps=0.01                            got  2.689414213700e-01  expect  2.689414213700e-01  err 1.2e-15
+[PASS] theta(0,0)=0       L=6 eps=0.3                             got  8.964855600817e-17  expect  0.000000000000e+00  err 9.0e-17
+[PASS] k(0,0)             L=6 eps=0.3                             got  1.919950898429e-01  expect  1.919950898429e-01  err 2.8e-17
+[PASS] e(0,0)             L=6 eps=0.3                             got  2.689414213700e-01  expect  2.689414213700e-01  err 5.6e-17
+[PASS] theta(0,0)=0       L=6 eps=1                               got -2.174394755301e-16  expect  0.000000000000e+00  err 2.2e-16
+[PASS] k(0,0)             L=6 eps=1                               got  3.932238664830e-01  expect  3.932238664830e-01  err 1.7e-16
+[PASS] e(0,0)             L=6 eps=1                               got  2.689414213700e-01  expect  2.689414213700e-01  err 5.6e-17
+[PASS] theta(0,0)=0       L=9 eps=0                               got -4.007725975685e-17  expect  0.000000000000e+00  err 4.0e-17
+[PASS] k(0,0)             L=9 eps=0                               got  1.124619074059e-01  expect  1.124619074059e-01  err 4.2e-17
+[PASS] e(0,0)             L=9 eps=0                               got  2.859996988784e-01  expect  2.859996988784e-01  err 0.0e+00
+[PASS] theta(0,0)=0       L=9 eps=0.0003                          got -1.482308665300e-17  expect  0.000000000000e+00  err 1.5e-17
+[PASS] k(0,0)             L=9 eps=0.0003                          got  1.058404264728e-01  expect  1.058404264728e-01  err 8.7e-16
+[PASS] e(0,0)             L=9 eps=0.0003                          got  2.689414213700e-01  expect  2.689414213700e-01  err 2.2e-15
+[PASS] theta(0,0)=0       L=9 eps=0.003                           got  8.014653618691e-17  expect  0.000000000000e+00  err 8.0e-17
+[PASS] k(0,0)             L=9 eps=0.003                           got  1.066165946113e-01  expect  1.066165946113e-01  err 1.1e-16
+[PASS] e(0,0)             L=9 eps=0.003                           got  2.689414213700e-01  expect  2.689414213700e-01  err 1.1e-16
+[PASS] theta(0,0)=0       L=9 eps=0.01                            got -1.091122317545e-17  expect  0.000000000000e+00  err 1.1e-17
+[PASS] k(0,0)             L=9 eps=0.01                            got  1.086288823777e-01  expect  1.086288823777e-01  err 3.1e-16
+[PASS] e(0,0)             L=9 eps=0.01                            got  2.689414213700e-01  expect  2.689414213700e-01  err 7.8e-16
+[PASS] theta(0,0)=0       L=9 eps=0.3                             got  2.145099445731e-16  expect  0.000000000000e+00  err 2.1e-16
+[PASS] k(0,0)             L=9 eps=0.3                             got  1.919950898429e-01  expect  1.919950898429e-01  err 5.6e-17
+[PASS] e(0,0)             L=9 eps=0.3                             got  2.689414213700e-01  expect  2.689414213700e-01  err 5.6e-17
+[PASS] theta(0,0)=0       L=9 eps=1                               got -4.837777605629e-16  expect  0.000000000000e+00  err 4.8e-16
+[PASS] k(0,0)             L=9 eps=1                               got  3.932238664830e-01  expect  3.932238664830e-01  err 2.2e-16
+[PASS] e(0,0)             L=9 eps=1                               got  2.689414213700e-01  expect  2.689414213700e-01  err 5.6e-17
+[PASS] theta(0,0)=0       L=12 eps=0                              got -2.666266031211e-17  expect  0.000000000000e+00  err 2.7e-17
+[PASS] k(0,0)             L=12 eps=0                              got  1.082774582456e-01  expect  1.082774582456e-01  err 7.6e-16
+[PASS] e(0,0)             L=12 eps=0                              got  2.753583072514e-01  expect  2.753583072514e-01  err 1.4e-15
+[PASS] theta(0,0)=0       L=12 eps=0.0003                         got -4.673578870324e-17  expect  0.000000000000e+00  err 4.7e-17
+[PASS] k(0,0)             L=12 eps=0.0003                         got  1.058404264728e-01  expect  1.058404264728e-01  err 7.2e-16
+[PASS] e(0,0)             L=12 eps=0.0003                         got  2.689414213700e-01  expect  2.689414213700e-01  err 1.4e-15
+[PASS] theta(0,0)=0       L=12 eps=0.003                          got -9.606380007667e-17  expect  0.000000000000e+00  err 9.6e-17
+[PASS] k(0,0)             L=12 eps=0.003                          got  1.066165946113e-01  expect  1.066165946113e-01  err 1.5e-16
+[PASS] e(0,0)             L=12 eps=0.003                          got  2.689414213700e-01  expect  2.689414213700e-01  err 7.8e-16
+[PASS] theta(0,0)=0       L=12 eps=0.01                           got -5.555864939930e-18  expect  0.000000000000e+00  err 5.6e-18
+[PASS] k(0,0)             L=12 eps=0.01                           got  1.086288823777e-01  expect  1.086288823777e-01  err 6.4e-16
+[PASS] e(0,0)             L=12 eps=0.01                           got  2.689414213700e-01  expect  2.689414213700e-01  err 5.6e-17
+[PASS] theta(0,0)=0       L=12 eps=0.3                            got  5.959568979542e-16  expect  0.000000000000e+00  err 6.0e-16
+[PASS] k(0,0)             L=12 eps=0.3                            got  1.919950898429e-01  expect  1.919950898429e-01  err 6.4e-16
+[PASS] e(0,0)             L=12 eps=0.3                            got  2.689414213700e-01  expect  2.689414213700e-01  err 1.7e-16
+[PASS] theta(0,0)=0       L=12 eps=1                              got  5.241143924923e-16  expect  0.000000000000e+00  err 5.2e-16
+[PASS] k(0,0)             L=12 eps=1                              got  3.932238664830e-01  expect  3.932238664830e-01  err 1.2e-15
+[PASS] e(0,0)             L=12 eps=1                              got  2.689414213700e-01  expect  2.689414213700e-01  err 1.7e-16
+[PASS] c(T=4/3) = 1/(1+exp(0.75))                                 got  3.208213008246e-01  expect  3.208213008246e-01  err 0.0e+00
+[PASS] k(0,0) T=4/3 L=10 eps=0.01                                 got  1.427705034521e-01  expect  1.427705034521e-01  err 2.2e-16
+[PASS] e(0,0) T=4/3 L=10 eps=0.01                                 got  3.208213008246e-01  expect  3.208213008246e-01  err 3.3e-16
+
+== 3. eps = 1 (independent spins, closed form) ==
+[PASS] theta  L=6 k0 s=0 g=0                                      got -2.174394755301e-16  expect  0.000000000000e+00  err 2.2e-16
+[PASS] k      L=6 k0 s=0 g=0                                      got  3.932238664830e-01  expect  3.932238664830e-01  err 5.8e-14
+[PASS] e      L=6 k0 s=0 g=0                                      got  2.689414213700e-01  expect  2.689414213700e-01  err 4.0e-14
+[PASS] chi_KK L=6 k0 s=0 g=0                                      got  4.771977146223e-01  expect  4.771977145934e-01  err 2.9e-11
+[PASS] chi_EE L=6 k0 s=0 g=0                                      got  3.932238664830e-01  expect  3.932238664591e-01  err 2.4e-11
+[PASS] chi_KE L=6 k0 s=0 g=0                                      got  1.817154953459e-01  expect  1.817154953015e-01  err 4.4e-11
+[PASS] theta  L=6 k0 s=0.2 g=0                                    got -4.180403704930e-01  expect -4.180403704930e-01  err 3.3e-16
+[PASS] k      L=6 k0 s=0.2 g=0                                    got  3.062625425327e-01  expect  3.062625425327e-01  err 1.2e-14
+[PASS] e      L=6 k0 s=0.2 g=0                                    got  2.315311486794e-01  expect  2.315311486793e-01  err 4.7e-14
+[PASS] chi_KK L=6 k0 s=0.2 g=0                                    got  3.945586756297e-01  expect  3.945586755788e-01  err 5.1e-11
+[PASS] chi_EE L=6 k0 s=0.2 g=0                                    got  4.134638059493e-01  expect  4.134638059104e-01  err 3.9e-11
+[PASS] chi_KE L=6 k0 s=0.2 g=0                                    got  1.910687186352e-01  expect  1.910687186397e-01  err 4.5e-12
+[PASS] theta  L=6 k0 s=-0.3 g=0.1                                 got  6.674667086480e-01  expect  6.674667086480e-01  err 1.1e-16
+[PASS] k      L=6 k0 s=-0.3 g=0.1                                 got  5.417819373146e-01  expect  5.417819373147e-01  err 3.2e-14
+[PASS] e      L=6 k0 s=-0.3 g=0.1                                 got  2.874775523504e-01  expect  2.874775523505e-01  err 3.9e-14
+[PASS] chi_KK L=6 k0 s=-0.3 g=0.1                                 got  6.396619757769e-01  expect  6.396619757672e-01  err 9.7e-12
+[PASS] chi_EE L=6 k0 s=-0.3 g=0.1                                 got  3.097707796240e-01  expect  3.097707795089e-01  err 1.2e-10
+[PASS] chi_KE L=6 k0 s=-0.3 g=0.1                                 got  1.741274700445e-01  expect  1.741274700470e-01  err 2.6e-12
+[PASS] theta  L=6 k0 s=0.1 g=-0.15                                got  3.297397987545e-02  expect  3.297397987545e-02  err 5.0e-16
+[PASS] k      L=6 k0 s=0.1 g=-0.15                                got  3.739230145276e-01  expect  3.739230145277e-01  err 5.6e-14
+[PASS] e      L=6 k0 s=0.1 g=-0.15                                got  3.187454695488e-01  expect  3.187454695488e-01  err 6.7e-15
+[PASS] chi_KK L=6 k0 s=0.1 g=-0.15                                got  4.230612920441e-01  expect  4.230612919848e-01  err 5.9e-11
+[PASS] chi_EE L=6 k0 s=0.1 g=-0.15                                got  5.044111095569e-01  expect  5.044111096077e-01  err 5.1e-11
+[PASS] chi_KE L=6 k0 s=0.1 g=-0.15                                got  1.574353616053e-01  expect  1.574353615969e-01  err 8.3e-12
+[PASS] theta  L=6 k0 s=0.5 g=0.15                                 got -1.005404266441e+00  expect -1.005404266441e+00  err 4.4e-16
+[PASS] k      L=6 k0 s=0.5 g=0.15                                 got  1.775250291136e-01  expect  1.775250291136e-01  err 2.6e-14
+[PASS] e      L=6 k0 s=0.5 g=0.15                                 got  1.244058993946e-01  expect  1.244058993945e-01  err 1.1e-13
+[PASS] chi_KK L=6 k0 s=0.5 g=0.15                                 got  2.776995118056e-01  expect  2.776995118072e-01  err 1.6e-12
+[PASS] chi_EE L=6 k0 s=0.5 g=0.15                                 got  2.673548106831e-01  expect  2.673548107623e-01  err 7.9e-11
+[PASS] chi_KE L=6 k0 s=0.5 g=0.15                                 got  1.636524666951e-01  expect  1.636524666823e-01  err 1.3e-11
+[PASS] theta  L=6 full s=0 g=0                                    got -5.818423396198e-17  expect  0.000000000000e+00  err 5.8e-17
+[PASS] k      L=6 full s=0 g=0                                    got  3.932238664830e-01  expect  3.932238664830e-01  err 5.8e-14
+[PASS] e      L=6 full s=0 g=0                                    got  2.689414213700e-01  expect  2.689414213700e-01  err 4.1e-14
+[PASS] chi_KK L=6 full s=0 g=0                                    got  4.771977146223e-01  expect  4.771977145934e-01  err 2.9e-11
+[PASS] chi_EE L=6 full s=0 g=0                                    got  3.932238664830e-01  expect  3.932238664591e-01  err 2.4e-11
+[PASS] chi_KE L=6 full s=0 g=0                                    got  1.817154953459e-01  expect  1.817154953015e-01  err 4.4e-11
+[PASS] theta  L=6 full s=0.2 g=0                                  got -4.180403704930e-01  expect -4.180403704930e-01  err 2.2e-16
+[PASS] k      L=6 full s=0.2 g=0                                  got  3.062625425327e-01  expect  3.062625425327e-01  err 1.1e-14
+[PASS] e      L=6 full s=0.2 g=0                                  got  2.315311486794e-01  expect  2.315311486793e-01  err 4.7e-14
+[PASS] chi_KK L=6 full s=0.2 g=0                                  got  3.945586756297e-01  expect  3.945586755788e-01  err 5.1e-11
+[PASS] chi_EE L=6 full s=0.2 g=0                                  got  4.134638059493e-01  expect  4.134638059104e-01  err 3.9e-11
+[PASS] chi_KE L=6 full s=0.2 g=0                                  got  1.910687186352e-01  expect  1.910687186397e-01  err 4.5e-12
+[PASS] theta  L=6 full s=-0.3 g=0.1                               got  6.674667086480e-01  expect  6.674667086480e-01  err 5.6e-16
+[PASS] k      L=6 full s=-0.3 g=0.1                               got  5.417819373146e-01  expect  5.417819373147e-01  err 3.1e-14
+[PASS] e      L=6 full s=-0.3 g=0.1                               got  2.874775523504e-01  expect  2.874775523505e-01  err 3.9e-14
+[PASS] chi_KK L=6 full s=-0.3 g=0.1                               got  6.396619757769e-01  expect  6.396619757672e-01  err 9.7e-12
+[PASS] chi_EE L=6 full s=-0.3 g=0.1                               got  3.097707796240e-01  expect  3.097707795089e-01  err 1.2e-10
+[PASS] chi_KE L=6 full s=-0.3 g=0.1                               got  1.741274700445e-01  expect  1.741274700470e-01  err 2.6e-12
+[PASS] theta  L=6 full s=0.1 g=-0.15                              got  3.297397987545e-02  expect  3.297397987545e-02  err 2.3e-16
+[PASS] k      L=6 full s=0.1 g=-0.15                              got  3.739230145276e-01  expect  3.739230145277e-01  err 5.6e-14
+[PASS] e      L=6 full s=0.1 g=-0.15                              got  3.187454695488e-01  expect  3.187454695488e-01  err 6.6e-15
+[PASS] chi_KK L=6 full s=0.1 g=-0.15                              got  4.230612920441e-01  expect  4.230612919848e-01  err 5.9e-11
+[PASS] chi_EE L=6 full s=0.1 g=-0.15                              got  5.044111095569e-01  expect  5.044111096077e-01  err 5.1e-11
+[PASS] chi_KE L=6 full s=0.1 g=-0.15                              got  1.574353616053e-01  expect  1.574353615969e-01  err 8.3e-12
+[PASS] theta  L=6 full s=0.5 g=0.15                               got -1.005404266441e+00  expect -1.005404266441e+00  err 8.9e-16
+[PASS] k      L=6 full s=0.5 g=0.15                               got  1.775250291136e-01  expect  1.775250291136e-01  err 2.6e-14
+[PASS] e      L=6 full s=0.5 g=0.15                               got  1.244058993946e-01  expect  1.244058993945e-01  err 1.1e-13
+[PASS] chi_KK L=6 full s=0.5 g=0.15                               got  2.776995118056e-01  expect  2.776995118072e-01  err 1.6e-12
+[PASS] chi_EE L=6 full s=0.5 g=0.15                               got  2.673548106831e-01  expect  2.673548107623e-01  err 7.9e-11
+[PASS] chi_KE L=6 full s=0.5 g=0.15                               got  1.636524666951e-01  expect  1.636524666823e-01  err 1.3e-11
+[PASS] theta  L=9 k0 s=0 g=0                                      got -4.837777605629e-16  expect  0.000000000000e+00  err 4.8e-16
+[PASS] k      L=9 k0 s=0 g=0                                      got  3.932238664830e-01  expect  3.932238664830e-01  err 5.9e-14
+[PASS] e      L=9 k0 s=0 g=0                                      got  2.689414213700e-01  expect  2.689414213700e-01  err 4.0e-14
+[PASS] chi_KK L=9 k0 s=0 g=0                                      got  4.771977146223e-01  expect  4.771977145934e-01  err 2.9e-11
+[PASS] chi_EE L=9 k0 s=0 g=0                                      got  3.932238664830e-01  expect  3.932238664591e-01  err 2.4e-11
+[PASS] chi_KE L=9 k0 s=0 g=0                                      got  1.817154953459e-01  expect  1.817154953015e-01  err 4.4e-11
+[PASS] theta  L=9 k0 s=0.2 g=0                                    got -6.270605557395e-01  expect -6.270605557395e-01  err 2.2e-16
+[PASS] k      L=9 k0 s=0.2 g=0                                    got  3.062625425327e-01  expect  3.062625425327e-01  err 1.2e-14
+[PASS] e      L=9 k0 s=0.2 g=0                                    got  2.315311486794e-01  expect  2.315311486793e-01  err 4.7e-14
+[PASS] chi_KK L=9 k0 s=0.2 g=0                                    got  3.945586756297e-01  expect  3.945586755788e-01  err 5.1e-11
+[PASS] chi_EE L=9 k0 s=0.2 g=0                                    got  4.134638059493e-01  expect  4.134638059104e-01  err 3.9e-11
+[PASS] chi_KE L=9 k0 s=0.2 g=0                                    got  1.910687186352e-01  expect  1.910687186397e-01  err 4.5e-12
+[PASS] theta  L=9 k0 s=-0.3 g=0.1                                 got  1.001200062972e+00  expect  1.001200062972e+00  err 1.1e-15
+[PASS] k      L=9 k0 s=-0.3 g=0.1                                 got  5.417819373146e-01  expect  5.417819373147e-01  err 3.2e-14
+[PASS] e      L=9 k0 s=-0.3 g=0.1                                 got  2.874775523504e-01  expect  2.874775523505e-01  err 3.9e-14
+[PASS] chi_KK L=9 k0 s=-0.3 g=0.1                                 got  6.396619757769e-01  expect  6.396619757672e-01  err 9.7e-12
+[PASS] chi_EE L=9 k0 s=-0.3 g=0.1                                 got  3.097707796240e-01  expect  3.097707795089e-01  err 1.2e-10
+[PASS] chi_KE L=9 k0 s=-0.3 g=0.1                                 got  1.741274700445e-01  expect  1.741274700470e-01  err 2.6e-12
+[PASS] theta  L=9 k0 s=0.1 g=-0.15                                got  4.946096981317e-02  expect  4.946096981317e-02  err 3.1e-16
+[PASS] k      L=9 k0 s=0.1 g=-0.15                                got  3.739230145276e-01  expect  3.739230145277e-01  err 5.6e-14
+[PASS] e      L=9 k0 s=0.1 g=-0.15                                got  3.187454695488e-01  expect  3.187454695488e-01  err 6.8e-15
+[PASS] chi_KK L=9 k0 s=0.1 g=-0.15                                got  4.230612920441e-01  expect  4.230612919848e-01  err 5.9e-11
+[PASS] chi_EE L=9 k0 s=0.1 g=-0.15                                got  5.044111095569e-01  expect  5.044111096077e-01  err 5.1e-11
+[PASS] chi_KE L=9 k0 s=0.1 g=-0.15                                got  1.574353616053e-01  expect  1.574353615969e-01  err 8.3e-12
+[PASS] theta  L=9 k0 s=0.5 g=0.15                                 got -1.508106399661e+00  expect -1.508106399661e+00  err 1.3e-15
+[PASS] k      L=9 k0 s=0.5 g=0.15                                 got  1.775250291136e-01  expect  1.775250291136e-01  err 2.6e-14
+[PASS] e      L=9 k0 s=0.5 g=0.15                                 got  1.244058993946e-01  expect  1.244058993945e-01  err 1.1e-13
+[PASS] chi_KK L=9 k0 s=0.5 g=0.15                                 got  2.776995118056e-01  expect  2.776995118072e-01  err 1.6e-12
+[PASS] chi_EE L=9 k0 s=0.5 g=0.15                                 got  2.673548106831e-01  expect  2.673548107623e-01  err 7.9e-11
+[PASS] chi_KE L=9 k0 s=0.5 g=0.15                                 got  1.636524666951e-01  expect  1.636524666823e-01  err 1.3e-11
+[PASS] theta  L=9 full s=0 g=0                                    got -2.723659995791e-16  expect  0.000000000000e+00  err 2.7e-16
+[PASS] k      L=9 full s=0 g=0                                    got  3.932238664830e-01  expect  3.932238664830e-01  err 5.7e-14
+[PASS] e      L=9 full s=0 g=0                                    got  2.689414213700e-01  expect  2.689414213700e-01  err 4.0e-14
+[PASS] chi_KK L=9 full s=0 g=0                                    got  4.771977146223e-01  expect  4.771977145934e-01  err 2.9e-11
+[PASS] chi_EE L=9 full s=0 g=0                                    got  3.932238664830e-01  expect  3.932238664591e-01  err 2.4e-11
+[PASS] chi_KE L=9 full s=0 g=0                                    got  1.817154953459e-01  expect  1.817154953015e-01  err 4.4e-11
+[PASS] theta  L=9 full s=0.2 g=0                                  got -6.270605557396e-01  expect -6.270605557395e-01  err 2.4e-15
+[PASS] k      L=9 full s=0.2 g=0                                  got  3.062625425327e-01  expect  3.062625425327e-01  err 1.4e-14
+[PASS] e      L=9 full s=0.2 g=0                                  got  2.315311486794e-01  expect  2.315311486793e-01  err 4.8e-14
+[PASS] chi_KK L=9 full s=0.2 g=0                                  got  3.945586756297e-01  expect  3.945586755788e-01  err 5.1e-11
+[PASS] chi_EE L=9 full s=0.2 g=0                                  got  4.134638059493e-01  expect  4.134638059104e-01  err 3.9e-11
+[PASS] chi_KE L=9 full s=0.2 g=0                                  got  1.910687186352e-01  expect  1.910687186397e-01  err 4.4e-12
+[PASS] theta  L=9 full s=-0.3 g=0.1                               got  1.001200062972e+00  expect  1.001200062972e+00  err 2.0e-15
+[PASS] k      L=9 full s=-0.3 g=0.1                               got  5.417819373146e-01  expect  5.417819373147e-01  err 3.8e-14
+[PASS] e      L=9 full s=-0.3 g=0.1                               got  2.874775523504e-01  expect  2.874775523505e-01  err 4.1e-14
+[PASS] chi_KK L=9 full s=-0.3 g=0.1                               got  6.396619757769e-01  expect  6.396619757672e-01  err 9.7e-12
+[PASS] chi_EE L=9 full s=-0.3 g=0.1                               got  3.097707796240e-01  expect  3.097707795089e-01  err 1.2e-10
+[PASS] chi_KE L=9 full s=-0.3 g=0.1                               got  1.741274700445e-01  expect  1.741274700470e-01  err 2.6e-12
+[PASS] theta  L=9 full s=0.1 g=-0.15                              got  4.946096981317e-02  expect  4.946096981317e-02  err 3.0e-16
+[PASS] k      L=9 full s=0.1 g=-0.15                              got  3.739230145276e-01  expect  3.739230145277e-01  err 5.5e-14
+[PASS] e      L=9 full s=0.1 g=-0.15                              got  3.187454695488e-01  expect  3.187454695488e-01  err 3.4e-15
+[PASS] chi_KK L=9 full s=0.1 g=-0.15                              got  4.230612920441e-01  expect  4.230612919848e-01  err 5.9e-11
+[PASS] chi_EE L=9 full s=0.1 g=-0.15                              got  5.044111095569e-01  expect  5.044111096077e-01  err 5.1e-11
+[PASS] chi_KE L=9 full s=0.1 g=-0.15                              got  1.574353616053e-01  expect  1.574353615969e-01  err 8.3e-12
+[PASS] theta  L=9 full s=0.5 g=0.15                               got -1.508106399661e+00  expect -1.508106399661e+00  err 2.2e-16
+[PASS] k      L=9 full s=0.5 g=0.15                               got  1.775250291136e-01  expect  1.775250291136e-01  err 2.5e-14
+[PASS] e      L=9 full s=0.5 g=0.15                               got  1.244058993946e-01  expect  1.244058993945e-01  err 1.1e-13
+[PASS] chi_KK L=9 full s=0.5 g=0.15                               got  2.776995118056e-01  expect  2.776995118072e-01  err 1.6e-12
+[PASS] chi_EE L=9 full s=0.5 g=0.15                               got  2.673548106831e-01  expect  2.673548107623e-01  err 7.9e-11
+[PASS] chi_KE L=9 full s=0.5 g=0.15                               got  1.636524666951e-01  expect  1.636524666823e-01  err 1.3e-11
+
+== 4. zero-momentum sector vs full space (L = 8) ==
+[PASS] theta  eps=0 s=0 g=0                                       got  1.671370625477e-17  expect  5.233921884500e-18  err 1.1e-17
+[PASS] k      eps=0 s=0 g=0                                       got  1.151487500062e-01  expect  1.151487500062e-01  err 1.4e-16
+[PASS] e      eps=0 s=0 g=0                                       got  2.928325562639e-01  expect  2.928325562639e-01  err 5.6e-16
+[PASS] chi_KK eps=0 s=0 g=0                                       got  1.172909217265e+00  expect  1.172909217265e+00  err 2.9e-15
+[PASS] chi_KE eps=0 s=0 g=0                                       got  2.481305400655e+00  expect  2.481305400655e+00  err 8.9e-15
+[PASS] chi_EE eps=0 s=0 g=0                                       got  5.938540093936e+00  expect  5.938540093936e+00  err 2.1e-14
+[PASS] theta  eps=0 s=0.03 g=0                                    got -2.361953532216e-02  expect -2.361953532216e-02  err 3.5e-17
+[PASS] k      eps=0 s=0.03 g=0                                    got  8.365238399296e-02  expect  8.365238399296e-02  err 1.1e-16
+[PASS] e      eps=0 s=0.03 g=0                                    got  2.258211379319e-01  expect  2.258211379319e-01  err 1.7e-16
+[PASS] chi_KK eps=0 s=0.03 g=0                                    got  8.058926843777e-01  expect  8.058926843777e-01  err 2.4e-15
+[PASS] chi_KE eps=0 s=0.03 g=0                                    got  1.683565010619e+00  expect  1.683565010619e+00  err 1.2e-14
+[PASS] chi_EE eps=0 s=0.03 g=0                                    got  4.000062476558e+00  expect  4.000062476558e+00  err 1.9e-14
+[PASS] theta  eps=0 s=0.017 g=0                                   got -1.431786710247e-02  expect -1.431786710247e-02  err 2.8e-17
+[PASS] k      eps=0 s=0.017 g=0                                   got  9.576164496406e-02  expect  9.576164496406e-02  err 1.5e-16
+[PASS] e      eps=0 s=0.017 g=0                                   got  2.514614646672e-01  expect  2.514614646672e-01  err 1.7e-16
+[PASS] chi_KK eps=0 s=0.017 g=0                                   got  1.050584517106e+00  expect  1.050584517106e+00  err 4.4e-16
+[PASS] chi_KE eps=0 s=0.017 g=0                                   got  2.243807406819e+00  expect  2.243807406819e+00  err 8.0e-15
+[PASS] chi_EE eps=0 s=0.017 g=0                                   got  5.365704763229e+00  expect  5.365704763229e+00  err 2.7e-15
+[PASS] theta  eps=0 s=-0.1 g=0.1                                  got -9.977110705597e-02  expect -9.977110705597e-02  err 2.1e-16
+[PASS] k      eps=0 s=-0.1 g=0.1                                  got  7.093503328314e-02  expect  7.093503328314e-02  err 1.2e-16
+[PASS] e      eps=0 s=-0.1 g=0.1                                  got  1.760886925208e-01  expect  1.760886925208e-01  err 1.7e-16
+[PASS] chi_KK eps=0 s=-0.1 g=0.1                                  got  2.293093725335e-01  expect  2.293093725335e-01  err 9.7e-16
+[PASS] chi_KE eps=0 s=-0.1 g=0.1                                  got  2.598624240353e-01  expect  2.598624240353e-01  err 3.4e-15
+[PASS] chi_EE eps=0 s=-0.1 g=0.1                                  got  4.416199289220e-01  expect  4.416199289220e-01  err 2.7e-15
+[PASS] theta  eps=0 s=0.2 g=-0.1                                  got  8.265496501577e-02  expect  8.265496501577e-02  err 1.8e-16
+[PASS] k      eps=0 s=0.2 g=-0.1                                  got  1.194570960286e-01  expect  1.194570960286e-01  err 2.5e-16
+[PASS] e      eps=0 s=0.2 g=-0.1                                  got  3.829623752828e-01  expect  3.829623752828e-01  err 1.2e-15
+[PASS] chi_KK eps=0 s=0.2 g=-0.1                                  got  3.440042510917e-01  expect  3.440042510917e-01  err 9.4e-16
+[PASS] chi_KE eps=0 s=0.2 g=-0.1                                  got  5.636121531014e-01  expect  5.636121531014e-01  err 1.2e-14
+[PASS] chi_EE eps=0 s=0.2 g=-0.1                                  got  1.643757092417e+00  expect  1.643757092417e+00  err 1.5e-14
+[PASS] theta  eps=0.003 s=0 g=0                                   got  2.110039224500e-17  expect  3.555891918778e-17  err 1.4e-17
+[PASS] k      eps=0.003 s=0 g=0                                   got  1.066165946113e-01  expect  1.066165946113e-01  err 4.2e-16
+[PASS] e      eps=0.003 s=0 g=0                                   got  2.689414213700e-01  expect  2.689414213700e-01  err 1.0e-15
+[PASS] chi_KK eps=0.003 s=0 g=0                                   got  3.687240883333e+00  expect  3.687240883333e+00  err 1.2e-13
+[PASS] chi_KE eps=0.003 s=0 g=0                                   got  8.893424806876e+00  expect  8.893424806875e+00  err 3.1e-13
+[PASS] chi_EE eps=0.003 s=0 g=0                                   got  2.222124297522e+01  expect  2.222124297522e+01  err 7.8e-13
+[PASS] theta  eps=0.003 s=0.03 g=0                                got -6.083903910385e-03  expect -6.083903910385e-03  err 9.5e-18
+[PASS] k      eps=0.003 s=0.03 g=0                                got  1.253431505696e-03  expect  1.253431505695e-03  err 6.2e-16
+[PASS] e      eps=0.003 s=0.03 g=0                                got  3.215648569486e-03  expect  3.215648569484e-03  err 1.6e-15
+[PASS] chi_KK eps=0.003 s=0.03 g=0                                got  8.534957393533e-02  expect  8.534957393529e-02  err 3.9e-14
+[PASS] chi_KE eps=0.003 s=0.03 g=0                                got  2.193709397739e-01  expect  2.193709397738e-01  err 1.0e-13
+[PASS] chi_EE eps=0.003 s=0.03 g=0                                got  5.738780311866e-01  expect  5.738780311863e-01  err 2.7e-13
+[PASS] theta  eps=0.003 s=0.017 g=0                               got -5.838504825677e-03  expect -5.838504825677e-03  err 8.7e-18
+[PASS] k      eps=0.003 s=0.017 g=0                               got  4.578012227917e-03  expect  4.578012227917e-03  err 7.0e-17
+[PASS] e      eps=0.003 s=0.017 g=0                               got  1.173483387973e-02  expect  1.173483387973e-02  err 2.1e-16
+[PASS] chi_KK eps=0.003 s=0.017 g=0                               got  6.840525810741e-01  expect  6.840525810741e-01  err 1.2e-14
+[PASS] chi_KE eps=0.003 s=0.017 g=0                               got  1.749685617941e+00  expect  1.749685617941e+00  err 2.8e-14
+[PASS] chi_EE eps=0.003 s=0.017 g=0                               got  4.511755974260e+00  expect  4.511755974260e+00  err 7.5e-14
+[PASS] theta  eps=0.003 s=-0.1 g=0.1                              got -6.325402051457e-03  expect -6.325402051457e-03  err 6.1e-18
+[PASS] k      eps=0.003 s=-0.1 g=0.1                              got  1.059829321909e-04  expect  1.059829321909e-04  err 4.4e-18
+[PASS] e      eps=0.003 s=-0.1 g=0.1                              got  1.975573625652e-04  expect  1.975573625652e-04  err 8.9e-18
+[PASS] chi_KK eps=0.003 s=-0.1 g=0.1                              got  1.343690749032e-03  expect  1.343690749032e-03  err 6.6e-17
+[PASS] chi_KE eps=0.003 s=-0.1 g=0.1                              got  2.621439105498e-03  expect  2.621439105498e-03  err 1.4e-16
+[PASS] chi_EE eps=0.003 s=-0.1 g=0.1                              got  5.594063824074e-03  expect  5.594063824075e-03  err 3.0e-16
+[PASS] theta  eps=0.003 s=0.2 g=-0.1                              got  8.020938196724e-02  expect  8.020938196724e-02  err 1.4e-17
+[PASS] k      eps=0.003 s=0.2 g=-0.1                              got  1.194140021122e-01  expect  1.194140021122e-01  err 1.4e-17
+[PASS] e      eps=0.003 s=0.2 g=-0.1                              got  3.802437094856e-01  expect  3.802437094856e-01  err 0.0e+00
+[PASS] chi_KK eps=0.003 s=0.2 g=-0.1                              got  3.514538718304e-01  expect  3.514538718304e-01  err 6.7e-16
+[PASS] chi_KE eps=0.003 s=0.2 g=-0.1                              got  5.922797153479e-01  expect  5.922797153479e-01  err 5.2e-15
+[PASS] chi_EE eps=0.003 s=0.2 g=-0.1                              got  1.745384104967e+00  expect  1.745384104967e+00  err 1.9e-14
+[PASS] theta  eps=0.01 s=0 g=0                                    got  3.102148311852e-17  expect  2.209374991178e-17  err 8.9e-18
+[PASS] k      eps=0.01 s=0 g=0                                    got  1.086288823777e-01  expect  1.086288823777e-01  err 4.4e-16
+[PASS] e      eps=0.01 s=0 g=0                                    got  2.689414213700e-01  expect  2.689414213700e-01  err 9.4e-16
+[PASS] chi_KK eps=0.01 s=0 g=0                                    got  1.812361387285e+00  expect  1.812361387285e+00  err 2.1e-14
+[PASS] chi_KE eps=0.01 s=0 g=0                                    got  4.135188441760e+00  expect  4.135188441760e+00  err 4.6e-14
+[PASS] chi_EE eps=0.01 s=0 g=0                                    got  1.015555605080e+01  expect  1.015555605080e+01  err 1.4e-13
+[PASS] theta  eps=0.01 s=0.03 g=0                                 got -1.611836218520e-02  expect -1.611836218520e-02  err 6.9e-18
+[PASS] k      eps=0.01 s=0.03 g=0                                 got  2.430281256150e-02  expect  2.430281256150e-02  err 1.9e-15
+[PASS] e      eps=0.01 s=0.03 g=0                                 got  6.187457476243e-02  expect  6.187457476242e-02  err 4.8e-15
+[PASS] chi_KK eps=0.01 s=0.03 g=0                                 got  1.742870907492e+00  expect  1.742870907492e+00  err 9.6e-14
+[PASS] chi_KE eps=0.01 s=0.03 g=0                                 got  4.418366231017e+00  expect  4.418366231017e+00  err 2.4e-13
+[PASS] chi_EE eps=0.01 s=0.03 g=0                                 got  1.138977760695e+01  expect  1.138977760695e+01  err 6.3e-13
+[PASS] theta  eps=0.01 s=0.017 g=0                                got -1.191865880621e-02  expect -1.191865880621e-02  err 7.3e-17
+[PASS] k      eps=0.01 s=0.017 g=0                                got  6.085406195791e-02  expect  6.085406195791e-02  err 1.0e-15
+[PASS] e      eps=0.01 s=0.017 g=0                                got  1.537070508762e-01  expect  1.537070508762e-01  err 2.7e-15
+[PASS] chi_KK eps=0.01 s=0.017 g=0                                got  3.605489029571e+00  expect  3.605489029571e+00  err 3.5e-14
+[PASS] chi_KE eps=0.01 s=0.017 g=0                                got  8.964388284547e+00  expect  8.964388284547e+00  err 9.4e-14
+[PASS] chi_EE eps=0.01 s=0.017 g=0                                got  2.274567093943e+01  expect  2.274567093943e+01  err 2.7e-13
+[PASS] theta  eps=0.01 s=-0.1 g=0.1                               got -2.002165427751e-02  expect -2.002165427751e-02  err 1.0e-17
+[PASS] k      eps=0.01 s=-0.1 g=0.1                               got  1.316362148464e-03  expect  1.316362148464e-03  err 7.8e-18
+[PASS] e      eps=0.01 s=-0.1 g=0.1                               got  2.462777319411e-03  expect  2.462777319411e-03  err 2.0e-17
+[PASS] chi_KK eps=0.01 s=-0.1 g=0.1                               got  1.848965399361e-02  expect  1.848965399361e-02  err 2.7e-16
+[PASS] chi_KE eps=0.01 s=-0.1 g=0.1                               got  3.608796429859e-02  expect  3.608796429859e-02  err 5.3e-16
+[PASS] chi_EE eps=0.01 s=-0.1 g=0.1                               got  7.635969901659e-02  expect  7.635969901659e-02  err 1.0e-15
+[PASS] theta  eps=0.01 s=0.2 g=-0.1                               got  7.492940513295e-02  expect  7.492940513295e-02  err 0.0e+00
+[PASS] k      eps=0.01 s=0.2 g=-0.1                               got  1.191248149240e-01  expect  1.191248149240e-01  err 2.8e-16
+[PASS] e      eps=0.01 s=0.2 g=-0.1                               got  3.733712805284e-01  expect  3.733712805284e-01  err 3.9e-16
+[PASS] chi_KK eps=0.01 s=0.2 g=-0.1                               got  3.672185441079e-01  expect  3.672185441079e-01  err 2.4e-15
+[PASS] chi_KE eps=0.01 s=0.2 g=-0.1                               got  6.516691935827e-01  expect  6.516691935827e-01  err 8.1e-15
+[PASS] chi_EE eps=0.01 s=0.2 g=-0.1                               got  1.948164960138e+00  expect  1.948164960138e+00  err 3.3e-14
+
+== 5. Lanczos + CG vs dense diagonalization (k0 sector) ==
+[PASS] theta  L=8 eps=0 s=0 g=0                                   got  1.671370625477e-17  expect  3.578819556116e-17  err 1.9e-17
+[PASS] theta2 L=8 eps=0 s=0 g=0                                   got -2.890554669423e-02  expect -2.890554669423e-02  err 4.5e-17
+[PASS] k      L=8 eps=0 s=0 g=0                                   got  1.151487500062e-01  expect  1.151487500062e-01  err 8.7e-16
+[PASS] e      L=8 eps=0 s=0 g=0                                   got  2.928325562639e-01  expect  2.928325562639e-01  err 2.3e-15
+[PASS] chi_KK L=8 eps=0 s=0 g=0                                   got  1.172909217265e+00  expect  1.172909217265e+00  err 1.3e-14
+[PASS] chi_KE L=8 eps=0 s=0 g=0                                   got  2.481305400655e+00  expect  2.481305400655e+00  err 2.7e-14
+[PASS] chi_EE L=8 eps=0 s=0 g=0                                   got  5.938540093936e+00  expect  5.938540093936e+00  err 6.3e-14
+[PASS] theta  L=8 eps=0 s=0.0166 g=0                              got -1.401075608168e-02  expect -1.401075608168e-02  err 3.5e-18
+[PASS] theta2 L=8 eps=0 s=0.0166 g=0                              got -4.278148457948e-02  expect -4.278148457948e-02  err 9.0e-17
+[PASS] k      L=8 eps=0 s=0.0166 g=0                              got  9.618317318213e-02  expect  9.618317318213e-02  err 7.6e-16
+[PASS] e      L=8 eps=0 s=0.0166 g=0                              got  2.523618915269e-01  expect  2.523618915269e-01  err 2.2e-15
+[PASS] chi_KK L=8 eps=0 s=0.0166 g=0                              got  1.057036698290e+00  expect  1.057036698290e+00  err 2.0e-14
+[PASS] chi_KE L=8 eps=0 s=0.0166 g=0                              got  2.258276975891e+00  expect  2.258276975891e+00  err 3.9e-14
+[PASS] chi_EE L=8 eps=0 s=0.0166 g=0                              got  5.400988881601e+00  expect  5.400988881601e+00  err 1.0e-13
+[PASS] theta  L=8 eps=0 s=0.0175 g=0                              got -1.469986582591e-02  expect -1.469986582591e-02  err 1.7e-18
+[PASS] theta2 L=8 eps=0 s=0.0175 g=0                              got -4.356836084424e-02  expect -4.356836084424e-02  err 2.8e-17
+[PASS] k      L=8 eps=0 s=0.0175 g=0                              got  9.523840249799e-02  expect  9.523840249799e-02  err 5.0e-16
+[PASS] e      L=8 eps=0 s=0.0175 g=0                              got  2.503441668531e-01  expect  2.503441668531e-01  err 1.3e-15
+[PASS] chi_KK L=8 eps=0 s=0.0175 g=0                              got  1.042355793335e+00  expect  1.042355793335e+00  err 1.3e-14
+[PASS] chi_KE L=8 eps=0 s=0.0175 g=0                              got  2.225309515390e+00  expect  2.225309515390e+00  err 2.5e-14
+[PASS] chi_EE L=8 eps=0 s=0.0175 g=0                              got  5.320595019555e+00  expect  5.320595019555e+00  err 7.5e-14
+[PASS] theta  L=8 eps=0 s=-0.15 g=0.1                             got -6.855682728127e-02  expect -6.855682728127e-02  err 1.2e-16
+[PASS] theta2 L=8 eps=0 s=-0.15 g=0.1                             got -1.301115840187e-01  expect -1.301115840187e-01  err 2.5e-16
+[PASS] k      L=8 eps=0 s=-0.15 g=0.1                             got  8.712224727159e-02  expect  8.712224727159e-02  err 7.6e-16
+[PASS] e      L=8 eps=0 s=-0.15 g=0.1                             got  1.970746161530e-01  expect  1.970746161531e-01  err 1.7e-15
+[PASS] chi_KK L=8 eps=0 s=-0.15 g=0.1                             got  4.785008105149e-01  expect  4.785008105149e-01  err 1.1e-14
+[PASS] chi_KE L=8 eps=0 s=-0.15 g=0.1                             got  6.882005756965e-01  expect  6.882005756965e-01  err 1.9e-14
+[PASS] chi_EE L=8 eps=0 s=-0.15 g=0.1                             got  1.235572754179e+00  expect  1.235572754179e+00  err 3.4e-14
+[PASS] theta  L=8 eps=0 s=0.3 g=-0.1                              got  3.301346663176e-03  expect  3.301346663176e-03  err 1.4e-16
+[PASS] theta2 L=8 eps=0 s=0.3 g=-0.1                              got -1.193667985828e-02  expect -1.193667985828e-02  err 7.1e-17
+[PASS] k      L=8 eps=0 s=0.3 g=-0.1                              got  7.095039002503e-02  expect  7.095039002503e-02  err 6.4e-16
+[PASS] e      L=8 eps=0 s=0.3 g=-0.1                              got  2.632821060719e-01  expect  2.632821060719e-01  err 2.0e-15
+[PASS] chi_KK L=8 eps=0 s=0.3 g=-0.1                              got  7.949122080909e-01  expect  7.949122080909e-01  err 9.8e-15
+[PASS] chi_KE L=8 eps=0 s=0.3 g=-0.1                              got  2.485432055618e+00  expect  2.485432055618e+00  err 2.9e-14
+[PASS] chi_EE L=8 eps=0 s=0.3 g=-0.1                              got  8.795092407296e+00  expect  8.795092407296e+00  err 9.1e-14
+[PASS] theta  L=8 eps=0 s=0.1 g=-0.05                             got  3.294173165944e-02  expect  3.294173165944e-02  err 4.9e-17
+[PASS] theta2 L=8 eps=0 s=0.1 g=-0.05                             got  1.644109698795e-03  expect  1.644109698795e-03  err 9.3e-18
+[PASS] k      L=8 eps=0 s=0.1 g=-0.05                             got  1.223782656270e-01  expect  1.223782656270e-01  err 3.6e-16
+[PASS] e      L=8 eps=0 s=0.1 g=-0.05                             got  3.483618414056e-01  expect  3.483618414056e-01  err 1.0e-15
+[PASS] chi_KK L=8 eps=0 s=0.1 g=-0.05                             got  6.363602698604e-01  expect  6.363602698604e-01  err 1.4e-14
+[PASS] chi_KE L=8 eps=0 s=0.1 g=-0.05                             got  1.326931182730e+00  expect  1.326931182730e+00  err 3.7e-14
+[PASS] chi_EE L=8 eps=0 s=0.1 g=-0.05                             got  3.627846031560e+00  expect  3.627846031561e+00  err 9.8e-14
+[PASS] theta  L=8 eps=0.003 s=0 g=0                               got  2.110039224500e-17  expect  4.740466856548e-16  err 4.5e-16
+[PASS] theta2 L=8 eps=0.003 s=0 g=0                               got -6.812714490395e-03  expect -6.812714490395e-03  err 4.5e-17
+[PASS] k      L=8 eps=0.003 s=0 g=0                               got  1.066165946113e-01  expect  1.066165946113e-01  err 2.4e-15
+[PASS] e      L=8 eps=0.003 s=0 g=0                               got  2.689414213700e-01  expect  2.689414213700e-01  err 5.9e-15
+[PASS] chi_KK L=8 eps=0.003 s=0 g=0                               got  3.687240883333e+00  expect  3.687240883333e+00  err 3.4e-13
+[PASS] chi_KE L=8 eps=0.003 s=0 g=0                               got  8.893424806876e+00  expect  8.893424806875e+00  err 8.7e-13
+[PASS] chi_EE L=8 eps=0.003 s=0 g=0                               got  2.222124297522e+01  expect  2.222124297521e+01  err 2.2e-12
+[PASS] theta  L=8 eps=0.003 s=0.0166 g=0                          got -5.823403577327e-03  expect -5.823403577327e-03  err 6.9e-18
+[PASS] theta2 L=8 eps=0.003 s=0.0166 g=0                          got -1.557740793800e-02  expect -1.557740793800e-02  err 1.5e-16
+[PASS] k      L=8 eps=0.003 s=0.0166 g=0                          got  4.864717354185e-03  expect  4.864717354187e-03  err 1.9e-15
+[PASS] e      L=8 eps=0.003 s=0.0166 g=0                          got  1.246810203524e-02  expect  1.246810203525e-02  err 4.8e-15
+[PASS] chi_KK L=8 eps=0.003 s=0.0166 g=0                          got  7.508122569338e-01  expect  7.508122569341e-01  err 3.0e-13
+[PASS] chi_KE L=8 eps=0.003 s=0.0166 g=0                          got  1.920067948141e+00  expect  1.920067948141e+00  err 7.6e-13
+[PASS] chi_EE L=8 eps=0.003 s=0.0166 g=0                          got  4.948862359976e+00  expect  4.948862359978e+00  err 2.0e-12
+[PASS] theta  L=8 eps=0.003 s=0.0175 g=0                          got -5.856158063854e-03  expect -5.856158063854e-03  err 1.0e-17
+[PASS] theta2 L=8 eps=0.003 s=0.0175 g=0                          got -1.627095294770e-02  expect -1.627095294770e-02  err 1.4e-16
+[PASS] k      L=8 eps=0.003 s=0.0175 g=0                          got  4.254690399651e-03  expect  4.254690399651e-03  err 1.5e-16
+[PASS] e      L=8 eps=0.003 s=0.0175 g=0                          got  1.090773588880e-02  expect  1.090773588880e-02  err 3.8e-16
+[PASS] chi_KK L=8 eps=0.003 s=0.0175 g=0                          got  6.110187833283e-01  expect  6.110187833283e-01  err 3.7e-14
+[PASS] chi_KE L=8 eps=0.003 s=0.0175 g=0                          got  1.563253687381e+00  expect  1.563253687381e+00  err 9.4e-14
+[PASS] chi_EE L=8 eps=0.003 s=0.0175 g=0                          got  4.033304021227e+00  expect  4.033304021228e+00  err 2.4e-13
+[PASS] theta  L=8 eps=0.003 s=-0.15 g=0.1                         got -6.262169480605e-03  expect -6.262169480605e-03  err 1.7e-18
+[PASS] theta2 L=8 eps=0.003 s=-0.15 g=0.1                         got -7.053698367331e-02  expect -7.053698367331e-02  err 1.4e-16
+[PASS] k      L=8 eps=0.003 s=-0.15 g=0.1                         got  2.400559387174e-04  expect  2.400559387174e-04  err 1.1e-17
+[PASS] e      L=8 eps=0.003 s=-0.15 g=0.1                         got  4.611342353155e-04  expect  4.611342353155e-04  err 2.2e-17
+[PASS] chi_KK L=8 eps=0.003 s=-0.15 g=0.1                         got  5.228742291891e-03  expect  5.228742291891e-03  err 3.2e-16
+[PASS] chi_KE L=8 eps=0.003 s=-0.15 g=0.1                         got  1.032139127241e-02  expect  1.032139127242e-02  err 6.5e-16
+[PASS] chi_EE L=8 eps=0.003 s=-0.15 g=0.1                         got  2.146306985737e-02  expect  2.146306985737e-02  err 1.4e-15
+[PASS] theta  L=8 eps=0.003 s=0.3 g=-0.1                          got  1.253936098510e-03  expect  1.253936098510e-03  err 1.2e-16
+[PASS] theta2 L=8 eps=0.003 s=0.3 g=-0.1                          got -6.523118147851e-03  expect -6.523118147851e-03  err 3.5e-18
+[PASS] k      L=8 eps=0.003 s=0.3 g=-0.1                          got  6.937523898353e-02  expect  6.937523898353e-02  err 7.8e-16
+[PASS] e      L=8 eps=0.003 s=0.3 g=-0.1                          got  2.548747153703e-01  expect  2.548747153703e-01  err 2.6e-15
+[PASS] chi_KK L=8 eps=0.003 s=0.3 g=-0.1                          got  1.152637926895e+00  expect  1.152637926895e+00  err 3.6e-15
+[PASS] chi_KE L=8 eps=0.003 s=0.3 g=-0.1                          got  3.828970774416e+00  expect  3.828970774416e+00  err 8.4e-15
+[PASS] chi_EE L=8 eps=0.003 s=0.3 g=-0.1                          got  1.380690507753e+01  expect  1.380690507753e+01  err 3.0e-14
+[PASS] theta  L=8 eps=0.003 s=0.1 g=-0.05                         got  3.168074551089e-02  expect  3.168074551089e-02  err 2.4e-16
+[PASS] theta2 L=8 eps=0.003 s=0.1 g=-0.05                         got -3.036358916127e-03  expect -3.036358916127e-03  err 1.0e-16
+[PASS] k      L=8 eps=0.003 s=0.1 g=-0.05                         got  1.216411246993e-01  expect  1.216411246993e-01  err 5.0e-16
+[PASS] e      L=8 eps=0.003 s=0.1 g=-0.05                         got  3.438692366635e-01  expect  3.438692366635e-01  err 1.3e-15
+[PASS] chi_KK L=8 eps=0.003 s=0.1 g=-0.05                         got  6.347087983810e-01  expect  6.347087983810e-01  err 7.4e-15
+[PASS] chi_KE L=8 eps=0.003 s=0.1 g=-0.05                         got  1.321774145784e+00  expect  1.321774145784e+00  err 2.4e-14
+[PASS] chi_EE L=8 eps=0.003 s=0.1 g=-0.05                         got  3.599124056508e+00  expect  3.599124056508e+00  err 6.7e-14
+[PASS] theta  L=8 eps=0.01 s=0 g=0                                got  3.102148311852e-17  expect  1.111024528916e-16  err 8.0e-17
+[PASS] theta2 L=8 eps=0.01 s=0 g=0                                got -2.110132788312e-02  expect -2.110132788312e-02  err 2.1e-17
+[PASS] k      L=8 eps=0.01 s=0 g=0                                got  1.086288823777e-01  expect  1.086288823777e-01  err 1.0e-15
+[PASS] e      L=8 eps=0.01 s=0 g=0                                got  2.689414213700e-01  expect  2.689414213700e-01  err 2.3e-15
+[PASS] chi_KK L=8 eps=0.01 s=0 g=0                                got  1.812361387285e+00  expect  1.812361387285e+00  err 3.3e-14
+[PASS] chi_KE L=8 eps=0.01 s=0 g=0                                got  4.135188441760e+00  expect  4.135188441760e+00  err 7.4e-14
+[PASS] chi_EE L=8 eps=0.01 s=0 g=0                                got  1.015555605080e+01  expect  1.015555605080e+01  err 1.8e-13
+[PASS] theta  L=8 eps=0.01 s=0.0166 g=0                           got -1.172161711224e-02  expect -1.172161711224e-02  err 7.8e-17
+[PASS] theta2 L=8 eps=0.01 s=0.0166 g=0                           got -2.554034060161e-02  expect -2.554034060161e-02  err 6.2e-17
+[PASS] k      L=8 eps=0.01 s=0.0166 g=0                           got  6.229727517751e-02  expect  6.229727517751e-02  err 2.6e-15
+[PASS] e      L=8 eps=0.01 s=0.0166 g=0                           got  1.572934743011e-01  expect  1.572934743012e-01  err 6.7e-15
+[PASS] chi_KK L=8 eps=0.01 s=0.0166 g=0                           got  3.609665771052e+00  expect  3.609665771052e+00  err 1.8e-14
+[PASS] chi_KE L=8 eps=0.01 s=0.0166 g=0                           got  8.965403627811e+00  expect  8.965403627811e+00  err 4.3e-14
+[PASS] chi_EE L=8 eps=0.01 s=0.0166 g=0                           got  2.273498922240e+01  expect  2.273498922240e+01  err 1.3e-13
+[PASS] theta  L=8 eps=0.01 s=0.0175 g=0                           got -1.215847316047e-02  expect -1.215847316047e-02  err 7.6e-17
+[PASS] theta2 L=8 eps=0.01 s=0.0175 g=0                           got -2.591572706287e-02  expect -2.591572706287e-02  err 4.9e-17
+[PASS] k      L=8 eps=0.01 s=0.0175 g=0                           got  5.905419270747e-02  expect  5.905419270747e-02  err 1.2e-15
+[PASS] e      L=8 eps=0.01 s=0.0175 g=0                           got  1.492291837488e-01  expect  1.492291837488e-01  err 3.1e-15
+[PASS] chi_KK L=8 eps=0.01 s=0.0175 g=0                           got  3.592558882194e+00  expect  3.592558882194e+00  err 5.8e-14
+[PASS] chi_KE L=8 eps=0.01 s=0.0175 g=0                           got  8.943425574463e+00  expect  8.943425574463e+00  err 1.4e-13
+[PASS] chi_EE L=8 eps=0.01 s=0.0175 g=0                           got  2.270876439403e+01  expect  2.270876439403e+01  err 3.2e-13
+[PASS] theta  L=8 eps=0.01 s=-0.15 g=0.1                          got -1.918719791891e-02  expect -1.918719791891e-02  err 6.9e-18
+[PASS] theta2 L=8 eps=0.01 s=-0.15 g=0.1                          got -7.525278193390e-02  expect -7.525278193390e-02  err 1.7e-16
+[PASS] k      L=8 eps=0.01 s=-0.15 g=0.1                          got  3.392122983976e-03  expect  3.392122983976e-03  err 1.5e-16
+[PASS] e      L=8 eps=0.01 s=-0.15 g=0.1                          got  6.542226159122e-03  expect  6.542226159122e-03  err 3.4e-16
+[PASS] chi_KK L=8 eps=0.01 s=-0.15 g=0.1                          got  9.001419353690e-02  expect  9.001419353690e-02  err 2.8e-15
+[PASS] chi_KE L=8 eps=0.01 s=-0.15 g=0.1                          got  1.774324183159e-01  expect  1.774324183159e-01  err 6.1e-15
+[PASS] chi_EE L=8 eps=0.01 s=-0.15 g=0.1                          got  3.649982932218e-01  expect  3.649982932218e-01  err 1.4e-14
+[PASS] theta  L=8 eps=0.01 s=0.3 g=-0.1                           got -3.096703424310e-03  expect -3.096703424310e-03  err 1.3e-16
+[PASS] theta2 L=8 eps=0.01 s=0.3 g=-0.1                           got -2.054693509791e-02  expect -2.054693509791e-02  err 4.2e-17
+[PASS] k      L=8 eps=0.01 s=0.3 g=-0.1                           got  6.849172868245e-02  expect  6.849172868245e-02  err 4.3e-16
+[PASS] e      L=8 eps=0.01 s=0.3 g=-0.1                           got  2.457346461169e-01  expect  2.457346461169e-01  err 1.6e-15
+[PASS] chi_KK L=8 eps=0.01 s=0.3 g=-0.1                           got  9.297178411107e-01  expect  9.297178411107e-01  err 4.3e-15
+[PASS] chi_KE L=8 eps=0.01 s=0.3 g=-0.1                           got  3.004047995653e+00  expect  3.004047995653e+00  err 1.1e-14
+[PASS] chi_EE L=8 eps=0.01 s=0.3 g=-0.1                           got  1.072734727209e+01  expect  1.072734727209e+01  err 2.3e-14
+[PASS] theta  L=8 eps=0.01 s=0.1 g=-0.05                          got  2.911052132116e-02  expect  2.911052132116e-02  err 3.1e-16
+[PASS] theta2 L=8 eps=0.01 s=0.1 g=-0.05                          got -1.265728229237e-02  expect -1.265728229237e-02  err 8.3e-17
+[PASS] k      L=8 eps=0.01 s=0.1 g=-0.05                          got  1.200121283217e-01  expect  1.200121283217e-01  err 9.6e-16
+[PASS] e      L=8 eps=0.01 s=0.1 g=-0.05                          got  3.337319123669e-01  expect  3.337319123669e-01  err 2.6e-15
+[PASS] chi_KK L=8 eps=0.01 s=0.1 g=-0.05                          got  6.469879600348e-01  expect  6.469879600348e-01  err 7.3e-15
+[PASS] chi_KE L=8 eps=0.01 s=0.1 g=-0.05                          got  1.360130814323e+00  expect  1.360130814323e+00  err 1.0e-14
+[PASS] chi_EE L=8 eps=0.01 s=0.1 g=-0.05                          got  3.691488588830e+00  expect  3.691488588830e+00  err 4.5e-14
+[PASS] theta  L=10 eps=0 s=0 g=0                                  got  5.391991269366e-18  expect  2.421016270928e-16  err 2.4e-16
+[PASS] theta2 L=10 eps=0 s=0 g=0                                  got -1.664587324737e-02  expect -1.664587324737e-02  err 1.8e-16
+[PASS] k      L=10 eps=0 s=0 g=0                                  got  1.105756768250e-01  expect  1.105756768250e-01  err 4.1e-15
+[PASS] e      L=10 eps=0 s=0 g=0                                  got  2.812028624151e-01  expect  2.812028624152e-01  err 1.0e-14
+[PASS] chi_KK L=10 eps=0 s=0 g=0                                  got  1.881927083682e+00  expect  1.881927083682e+00  err 5.4e-14
+[PASS] chi_KE L=10 eps=0 s=0 g=0                                  got  4.286504933790e+00  expect  4.286504933790e+00  err 1.2e-13
+[PASS] chi_EE L=10 eps=0 s=0 g=0                                  got  1.049878267319e+01  expect  1.049878267319e+01  err 2.9e-13
+[PASS] theta  L=10 eps=0 s=0.0166 g=0                             got -1.564793489698e-02  expect -1.564793489698e-02  err 1.2e-16
+[PASS] theta2 L=10 eps=0 s=0.0166 g=0                             got -3.241739704978e-02  expect -3.241739704978e-02  err 6.2e-17
+[PASS] k      L=10 eps=0 s=0.0166 g=0                             got  7.894738142416e-02  expect  7.894738142416e-02  err 4.5e-15
+[PASS] e      L=10 eps=0 s=0.0166 g=0                             got  2.081590045038e-01  expect  2.081590045038e-01  err 1.2e-14
+[PASS] chi_KK L=10 eps=0 s=0.0166 g=0                             got  1.551616862227e+00  expect  1.551616862227e+00  err 1.3e-13
+[PASS] chi_KE L=10 eps=0 s=0.0166 g=0                             got  3.571116946918e+00  expect  3.571116946918e+00  err 3.2e-13
+[PASS] chi_EE L=10 eps=0 s=0.0166 g=0                             got  8.742588644359e+00  expect  8.742588644360e+00  err 8.0e-13
+[PASS] theta  L=10 eps=0 s=0.0175 g=0                             got -1.635226496223e-02  expect -1.635226496223e-02  err 2.7e-16
+[PASS] theta2 L=10 eps=0 s=0.0175 g=0                             got -3.335547570174e-02  expect -3.335547570174e-02  err 2.6e-16
+[PASS] k      L=10 eps=0 s=0.0175 g=0                             got  7.758016506934e-02  expect  7.758016506934e-02  err 2.7e-15
+[PASS] e      L=10 eps=0 s=0.0175 g=0                             got  2.050156261615e-01  expect  2.050156261615e-01  err 7.1e-15
+[PASS] chi_KK L=10 eps=0 s=0.0175 g=0                             got  1.486600670332e+00  expect  1.486600670332e+00  err 9.0e-14
+[PASS] chi_KE L=10 eps=0 s=0.0175 g=0                             got  3.414041305776e+00  expect  3.414041305776e+00  err 2.1e-13
+[PASS] chi_EE L=10 eps=0 s=0.0175 g=0                             got  8.353045599487e+00  expect  8.353045599487e+00  err 5.1e-13
+[PASS] theta  L=10 eps=0 s=-0.15 g=0.1                            got -6.950127410371e-02  expect -6.950127410371e-02  err 1.7e-16
+[PASS] theta2 L=10 eps=0 s=-0.15 g=0.1                            got -1.277203417193e-01  expect -1.277203417193e-01  err 3.9e-16
+[PASS] k      L=10 eps=0 s=-0.15 g=0.1                            got  6.690948581065e-02  expect  6.690948581065e-02  err 2.6e-15
+[PASS] e      L=10 eps=0 s=-0.15 g=0.1                            got  1.527659496011e-01  expect  1.527659496011e-01  err 6.0e-15
+[PASS] chi_KK L=10 eps=0 s=-0.15 g=0.1                            got  2.985605522211e-01  expect  2.985605522211e-01  err 2.4e-14
+[PASS] chi_KE L=10 eps=0 s=-0.15 g=0.1                            got  4.021064609176e-01  expect  4.021064609176e-01  err 3.9e-14
+[PASS] chi_EE L=10 eps=0 s=-0.15 g=0.1                            got  7.163686777681e-01  expect  7.163686777682e-01  err 7.1e-14
+[PASS] theta  L=10 eps=0 s=0.3 g=-0.1                             got  3.978790937270e-03  expect  3.978790937270e-03  err 1.9e-16
+[PASS] theta2 L=10 eps=0 s=0.3 g=-0.1                             got -4.671911054012e-03  expect -4.671911054012e-03  err 1.3e-16
+[PASS] k      L=10 eps=0 s=0.3 g=-0.1                             got  6.998516579267e-02  expect  6.998516579267e-02  err 6.4e-16
+[PASS] e      L=10 eps=0 s=0.3 g=-0.1                             got  2.596907269923e-01  expect  2.596907269922e-01  err 2.3e-15
+[PASS] chi_KK L=10 eps=0 s=0.3 g=-0.1                             got  1.215164989411e+00  expect  1.215164989411e+00  err 1.2e-13
+[PASS] chi_KE L=10 eps=0 s=0.3 g=-0.1                             got  4.066101974098e+00  expect  4.066101974098e+00  err 4.3e-13
+[PASS] chi_EE L=10 eps=0 s=0.3 g=-0.1                             got  1.472262425112e+01  expect  1.472262425112e+01  err 1.5e-12
+[PASS] theta  L=10 eps=0 s=0.1 g=-0.05                            got  4.123402591065e-02  expect  4.123402591065e-02  err 3.9e-16
+[PASS] theta2 L=10 eps=0 s=0.1 g=-0.05                            got  1.327380038791e-02  expect  1.327380038791e-02  err 1.3e-16
+[PASS] k      L=10 eps=0 s=0.1 g=-0.05                            got  1.226245178910e-01  expect  1.226245178910e-01  err 2.8e-15
+[PASS] e      L=10 eps=0 s=0.1 g=-0.05                            got  3.491423508278e-01  expect  3.491423508278e-01  err 7.5e-15
+[PASS] chi_KK L=10 eps=0 s=0.1 g=-0.05                            got  5.834530926057e-01  expect  5.834530926058e-01  err 3.8e-14
+[PASS] chi_KE L=10 eps=0 s=0.1 g=-0.05                            got  1.165236345057e+00  expect  1.165236345057e+00  err 9.9e-14
+[PASS] chi_EE L=10 eps=0 s=0.1 g=-0.05                            got  3.136796303816e+00  expect  3.136796303816e+00  err 2.6e-13
+[PASS] theta  L=10 eps=0.003 s=0 g=0                              got  3.690048298254e-17  expect  1.202840777884e-15  err 1.2e-15
+[PASS] theta2 L=10 eps=0.003 s=0 g=0                              got -7.936842476955e-03  expect -7.936842476955e-03  err 6.4e-17
+[PASS] k      L=10 eps=0.003 s=0 g=0                              got  1.066165946113e-01  expect  1.066165946113e-01  err 6.1e-15
+[PASS] e      L=10 eps=0.003 s=0 g=0                              got  2.689414213700e-01  expect  2.689414213700e-01  err 1.5e-14
+[PASS] chi_KK L=10 eps=0.003 s=0 g=0                              got  3.183264863166e+00  expect  3.183264863165e+00  err 5.9e-13
+[PASS] chi_KE L=10 eps=0.003 s=0 g=0                              got  7.607916625031e+00  expect  7.607916625029e+00  err 1.5e-12
+[PASS] chi_EE L=10 eps=0.003 s=0 g=0                              got  1.894225504829e+01  expect  1.894225504829e+01  err 3.8e-12
+[PASS] theta  L=10 eps=0.003 s=0.0166 g=0                         got -7.335035875025e-03  expect -7.335035875024e-03  err 6.2e-17
+[PASS] theta2 L=10 eps=0.003 s=0.0166 g=0                         got -1.759787158625e-02  expect -1.759787158625e-02  err 9.3e-16
+[PASS] k      L=10 eps=0.003 s=0.0166 g=0                         got  4.070216463722e-03  expect  4.070216463726e-03  err 3.9e-15
+[PASS] e      L=10 eps=0.003 s=0.0166 g=0                         got  1.045932706414e-02  expect  1.045932706415e-02  err 1.0e-14
+[PASS] chi_KK L=10 eps=0.003 s=0.0166 g=0                         got  6.147486202996e-01  expect  6.147486203002e-01  err 6.7e-13
+[PASS] chi_KE L=10 eps=0.003 s=0.0166 g=0                         got  1.576278740003e+00  expect  1.576278740005e+00  err 1.7e-12
+[PASS] chi_EE L=10 eps=0.003 s=0.0166 g=0                         got  4.074154214634e+00  expect  4.074154214638e+00  err 4.5e-12
+[PASS] theta  L=10 eps=0.003 s=0.0175 g=0                         got -7.369349684059e-03  expect -7.369349684059e-03  err 3.6e-17
+[PASS] theta2 L=10 eps=0.003 s=0.0175 g=0                         got -1.835830825783e-02  expect -1.835830825783e-02  err 8.6e-16
+[PASS] k      L=10 eps=0.003 s=0.0175 g=0                         got  3.572819363690e-03  expect  3.572819363690e-03  err 8.0e-16
+[PASS] e      L=10 eps=0.003 s=0.0175 g=0                         got  9.183610585612e-03  expect  9.183610585614e-03  err 2.1e-15
+[PASS] chi_KK L=10 eps=0.003 s=0.0175 g=0                         got  4.962499392192e-01  expect  4.962499392194e-01  err 1.8e-13
+[PASS] chi_KE L=10 eps=0.003 s=0.0175 g=0                         got  1.273131057116e+00  expect  1.273131057117e+00  err 4.5e-13
+[PASS] chi_EE L=10 eps=0.003 s=0.0175 g=0                         got  3.294695741031e+00  expect  3.294695741032e+00  err 1.2e-12
+[PASS] theta  L=10 eps=0.003 s=-0.15 g=0.1                        got -7.828280897562e-03  expect -7.828280897562e-03  err 2.3e-17
+[PASS] theta2 L=10 eps=0.003 s=-0.15 g=0.1                        got -7.313511036452e-02  expect -7.313511036452e-02  err 3.3e-16
+[PASS] k      L=10 eps=0.003 s=-0.15 g=0.1                        got  2.367109705671e-04  expect  2.367109705671e-04  err 2.2e-17
+[PASS] e      L=10 eps=0.003 s=-0.15 g=0.1                        got  4.546728083844e-04  expect  4.546728083844e-04  err 4.5e-17
+[PASS] chi_KK L=10 eps=0.003 s=-0.15 g=0.1                        got  5.006104181183e-03  expect  5.006104181183e-03  err 6.5e-16
+[PASS] chi_KE L=10 eps=0.003 s=-0.15 g=0.1                        got  9.890028726270e-03  expect  9.890028726271e-03  err 1.3e-15
+[PASS] chi_EE L=10 eps=0.003 s=-0.15 g=0.1                        got  2.061296399841e-02  expect  2.061296399841e-02  err 2.8e-15
+[PASS] theta  L=10 eps=0.003 s=0.3 g=-0.1                         got  1.539979427247e-03  expect  1.539979427248e-03  err 9.0e-16
+[PASS] theta2 L=10 eps=0.003 s=0.3 g=-0.1                         got -7.406662521108e-03  expect -7.406662521108e-03  err 1.3e-16
+[PASS] k      L=10 eps=0.003 s=0.3 g=-0.1                         got  6.898771078058e-02  expect  6.898771078058e-02  err 1.8e-16
+[PASS] e      L=10 eps=0.003 s=0.3 g=-0.1                         got  2.534362132770e-01  expect  2.534362132770e-01  err 5.6e-16
+[PASS] chi_KK L=10 eps=0.003 s=0.3 g=-0.1                         got  1.216630624458e+00  expect  1.216630624458e+00  err 1.1e-13
+[PASS] chi_KE L=10 eps=0.003 s=0.3 g=-0.1                         got  4.072768726668e+00  expect  4.072768726668e+00  err 3.9e-13
+[PASS] chi_EE L=10 eps=0.003 s=0.3 g=-0.1                         got  1.472839629964e+01  expect  1.472839629964e+01  err 1.4e-12
+[PASS] theta  L=10 eps=0.003 s=0.1 g=-0.05                        got  3.963105214220e-02  expect  3.963105214221e-02  err 1.6e-15
+[PASS] theta2 L=10 eps=0.003 s=0.1 g=-0.05                        got  6.850307732207e-03  expect  6.850307732208e-03  err 8.7e-16
+[PASS] k      L=10 eps=0.003 s=0.1 g=-0.05                        got  1.217990909643e-01  expect  1.217990909643e-01  err 4.2e-15
+[PASS] e      L=10 eps=0.003 s=0.1 g=-0.05                        got  3.443619822585e-01  expect  3.443619822585e-01  err 1.2e-14
+[PASS] chi_KK L=10 eps=0.003 s=0.1 g=-0.05                        got  6.092785340980e-01  expect  6.092785340980e-01  err 2.6e-14
+[PASS] chi_KE L=10 eps=0.003 s=0.1 g=-0.05                        got  1.243898323480e+00  expect  1.243898323480e+00  err 5.3e-14
+[PASS] chi_EE L=10 eps=0.003 s=0.1 g=-0.05                        got  3.362521040533e+00  expect  3.362521040533e+00  err 1.6e-13
+[PASS] theta  L=10 eps=0.01 s=0 g=0                               got  5.802281118609e-17  expect  5.169185073796e-16  err 4.6e-16
+[PASS] theta2 L=10 eps=0.01 s=0 g=0                               got -2.282084110240e-02  expect -2.282084110240e-02  err 9.7e-17
+[PASS] k      L=10 eps=0.01 s=0 g=0                               got  1.086288823777e-01  expect  1.086288823777e-01  err 3.2e-15
+[PASS] e      L=10 eps=0.01 s=0 g=0                               got  2.689414213700e-01  expect  2.689414213700e-01  err 7.7e-15
+[PASS] chi_KK L=10 eps=0.01 s=0 g=0                               got  1.772686446732e+00  expect  1.772686446732e+00  err 5.0e-14
+[PASS] chi_KE L=10 eps=0.01 s=0 g=0                               got  4.033272711448e+00  expect  4.033272711448e+00  err 1.1e-13
+[PASS] chi_EE L=10 eps=0.01 s=0 g=0                               got  9.893758151668e+00  expect  9.893758151668e+00  err 2.6e-13
+[PASS] theta  L=10 eps=0.01 s=0.0166 g=0                          got -1.475080819411e-02  expect -1.475080819411e-02  err 7.0e-16
+[PASS] theta2 L=10 eps=0.01 s=0.0166 g=0                          got -2.867691742439e-02  expect -2.867691742439e-02  err 3.2e-16
+[PASS] k      L=10 eps=0.01 s=0.0166 g=0                          got  6.323352740257e-02  expect  6.323352740257e-02  err 6.5e-15
+[PASS] e      L=10 eps=0.01 s=0.0166 g=0                          got  1.598035056754e-01  expect  1.598035056754e-01  err 1.6e-14
+[PASS] chi_KK L=10 eps=0.01 s=0.0166 g=0                          got  3.686404214121e+00  expect  3.686404214121e+00  err 4.7e-14
+[PASS] chi_KE L=10 eps=0.01 s=0.0166 g=0                          got  9.151012288599e+00  expect  9.151012288599e+00  err 8.2e-14
+[PASS] chi_EE L=10 eps=0.01 s=0.0166 g=0                          got  2.318922209261e+01  expect  2.318922209261e+01  err 2.3e-13
+[PASS] theta  L=10 eps=0.01 s=0.0175 g=0                          got -1.530495775158e-02  expect -1.530495775158e-02  err 6.1e-16
+[PASS] theta2 L=10 eps=0.01 s=0.0175 g=0                          got -2.910528251479e-02  expect -2.910528251479e-02  err 3.3e-16
+[PASS] k      L=10 eps=0.01 s=0.0175 g=0                          got  5.990951171961e-02  expect  5.990951171961e-02  err 4.9e-15
+[PASS] e      L=10 eps=0.01 s=0.0175 g=0                          got  1.515412445661e-01  expect  1.515412445661e-01  err 1.3e-14
+[PASS] chi_KK L=10 eps=0.01 s=0.0175 g=0                          got  3.695086726380e+00  expect  3.695086726380e+00  err 1.5e-13
+[PASS] chi_KE L=10 eps=0.01 s=0.0175 g=0                          got  9.196314690604e+00  expect  9.196314690604e+00  err 3.7e-13
+[PASS] chi_EE L=10 eps=0.01 s=0.0175 g=0                          got  2.333776364532e+01  expect  2.333776364532e+01  err 9.0e-13
+[PASS] theta  L=10 eps=0.01 s=-0.15 g=0.1                         got -2.399534831440e-02  expect -2.399534831440e-02  err 6.2e-17
+[PASS] theta2 L=10 eps=0.01 s=-0.15 g=0.1                         got -8.094674346278e-02  expect -8.094674346278e-02  err 2.6e-16
+[PASS] k      L=10 eps=0.01 s=-0.15 g=0.1                         got  3.325948524064e-03  expect  3.325948524064e-03  err 3.0e-16
+[PASS] e      L=10 eps=0.01 s=-0.15 g=0.1                         got  6.414937361522e-03  expect  6.414937361522e-03  err 6.1e-16
+[PASS] chi_KK L=10 eps=0.01 s=-0.15 g=0.1                         got  8.566697061233e-02  expect  8.566697061235e-02  err 1.1e-14
+[PASS] chi_KE L=10 eps=0.01 s=-0.15 g=0.1                         got  1.690578785495e-01  expect  1.690578785495e-01  err 2.0e-14
+[PASS] chi_EE L=10 eps=0.01 s=-0.15 g=0.1                         got  3.485873937517e-01  expect  3.485873937518e-01  err 4.7e-14
+[PASS] theta  L=10 eps=0.01 s=0.3 g=-0.1                          got -3.874153401087e-03  expect -3.874153401086e-03  err 6.2e-16
+[PASS] theta2 L=10 eps=0.01 s=0.3 g=-0.1                          got -2.190189371685e-02  expect -2.190189371685e-02  err 2.2e-16
+[PASS] k      L=10 eps=0.01 s=0.3 g=-0.1                          got  6.845665734893e-02  expect  6.845665734893e-02  err 1.2e-15
+[PASS] e      L=10 eps=0.01 s=0.3 g=-0.1                          got  2.456057573160e-01  expect  2.456057573160e-01  err 4.3e-15
+[PASS] chi_KK L=10 eps=0.01 s=0.3 g=-0.1                          got  9.345712113583e-01  expect  9.345712113583e-01  err 6.6e-14
+[PASS] chi_KE L=10 eps=0.01 s=0.3 g=-0.1                          got  3.022993018455e+00  expect  3.022993018455e+00  err 2.2e-13
+[PASS] chi_EE L=10 eps=0.01 s=0.3 g=-0.1                          got  1.080056730948e+01  expect  1.080056730948e+01  err 7.7e-13
+[PASS] theta  L=10 eps=0.01 s=0.1 g=-0.05                         got  3.639655143142e-02  expect  3.639655143142e-02  err 9.8e-16
+[PASS] theta2 L=10 eps=0.01 s=0.1 g=-0.05                         got -4.723661299093e-03  expect -4.723661299093e-03  err 4.9e-16
+[PASS] k      L=10 eps=0.01 s=0.1 g=-0.05                         got  1.200654308778e-01  expect  1.200654308778e-01  err 3.6e-15
+[PASS] e      L=10 eps=0.01 s=0.1 g=-0.05                         got  3.338956420926e-01  expect  3.338956420926e-01  err 1.0e-14
+[PASS] chi_KK L=10 eps=0.01 s=0.1 g=-0.05                         got  6.415091069558e-01  expect  6.415091069559e-01  err 2.6e-14
+[PASS] chi_KE L=10 eps=0.01 s=0.1 g=-0.05                         got  1.343168535067e+00  expect  1.343168535067e+00  err 4.9e-14
+[PASS] chi_EE L=10 eps=0.01 s=0.1 g=-0.05                         got  3.639580186054e+00  expect  3.639580186055e+00  err 1.6e-13
+
+== 6. derivatives vs finite differences (L = 10) ==
+[PASS] k = -(1/L) dtheta/ds  eps=0.003 s=0 g=0                    got  1.066165946113e-01  expect  1.066165946109e-01  err 3.5e-13
+[PASS] e = -(1/L) dtheta/dg  eps=0.003 s=0 g=0                    got  2.689414213700e-01  expect  2.689414213740e-01  err 4.0e-12
+[PASS] Maxwell dk/dg = de/ds  eps=0.003 s=0 g=0                   got -7.607916623032e+00  expect -7.607916624909e+00  err 1.9e-09
+[PASS] dk/dg = -chi_KE        eps=0.003 s=0 g=0                   got -7.607916623032e+00  expect -7.607916625031e+00  err 2.0e-09
+[PASS] chi_KK LR vs FD        eps=0.003 s=0 g=0                   got  3.183264863166e+00  expect  3.183264863172e+00  err 6.4e-12
+[PASS] chi_EE LR vs FD        eps=0.003 s=0 g=0                   got  1.894225504829e+01  expect  1.894225504332e+01  err 5.0e-09
+[PASS] k = -(1/L) dtheta/ds  eps=0.003 s=0.02 g=0.05              got  8.678354476640e-05  expect  8.678354473269e-05  err 3.4e-14
+[PASS] e = -(1/L) dtheta/dg  eps=0.003 s=0.02 g=0.05              got  1.825916811873e-04  expect  1.825916813508e-04  err 1.6e-13
+[PASS] Maxwell dk/dg = de/ds  eps=0.003 s=0.02 g=0.05             got -2.195834006471e-03  expect -2.195834006506e-03  err 3.5e-14
+[PASS] dk/dg = -chi_KE        eps=0.003 s=0.02 g=0.05             got -2.195834006471e-03  expect -2.195834006463e-03  err 8.3e-15
+[PASS] chi_KK LR vs FD        eps=0.003 s=0.02 g=0.05             got  9.972895013790e-04  expect  9.972895013684e-04  err 1.1e-14
+[PASS] chi_EE LR vs FD        eps=0.003 s=0.02 g=0.05             got  5.346823183313e-03  expect  5.346823183278e-03  err 3.5e-14
+[PASS] k = -(1/L) dtheta/ds  eps=0.003 s=-0.08 g=0.1              got  8.368362933056e-05  expect  8.368362937212e-05  err 4.2e-14
+[PASS] e = -(1/L) dtheta/dg  eps=0.003 s=-0.08 g=0.1              got  1.541744478374e-04  expect  1.541744477426e-04  err 9.5e-14
+[PASS] Maxwell dk/dg = de/ds  eps=0.003 s=-0.08 g=0.1             got -1.770734174802e-03  expect -1.770734174816e-03  err 1.4e-14
+[PASS] dk/dg = -chi_KE        eps=0.003 s=-0.08 g=0.1             got -1.770734174802e-03  expect -1.770734174797e-03  err 5.9e-15
+[PASS] chi_KK LR vs FD        eps=0.003 s=-0.08 g=0.1             got  9.129623747474e-04  expect  9.129623747423e-04  err 5.1e-15
+[PASS] chi_EE LR vs FD        eps=0.003 s=-0.08 g=0.1             got  3.812561843532e-03  expect  3.812561843548e-03  err 1.7e-14
+[PASS] k = -(1/L) dtheta/ds  eps=0.003 s=0.12 g=-0.1              got  1.472055957996e-01  expect  1.472055957999e-01  err 2.8e-13
+[PASS] e = -(1/L) dtheta/dg  eps=0.003 s=0.12 g=-0.1              got  4.210323152403e-01  expect  4.210323152407e-01  err 3.6e-13
+[PASS] Maxwell dk/dg = de/ds  eps=0.003 s=0.12 g=-0.1             got -4.268222321154e-01  expect -4.268222321334e-01  err 1.8e-11
+[PASS] dk/dg = -chi_KE        eps=0.003 s=0.12 g=-0.1             got -4.268222321154e-01  expect -4.268222321135e-01  err 1.9e-12
+[PASS] chi_KK LR vs FD        eps=0.003 s=0.12 g=-0.1             got  3.430844397843e-01  expect  3.430844397946e-01  err 1.0e-11
+[PASS] chi_EE LR vs FD        eps=0.003 s=0.12 g=-0.1             got  1.120696798760e+00  expect  1.120696798768e+00  err 7.7e-12
+[PASS] k = -(1/L) dtheta/ds  eps=0.01 s=0 g=0                     got  1.086288823777e-01  expect  1.086288823770e-01  err 6.7e-13
+[PASS] e = -(1/L) dtheta/dg  eps=0.01 s=0 g=0                     got  2.689414213700e-01  expect  2.689414213695e-01  err 5.2e-13
+[PASS] Maxwell dk/dg = de/ds  eps=0.01 s=0 g=0                    got -4.033272711456e+00  expect -4.033272711415e+00  err 4.1e-11
+[PASS] dk/dg = -chi_KE        eps=0.01 s=0 g=0                    got -4.033272711456e+00  expect -4.033272711448e+00  err 8.8e-12
+[PASS] chi_KK LR vs FD        eps=0.01 s=0 g=0                    got  1.772686446732e+00  expect  1.772686446732e+00  err 4.4e-13
+[PASS] chi_EE LR vs FD        eps=0.01 s=0 g=0                    got  9.893758151668e+00  expect  9.893758151637e+00  err 3.1e-11
+[PASS] k = -(1/L) dtheta/ds  eps=0.01 s=0.02 g=0.05               got  1.056403212595e-03  expect  1.056403212679e-03  err 8.4e-14
+[PASS] e = -(1/L) dtheta/dg  eps=0.01 s=0.02 g=0.05               got  2.227465744889e-03  expect  2.227465745148e-03  err 2.6e-13
+[PASS] Maxwell dk/dg = de/ds  eps=0.01 s=0.02 g=0.05              got -2.905461069582e-02  expect -2.905461069587e-02  err 4.9e-14
+[PASS] dk/dg = -chi_KE        eps=0.01 s=0.02 g=0.05              got -2.905461069582e-02  expect -2.905461069589e-02  err 7.0e-14
+[PASS] chi_KK LR vs FD        eps=0.01 s=0.02 g=0.05              got  1.320148521334e-02  expect  1.320148521329e-02  err 5.3e-14
+[PASS] chi_EE LR vs FD        eps=0.01 s=0.02 g=0.05              got  7.013143435762e-02  expect  7.013143435767e-02  err 4.9e-14
+[PASS] k = -(1/L) dtheta/ds  eps=0.01 s=-0.08 g=0.1               got  1.015240532544e-03  expect  1.015240532589e-03  err 4.5e-14
+[PASS] e = -(1/L) dtheta/dg  eps=0.01 s=-0.08 g=0.1               got  1.876620149829e-03  expect  1.876620150026e-03  err 2.0e-13
+[PASS] Maxwell dk/dg = de/ds  eps=0.01 s=-0.08 g=0.1              got -2.334275868173e-02  expect -2.334275868183e-02  err 9.2e-14
+[PASS] dk/dg = -chi_KE        eps=0.01 s=-0.08 g=0.1              got -2.334275868173e-02  expect -2.334275868168e-02  err 5.5e-14
+[PASS] chi_KK LR vs FD        eps=0.01 s=-0.08 g=0.1              got  1.202607244905e-02  expect  1.202607244912e-02  err 7.0e-14
+[PASS] chi_EE LR vs FD        eps=0.01 s=-0.08 g=0.1              got  4.987068580806e-02  expect  4.987068580749e-02  err 5.6e-13
+[PASS] k = -(1/L) dtheta/ds  eps=0.01 s=0.12 g=-0.1               got  1.475355322700e-01  expect  1.475355322697e-01  err 3.1e-13
+[PASS] e = -(1/L) dtheta/dg  eps=0.01 s=0.12 g=-0.1               got  4.164597935673e-01  expect  4.164597935660e-01  err 1.3e-12
+[PASS] Maxwell dk/dg = de/ds  eps=0.01 s=0.12 g=-0.1              got -4.484438983446e-01  expect -4.484438983390e-01  err 5.6e-12
+[PASS] dk/dg = -chi_KE        eps=0.01 s=0.12 g=-0.1              got -4.484438983446e-01  expect -4.484438983487e-01  err 4.1e-12
+[PASS] chi_KK LR vs FD        eps=0.01 s=0.12 g=-0.1              got  3.488311455959e-01  expect  3.488311456026e-01  err 6.7e-12
+[PASS] chi_EE LR vs FD        eps=0.01 s=0.12 g=-0.1              got  1.190017786428e+00  expect  1.190017786428e+00  err 4.4e-13
+[PASS] k = -(1/L) dtheta/ds  eps=0.1 s=0 g=0                      got  1.345011536600e-01  expect  1.345011536592e-01  err 7.3e-13
+[PASS] e = -(1/L) dtheta/dg  eps=0.1 s=0 g=0                      got  2.689414213700e-01  expect  2.689414213697e-01  err 3.1e-13
+[PASS] Maxwell dk/dg = de/ds  eps=0.1 s=0 g=0                     got -9.485216721512e-01  expect -9.485216721357e-01  err 1.5e-11
+[PASS] dk/dg = -chi_KE        eps=0.1 s=0 g=0                     got -9.485216721512e-01  expect -9.485216721475e-01  err 3.7e-12
+[PASS] chi_KK LR vs FD        eps=0.1 s=0 g=0                     got  5.632167860828e-01  expect  5.632167860807e-01  err 2.1e-12
+[PASS] chi_EE LR vs FD        eps=0.1 s=0 g=0                     got  2.166722154312e+00  expect  2.166722154328e+00  err 1.6e-11
+[PASS] k = -(1/L) dtheta/ds  eps=0.1 s=0.02 g=0.05                got  7.360231943806e-02  expect  7.360231943962e-02  err 1.6e-12
+[PASS] e = -(1/L) dtheta/dg  eps=0.1 s=0.02 g=0.05                got  1.370933563870e-01  expect  1.370933563880e-01  err 1.0e-12
+[PASS] Maxwell dk/dg = de/ds  eps=0.1 s=0.02 g=0.05               got -8.813859989405e-01  expect -8.813859989375e-01  err 3.0e-12
+[PASS] dk/dg = -chi_KE        eps=0.1 s=0.02 g=0.05               got -8.813859989405e-01  expect -8.813859989437e-01  err 3.2e-12
+[PASS] chi_KK LR vs FD        eps=0.1 s=0.02 g=0.05               got  4.796594602416e-01  expect  4.796594602379e-01  err 3.7e-12
+[PASS] chi_EE LR vs FD        eps=0.1 s=0.02 g=0.05               got  1.941701288392e+00  expect  1.941701288383e+00  err 9.3e-12
+[PASS] k = -(1/L) dtheta/ds  eps=0.1 s=-0.08 g=0.1                got  8.012287031284e-02  expect  8.012287031259e-02  err 2.4e-13
+[PASS] e = -(1/L) dtheta/dg  eps=0.1 s=-0.08 g=0.1                got  1.334867665643e-01  expect  1.334867665649e-01  err 5.7e-13
+[PASS] Maxwell dk/dg = de/ds  eps=0.1 s=-0.08 g=0.1               got -9.137606057354e-01  expect -9.137606057269e-01  err 8.6e-12
+[PASS] dk/dg = -chi_KE        eps=0.1 s=-0.08 g=0.1               got -9.137606057354e-01  expect -9.137606057337e-01  err 1.7e-12
+[PASS] chi_KK LR vs FD        eps=0.1 s=-0.08 g=0.1               got  5.500718882765e-01  expect  5.500718882784e-01  err 1.9e-12
+[PASS] chi_EE LR vs FD        eps=0.1 s=-0.08 g=0.1               got  1.797565120617e+00  expect  1.797565120609e+00  err 8.3e-12
+[PASS] k = -(1/L) dtheta/ds  eps=0.1 s=0.12 g=-0.1                got  1.529852162831e-01  expect  1.529852162829e-01  err 2.3e-13
+[PASS] e = -(1/L) dtheta/dg  eps=0.1 s=0.12 g=-0.1                got  3.631336478220e-01  expect  3.631336478222e-01  err 2.1e-13
+[PASS] Maxwell dk/dg = de/ds  eps=0.1 s=0.12 g=-0.1               got -5.392760258021e-01  expect -5.392760258358e-01  err 3.4e-11
+[PASS] dk/dg = -chi_KE        eps=0.1 s=0.12 g=-0.1               got -5.392760258021e-01  expect -5.392760258072e-01  err 5.1e-12
+[PASS] chi_KK LR vs FD        eps=0.1 s=0.12 g=-0.1               got  3.725951113240e-01  expect  3.725951113247e-01  err 7.1e-13
+[PASS] chi_EE LR vs FD        eps=0.1 s=0.12 g=-0.1               got  1.464275664241e+00  expect  1.464275664227e+00  err 1.3e-11
+
+== 7. strict East crossing vs closed form ==
+[PASS] strict s*(g=-0.15) L=8                                     got  5.227522464182e-01  expect  5.227522464182e-01  err 0.0e+00
+[PASS] slope -e/k = ds*/dg (FD of closed form) g=-0.15 L=8        got -5.064248438502e+00  expect -5.064248448494e+00  err 1.0e-08
+[PASS] strict s*(g=-0.1) L=8                                      got  3.060182271876e-01  expect  3.060182271876e-01  err 1.7e-16
+[PASS] slope -e/k = ds*/dg (FD of closed form) g=-0.1 L=8         got -3.751925209854e+00  expect -3.751925213380e+00  err 3.5e-09
+[PASS] strict s*(g=0) L=8                                         got  5.705207704306e-17  expect -0.000000000000e+00  err 5.7e-17
+[PASS] slope -e/k = ds*/dg (FD of closed form) g=0 L=8            got -2.543080634815e+00  expect -2.543080635709e+00  err 8.9e-10
+[PASS] strict s*(g=0.05) L=8                                      got -1.183352113002e-01  expect -1.183352113002e-01  err 1.4e-17
+[PASS] slope -e/k = ds*/dg (FD of closed form) g=0.05 L=8         got -2.207842847363e+00  expect -2.207842847915e+00  err 5.5e-10
+[PASS] strict s*(g=0.15) L=8                                      got -3.149340181069e-01  expect -3.149340181069e-01  err 3.3e-16
+[PASS] slope -e/k = ds*/dg (FD of closed form) g=0.15 L=8         got -1.760983434732e+00  expect -1.760983434984e+00  err 2.5e-10
+[PASS] strict s*(g=-0.15) L=10                                    got  5.227522464182e-01  expect  5.227522464182e-01  err 3.0e-14
+[PASS] slope -e/k = ds*/dg (FD of closed form) g=-0.15 L=10       got -5.064248438501e+00  expect -5.064248448494e+00  err 1.0e-08
+[PASS] strict s*(g=-0.1) L=10                                     got  3.060182271876e-01  expect  3.060182271876e-01  err 1.7e-16
+[PASS] slope -e/k = ds*/dg (FD of closed form) g=-0.1 L=10        got -3.751925209854e+00  expect -3.751925213380e+00  err 3.5e-09
+[PASS] strict s*(g=0) L=10                                        got -1.286244468633e-16  expect -0.000000000000e+00  err 1.3e-16
+[PASS] slope -e/k = ds*/dg (FD of closed form) g=0 L=10           got -2.543080634815e+00  expect -2.543080635709e+00  err 8.9e-10
+[PASS] strict s*(g=0.05) L=10                                     got -1.183352113002e-01  expect -1.183352113002e-01  err 1.4e-16
+[PASS] slope -e/k = ds*/dg (FD of closed form) g=0.05 L=10        got -2.207842847363e+00  expect -2.207842847915e+00  err 5.5e-10
+[PASS] strict s*(g=0.15) L=10                                     got -3.149340181069e-01  expect -3.149340181069e-01  err 4.4e-15
+[PASS] slope -e/k = ds*/dg (FD of closed form) g=0.15 L=10        got -1.760983434732e+00  expect -1.760983434984e+00  err 2.5e-10
+[PASS] strict s*(g=-0.15) L=12                                    got  5.227522464182e-01  expect  5.227522464182e-01  err 2.2e-16
+[PASS] slope -e/k = ds*/dg (FD of closed form) g=-0.15 L=12       got -5.064248438502e+00  expect -5.064248448494e+00  err 1.0e-08
+[PASS] strict s*(g=-0.1) L=12                                     got  3.060182271876e-01  expect  3.060182271876e-01  err 1.7e-16
+[PASS] slope -e/k = ds*/dg (FD of closed form) g=-0.1 L=12        got -3.751925209854e+00  expect -3.751925213380e+00  err 3.5e-09
+[PASS] strict s*(g=0) L=12                                        got -8.377582798584e-12  expect -0.000000000000e+00  err 8.4e-12
+[PASS] slope -e/k = ds*/dg (FD of closed form) g=0 L=12           got -2.543080634777e+00  expect -2.543080635709e+00  err 9.3e-10
+[PASS] strict s*(g=0.05) L=12                                     got -1.183352113002e-01  expect -1.183352113002e-01  err 1.1e-16
+[PASS] slope -e/k = ds*/dg (FD of closed form) g=0.05 L=12        got -2.207842847363e+00  expect -2.207842847915e+00  err 5.5e-10
+[PASS] strict s*(g=0.15) L=12                                     got -3.149340181069e-01  expect -3.149340181069e-01  err 1.9e-14
+[PASS] slope -e/k = ds*/dg (FD of closed form) g=0.15 L=12        got -1.760983434732e+00  expect -1.760983434984e+00  err 2.5e-10
+[PASS] strict s*(g=-0.15) L=14                                    got  5.227522464182e-01  expect  5.227522464182e-01  err 1.1e-16
+[PASS] slope -e/k = ds*/dg (FD of closed form) g=-0.15 L=14       got -5.064248438501e+00  expect -5.064248448494e+00  err 1.0e-08
+[PASS] strict s*(g=-0.1) L=14                                     got  3.060182271876e-01  expect  3.060182271876e-01  err 5.6e-17
+[PASS] slope -e/k = ds*/dg (FD of closed form) g=-0.1 L=14        got -3.751925209854e+00  expect -3.751925213380e+00  err 3.5e-09
+[PASS] strict s*(g=0) L=14                                        got -8.506933684187e-17  expect -0.000000000000e+00  err 8.5e-17
+[PASS] slope -e/k = ds*/dg (FD of closed form) g=0 L=14           got -2.543080634815e+00  expect -2.543080635709e+00  err 8.9e-10
+[PASS] strict s*(g=0.05) L=14                                     got -1.183352113002e-01  expect -1.183352113002e-01  err 1.2e-16
+[PASS] slope -e/k = ds*/dg (FD of closed form) g=0.05 L=14        got -2.207842847363e+00  expect -2.207842847915e+00  err 5.5e-10
+[PASS] strict s*(g=0.15) L=14                                     got -3.149340181069e-01  expect -3.149340181069e-01  err 5.6e-17
+[PASS] slope -e/k = ds*/dg (FD of closed form) g=0.15 L=14        got -1.760983434732e+00  expect -1.760983434984e+00  err 2.5e-10
+
+== 8. Perron vector positivity (L = 12, eps = 0.003) ==
+[PASS] min/max component >= 0 at s=0 g=0 (1.180e-03)
+[PASS] gap > 0 at s=0 g=0
+[PASS] min/max component >= 0 at s=0.5 g=0 (2.276e-12)
+[PASS] gap > 0 at s=0.5 g=0
+[PASS] min/max component >= 0 at s=-0.5 g=0 (3.830e-06)
+[PASS] gap > 0 at s=-0.5 g=0
+[PASS] min/max component >= 0 at s=0.02 g=0.15 (1.041e-10)
+[PASS] gap > 0 at s=0.02 g=0.15
+[PASS] min/max component >= 0 at s=0 g=-0.15 (6.181e-06)
+[PASS] gap > 0 at s=0 g=-0.15
+
+== 9. softened East: exact product-state line ==
+[PASS] theta = L eps g/(1-eps)  L=8 eps=0.003 g=-0.1              got -2.407221664995e-03  expect -2.407221664995e-03  err 7.4e-17
+[PASS] e = rho                  L=8 eps=0.003 g=-0.1              got  2.109593439221e-01  expect  2.109593439221e-01  err 4.7e-16
+[PASS] k (product state)        L=8 eps=0.003 g=-0.1              got  5.677224191884e-02  expect  5.677224191884e-02  err 1.7e-16
+[PASS] theta = L eps g/(1-eps)  L=8 eps=0.003 g=0                 got  3.387847302350e-17  expect  0.000000000000e+00  err 3.4e-17
+[PASS] e = rho                  L=8 eps=0.003 g=0                 got  2.689414213700e-01  expect  2.689414213700e-01  err 1.1e-15
+[PASS] k (product state)        L=8 eps=0.003 g=0                 got  1.066165946113e-01  expect  1.066165946113e-01  err 4.3e-16
+[PASS] theta = L eps g/(1-eps)  L=8 eps=0.003 g=0.1               got  2.407221664995e-03  expect  2.407221664995e-03  err 4.3e-17
+[PASS] e = rho                  L=8 eps=0.003 g=0.1               got  3.075477001720e-01  expect  3.075477001720e-01  err 9.4e-16
+[PASS] k (product state)        L=8 eps=0.003 g=0.1               got  1.583315389931e-01  expect  1.583315389931e-01  err 4.7e-16
+[PASS] theta = L eps g/(1-eps)  L=8 eps=0.01 g=-0.1               got -8.080808080808e-03  expect -8.080808080808e-03  err 6.9e-18
+[PASS] e = rho                  L=8 eps=0.01 g=-0.1               got  2.104455786789e-01  expect  2.104455786789e-01  err 3.3e-16
+[PASS] k (product state)        L=8 eps=0.01 g=-0.1               got  5.790009917402e-02  expect  5.790009917402e-02  err 5.6e-17
+[PASS] theta = L eps g/(1-eps)  L=8 eps=0.01 g=0                  got  3.594827822064e-17  expect  0.000000000000e+00  err 3.6e-17
+[PASS] e = rho                  L=8 eps=0.01 g=0                  got  2.689414213700e-01  expect  2.689414213700e-01  err 1.2e-15
+[PASS] k (product state)        L=8 eps=0.01 g=0                  got  1.086288823777e-01  expect  1.086288823777e-01  err 5.0e-16
+[PASS] theta = L eps g/(1-eps)  L=8 eps=0.01 g=0.1                got  8.080808080808e-03  expect  8.080808080808e-03  err 1.4e-16
+[PASS] e = rho                  L=8 eps=0.01 g=0.1                got  3.077747959297e-01  expect  3.077747959297e-01  err 6.7e-16
+[PASS] k (product state)        L=8 eps=0.01 g=0.1                got  1.611813880577e-01  expect  1.611813880577e-01  err 4.2e-16
+[PASS] theta = L eps g/(1-eps)  L=8 eps=0.1 g=-0.1                got -8.888888888889e-02  expect -8.888888888889e-02  err 1.4e-16
+[PASS] e = rho                  L=8 eps=0.1 g=-0.1                got  2.029246846186e-01  expect  2.029246846186e-01  err 1.4e-16
+[PASS] k (product state)        L=8 eps=0.1 g=-0.1                got  7.111176032866e-02  expect  7.111176032866e-02  err 1.4e-17
+[PASS] theta = L eps g/(1-eps)  L=8 eps=0.1 g=0                   got  9.910885492450e-17  expect  0.000000000000e+00  err 9.9e-17
+[PASS] e = rho                  L=8 eps=0.1 g=0                   got  2.689414213700e-01  expect  2.689414213700e-01  err 3.9e-16
+[PASS] k (product state)        L=8 eps=0.1 g=0                   got  1.345011536600e-01  expect  1.345011536600e-01  err 1.7e-16
+[PASS] theta = L eps g/(1-eps)  L=8 eps=0.1 g=0.1                 got  8.888888888889e-02  expect  8.888888888889e-02  err 1.1e-16
+[PASS] e = rho                  L=8 eps=0.1 g=0.1                 got  3.109520720300e-01  expect  3.109520720300e-01  err 2.2e-16
+[PASS] k (product state)        L=8 eps=0.1 g=0.1                 got  1.989495847417e-01  expect  1.989495847417e-01  err 1.9e-16
+[PASS] theta = L eps g/(1-eps)  L=12 eps=0.003 g=-0.1             got -3.610832497492e-03  expect -3.610832497492e-03  err 1.5e-16
+[PASS] e = rho                  L=12 eps=0.003 g=-0.1             got  2.109593439221e-01  expect  2.109593439221e-01  err 3.5e-15
+[PASS] k (product state)        L=12 eps=0.003 g=-0.1             got  5.677224191884e-02  expect  5.677224191884e-02  err 1.3e-15
+[PASS] theta = L eps g/(1-eps)  L=12 eps=0.003 g=0                got -2.600806605648e-17  expect  0.000000000000e+00  err 2.6e-17
+[PASS] e = rho                  L=12 eps=0.003 g=0                got  2.689414213700e-01  expect  2.689414213700e-01  err 8.8e-15
+[PASS] k (product state)        L=12 eps=0.003 g=0                got  1.066165946113e-01  expect  1.066165946113e-01  err 3.5e-15
+[PASS] theta = L eps g/(1-eps)  L=12 eps=0.003 g=0.1              got  3.610832497492e-03  expect  3.610832497492e-03  err 1.7e-18
+[PASS] e = rho                  L=12 eps=0.003 g=0.1              got  3.075477001720e-01  expect  3.075477001720e-01  err 3.0e-15
+[PASS] k (product state)        L=12 eps=0.003 g=0.1              got  1.583315389931e-01  expect  1.583315389931e-01  err 2.2e-15
+[PASS] theta = L eps g/(1-eps)  L=12 eps=0.01 g=-0.1              got -1.212121212121e-02  expect -1.212121212121e-02  err 2.1e-17
+[PASS] e = rho                  L=12 eps=0.01 g=-0.1              got  2.104455786789e-01  expect  2.104455786789e-01  err 1.7e-15
+[PASS] k (product state)        L=12 eps=0.01 g=-0.1              got  5.790009917402e-02  expect  5.790009917402e-02  err 3.5e-16
+[PASS] theta = L eps g/(1-eps)  L=12 eps=0.01 g=0                 got -9.392907391167e-18  expect  0.000000000000e+00  err 9.4e-18
+[PASS] e = rho                  L=12 eps=0.01 g=0                 got  2.689414213700e-01  expect  2.689414213700e-01  err 2.6e-15
+[PASS] k (product state)        L=12 eps=0.01 g=0                 got  1.086288823777e-01  expect  1.086288823777e-01  err 9.6e-16
+[PASS] theta = L eps g/(1-eps)  L=12 eps=0.01 g=0.1               got  1.212121212121e-02  expect  1.212121212121e-02  err 2.7e-16
+[PASS] e = rho                  L=12 eps=0.01 g=0.1               got  3.077747959297e-01  expect  3.077747959297e-01  err 2.8e-16
+[PASS] k (product state)        L=12 eps=0.01 g=0.1               got  1.611813880577e-01  expect  1.611813880577e-01  err 3.6e-16
+[PASS] theta = L eps g/(1-eps)  L=12 eps=0.1 g=-0.1               got -1.333333333333e-01  expect -1.333333333333e-01  err 0.0e+00
+[PASS] e = rho                  L=12 eps=0.1 g=-0.1               got  2.029246846186e-01  expect  2.029246846186e-01  err 8.3e-16
+[PASS] k (product state)        L=12 eps=0.1 g=-0.1               got  7.111176032866e-02  expect  7.111176032866e-02  err 3.5e-16
+[PASS] theta = L eps g/(1-eps)  L=12 eps=0.1 g=0                  got  1.892796506997e-16  expect  0.000000000000e+00  err 1.9e-16
+[PASS] e = rho                  L=12 eps=0.1 g=0                  got  2.689414213700e-01  expect  2.689414213700e-01  err 2.5e-15
+[PASS] k (product state)        L=12 eps=0.1 g=0                  got  1.345011536600e-01  expect  1.345011536600e-01  err 1.1e-15
+[PASS] theta = L eps g/(1-eps)  L=12 eps=0.1 g=0.1                got  1.333333333333e-01  expect  1.333333333333e-01  err 2.8e-17
+[PASS] e = rho                  L=12 eps=0.1 g=0.1                got  3.109520720300e-01  expect  3.109520720300e-01  err 1.6e-15
+[PASS] k (product state)        L=12 eps=0.1 g=0.1                got  1.989495847417e-01  expect  1.989495847417e-01  err 8.0e-16
+
+== 10. discrete-time transfer matrix ==
+[PASS] lnZ vs enumeration  L=3 tobs=2 eps=0 s=0 g=0               got  3.330669073875e-16  expect  2.968736367847e-13  err 3.0e-13
+[PASS] <K> vs enumeration  L=3 tobs=2 eps=0 s=0 g=0               got  6.345251134112e-01  expect  6.345251134114e-01  err 2.0e-13
+[PASS] <E> vs enumeration  L=3 tobs=2 eps=0 s=0 g=0               got  2.420472792330e+00  expect  2.420472792331e+00  err 1.1e-12
+[PASS] lnZ vs enumeration  L=3 tobs=2 eps=0 s=0.3 g=0             got -1.505194510336e-01  expect -1.505194510336e-01  err 2.8e-14
+[PASS] <K> vs enumeration  L=3 tobs=2 eps=0 s=0.3 g=0             got  3.898851740078e-01  expect  3.898851740079e-01  err 1.0e-13
+[PASS] <E> vs enumeration  L=3 tobs=2 eps=0 s=0.3 g=0             got  2.054354551371e+00  expect  2.054354551371e+00  err 2.9e-13
+[PASS] lnZ vs enumeration  L=3 tobs=2 eps=0 s=-0.2 g=0.15         got -2.087637542184e-01  expect -2.087637542182e-01  err 1.9e-13
+[PASS] <K> vs enumeration  L=3 tobs=2 eps=0 s=-0.2 g=0.15         got  6.221192582415e-01  expect  6.221192582412e-01  err 2.4e-13
+[PASS] <E> vs enumeration  L=3 tobs=2 eps=0 s=-0.2 g=0.15         got  2.044914252421e+00  expect  2.044914252420e+00  err 8.7e-13
+[PASS] lnZ vs enumeration  L=3 tobs=2 eps=0 s=0.1 g=-0.3          got  8.271903731284e-01  expect  8.271903731286e-01  err 1.8e-13
+[PASS] <K> vs enumeration  L=3 tobs=2 eps=0 s=0.1 g=-0.3          got  9.628223749527e-01  expect  9.628223749529e-01  err 1.8e-13
+[PASS] <E> vs enumeration  L=3 tobs=2 eps=0 s=0.1 g=-0.3          got  3.607165647752e+00  expect  3.607165647752e+00  err 7.6e-14
+[PASS] lnZ vs enumeration  L=3 tobs=2 eps=0.01 s=0 g=0            got  3.330669073875e-16  expect -3.119726699197e-14  err 3.2e-14
+[PASS] <K> vs enumeration  L=3 tobs=2 eps=0.01 s=0 g=0            got  6.517732942661e-01  expect  6.517732942661e-01  err 7.9e-14
+[PASS] <E> vs enumeration  L=3 tobs=2 eps=0.01 s=0 g=0            got  2.420472792330e+00  expect  2.420472792331e+00  err 7.3e-13
+[PASS] lnZ vs enumeration  L=3 tobs=2 eps=0.01 s=0.3 g=0          got -1.551695917293e-01  expect -1.551695917290e-01  err 3.2e-13
+[PASS] <K> vs enumeration  L=3 tobs=2 eps=0.01 s=0.3 g=0          got  4.035931778203e-01  expect  4.035931778201e-01  err 2.0e-13
+[PASS] <E> vs enumeration  L=3 tobs=2 eps=0.01 s=0.3 g=0          got  2.055221896768e+00  expect  2.055221896768e+00  err 7.3e-14
+[PASS] lnZ vs enumeration  L=3 tobs=2 eps=0.01 s=-0.2 g=0.15      got -2.053092671304e-01  expect -2.053092671305e-01  err 7.0e-14
+[PASS] <K> vs enumeration  L=3 tobs=2 eps=0.01 s=-0.2 g=0.15      got  6.428636637516e-01  expect  6.428636637518e-01  err 1.4e-13
+[PASS] <E> vs enumeration  L=3 tobs=2 eps=0.01 s=-0.2 g=0.15      got  2.049653712932e+00  expect  2.049653712932e+00  err 4.6e-13
+[PASS] lnZ vs enumeration  L=3 tobs=2 eps=0.01 s=0.1 g=-0.3       got  8.245282995496e-01  expect  8.245282995497e-01  err 1.2e-14
+[PASS] <K> vs enumeration  L=3 tobs=2 eps=0.01 s=0.1 g=-0.3       got  9.766663986128e-01  expect  9.766663986131e-01  err 2.2e-13
+[PASS] <E> vs enumeration  L=3 tobs=2 eps=0.01 s=0.1 g=-0.3       got  3.601158516456e+00  expect  3.601158516456e+00  err 4.9e-13
+[PASS] lnZ vs enumeration  L=3 tobs=2 eps=0.1 s=0 g=0             got  3.330669073875e-16  expect -3.566036355097e-13  err 3.6e-13
+[PASS] <K> vs enumeration  L=3 tobs=2 eps=0.1 s=0 g=0             got  8.070069219599e-01  expect  8.070069219606e-01  err 7.4e-13
+[PASS] <E> vs enumeration  L=3 tobs=2 eps=0.1 s=0 g=0             got  2.420472792330e+00  expect  2.420472792331e+00  err 9.8e-13
+[PASS] lnZ vs enumeration  L=3 tobs=2 eps=0.1 s=0.3 g=0           got -1.971701522818e-01  expect -1.971701522817e-01  err 9.3e-14
+[PASS] <K> vs enumeration  L=3 tobs=2 eps=0.1 s=0.3 g=0           got  5.278677857999e-01  expect  5.278677857997e-01  err 1.9e-13
+[PASS] <E> vs enumeration  L=3 tobs=2 eps=0.1 s=0.3 g=0           got  2.063231131036e+00  expect  2.063231131037e+00  err 6.0e-13
+[PASS] lnZ vs enumeration  L=3 tobs=2 eps=0.1 s=-0.2 g=0.15       got -1.740098254794e-01  expect -1.740098254790e-01  err 4.2e-13
+[PASS] <K> vs enumeration  L=3 tobs=2 eps=0.1 s=-0.2 g=0.15       got  8.287768577527e-01  expect  8.287768577521e-01  err 6.5e-13
+[PASS] <E> vs enumeration  L=3 tobs=2 eps=0.1 s=-0.2 g=0.15       got  2.087876675046e+00  expect  2.087876675046e+00  err 2.5e-13
+[PASS] lnZ vs enumeration  L=3 tobs=2 eps=0.1 s=0.1 g=-0.3        got  8.009962153558e-01  expect  8.009962153562e-01  err 4.4e-13
+[PASS] <K> vs enumeration  L=3 tobs=2 eps=0.1 s=0.1 g=-0.3        got  1.102452516778e+00  expect  1.102452516779e+00  err 7.2e-14
+[PASS] <E> vs enumeration  L=3 tobs=2 eps=0.1 s=0.1 g=-0.3        got  3.549055705873e+00  expect  3.549055705871e+00  err 1.8e-12
+[PASS] finite lnZ(0,0) = 0              eps=0                     got  1.221245327088e-15  expect  0.000000000000e+00  err 1.2e-15
+[PASS] finite <K>(0,0) = t L k_eq       eps=0                     got  2.538100453645e+01  expect  2.538100453645e+01  err 7.1e-15
+[PASS] finite <E>(0,0) = (t+1) L c      eps=0                     got  6.669747249976e+01  expect  6.669747249976e+01  err 1.4e-14
+[PASS] finite <K> = -dlnZ/ds            eps=0                     got  4.037206314918e+00  expect  4.037206314920e+00  err 1.4e-12
+[PASS] finite <E> = -dlnZ/dg            eps=0                     got  1.174741103456e+01  expect  1.174741103460e+01  err 4.1e-11
+[PASS] finite VarK = -d<K>/ds           eps=0                     got  6.371865342882e+01  expect  6.371865342885e+01  err 3.1e-11
+[PASS] finite VarE = -d<E>/dg           eps=0                     got  4.705142645800e+02  expect  4.705142645876e+02  err 7.6e-09
+[PASS] finite CovKE = -d<K>/dg          eps=0                     got  1.665339190438e+02  expect  1.665339190465e+02  err 2.8e-09
+[PASS] finite k0 vs full basis lnZ      eps=0                     got -2.221581659909e+00  expect -2.221581659909e+00  err 1.8e-15
+[PASS] finite k0 vs full basis VarK     eps=0                     got  6.371865342882e+01  expect  6.371865342882e+01  err 1.1e-13
+[PASS] finite lnZ(0,0) = 0              eps=0.01                  got  7.771561172376e-16  expect  0.000000000000e+00  err 7.8e-16
+[PASS] finite <K>(0,0) = t L k_eq       eps=0.01                  got  2.607093177064e+01  expect  2.607093177064e+01  err 3.6e-15
+[PASS] finite <E>(0,0) = (t+1) L c      eps=0.01                  got  6.669747249976e+01  expect  6.669747249976e+01  err 2.8e-14
+[PASS] finite <K> = -dlnZ/ds            eps=0.01                  got  5.943900741140e+00  expect  5.943900741143e+00  err 2.5e-12
+[PASS] finite <E> = -dlnZ/dg            eps=0.01                  got  1.606576458941e+01  expect  1.606576458945e+01  err 4.8e-11
+[PASS] finite VarK = -d<K>/ds           eps=0.01                  got  7.383923463891e+01  expect  7.383923463890e+01  err 1.0e-11
+[PASS] finite VarE = -d<E>/dg           eps=0.01                  got  4.983782266113e+02  expect  4.983782266169e+02  err 5.6e-09
+[PASS] finite CovKE = -d<K>/dg          eps=0.01                  got  1.830042716946e+02  expect  1.830042716968e+02  err 2.1e-09
+[PASS] finite k0 vs full basis lnZ      eps=0.01                  got -2.420767193360e+00  expect -2.420767193360e+00  err 8.9e-16
+[PASS] finite k0 vs full basis VarK     eps=0.01                  got  7.383923463891e+01  expect  7.383923463891e+01  err 9.9e-14
+[PASS] finite lnZ(0,0) = 0              eps=0.1                   got  1.221245327088e-15  expect  0.000000000000e+00  err 1.2e-15
+[PASS] finite <K>(0,0) = t L k_eq       eps=0.1                   got  3.228027687839e+01  expect  3.228027687839e+01  err 1.4e-14
+[PASS] finite <E>(0,0) = (t+1) L c      eps=0.1                   got  6.669747249976e+01  expect  6.669747249976e+01  err 4.3e-14
+[PASS] finite <K> = -dlnZ/ds            eps=0.1                   got  1.979840164988e+01  expect  1.979840164988e+01  err 8.5e-13
+[PASS] finite <E> = -dlnZ/dg            eps=0.1                   got  3.957328057368e+01  expect  3.957328057370e+01  err 1.6e-11
+[PASS] finite VarK = -d<K>/ds           eps=0.1                   got  9.271995691350e+01  expect  9.271995691349e+01  err 1.4e-11
+[PASS] finite VarE = -d<E>/dg           eps=0.1                   got  3.925528108674e+02  expect  3.925528108673e+02  err 1.6e-10
+[PASS] finite CovKE = -d<K>/dg          eps=0.1                   got  1.697940238368e+02  expect  1.697940238368e+02  err 7.5e-12
+[PASS] finite k0 vs full basis lnZ      eps=0.1                   got -3.426466201183e+00  expect -3.426466201183e+00  err 3.1e-15
+[PASS] finite k0 vs full basis VarK     eps=0.1                   got  9.271995691350e+01  expect  9.271995691350e+01  err 1.3e-12
+[PASS] asym theta_d(0,0) = 0            eps=0                     got  2.220446049250e-16  expect  0.000000000000e+00  err 2.2e-16
+[PASS] asym k_d(0,0) equilibrium        eps=0                     got  1.151487500062e-01  expect  1.151487500062e-01  err 6.9e-17
+[PASS] asym e_d(0,0) equilibrium        eps=0                     got  2.928325562639e-01  expect  2.928325562639e-01  err 3.3e-16
+[PASS] asym k_d = -(1/L) dtheta/ds      eps=0                     got  5.718890237965e-02  expect  5.718890237980e-0note: window 4 (K 28..41) not reached (K = 16); restarting from the trajectory of window 3 (K = 21)
+note: window 5 (K 35..48) not reached (K = 3); restarting from the trajectory of window 3 (K = 21)
+note: window 5 (K 35..48) not reached (K = 21); restarting from the trajectory of window 4 (K = 31)
+note: window 5 (K 35..48) not reached (K = 31); restarting from the trajectory of window 4 (K = 31)
+note: window 4 (K 28..41) not reached (K = 16); restarting from the trajectory of window 3 (K = 21)
+note: window 5 (K 35..48) not reached (K = 3); restarting from the trajectory of window 3 (K = 21)
+note: window 5 (K 35..48) not reached (K = 21); restarting from the trajectory of window 4 (K = 31)
+note: window 5 (K 35..48) not reached (K = 31); restarting from the trajectory of window 4 (K = 31)
+note: window 4 (K 28..41) not reached (K = 16); restarting from the trajectory of window 3 (K = 21)
+note: window 5 (K 35..48) not reached (K = 3); restarting from the trajectory of window 3 (K = 21)
+note: window 5 (K 35..48) not reached (K = 21); restarting from the trajectory of window 4 (K = 31)
+note: window 5 (K 35..48) not reached (K = 31); restarting from the trajectory of window 4 (K = 31)
+east_reus: checkpoint written at cycle 3 of 44; stopping
+east_reus: resumed from east_test_reus.ckpt at cycle 3 of 44
+east_reus: checkpoint written at cycle 25 of 44; stopping
+east_reus: resumed from east_test_reus.ckpt at cycle 25 of 44
+note: window 4 (K 28..41) not reached (K = 16); restarting from the trajectory of window 3 (K = 21)
+note: window 5 (K 35..48) not reached (K = 3); restarting from the trajectory of window 3 (K = 21)
+note: window 5 (K 35..48) not reached (K = 21); restarting from the trajectory of window 4 (K = 31)
+note: window 5 (K 35..48) not reached (K = 31); restarting from the trajectory of window 4 (K = 31)
+east_reus: checkpoint written at cycle 3 of 44; stopping
+error: checkpoint east_test_reus.ckpt was written with different parameters
+  checkpoint: L 8 T 1 eps 0.05 s 0 g 0 tobs 20 nwin 6 k [0, 0.3] n_equil 20 n_prod 200 swap_every 5 sample_every 5
+  this run  : L 8 T 1 eps 0.05 s 0.01 g 0 tobs 20 nwin 6 k [0, 0.3] n_equil 20 n_prod 200 swap_every 5 sample_every 5
+  (remove the checkpoint to start over)
+2  err 1.5e-13
+[PASS] asym e_d = -(1/L) dtheta/dg      eps=0                     got  1.672805730970e-01  expect  1.672805730971e-01  err 1.4e-13
+[PASS] asym k0 vs full basis theta      eps=0                     got -9.739850646932e-02  expect -9.739850646932e-02  err 4.9e-16
+[PASS] asym theta_d(0,0) = 0            eps=0.01                  got  4.440892098501e-16  expect  0.000000000000e+00  err 4.4e-16
+[PASS] asym k_d(0,0) equilibrium        eps=0.01                  got  1.086288823777e-01  expect  1.086288823777e-01  err 1.4e-17
+[PASS] asym e_d(0,0) equilibrium        eps=0.01                  got  2.689414213700e-01  expect  2.689414213700e-01  err 5.6e-17
+[PASS] asym k_d = -(1/L) dtheta/ds      eps=0.01                  got  9.381185095971e-04  expect  9.381185096907e-04  err 9.4e-14
+[PASS] asym e_d = -(1/L) dtheta/dg      eps=0.01                  got  1.975686001951e-03  expect  1.975686002113e-03  err 1.6e-13
+[PASS] asym k0 vs full basis theta      eps=0.01                  got -2.032412018375e-02  expect -2.032412018375e-02  err 3.1e-15
+[PASS] [lnZ(600)-lnZ(300)]/300 = theta_d eps=0.01                 got -1.982483733838e-02  expect -1.982483698987e-02  err 3.5e-10
+[PASS] asym theta_d(0,0) = 0            eps=0.1                   got  0.000000000000e+00  expect  0.000000000000e+00  err 0.0e+00
+[PASS] asym k_d(0,0) equilibrium        eps=0.1                   got  1.345011536600e-01  expect  1.345011536600e-01  err 0.0e+00
+[PASS] asym e_d(0,0) equilibrium        eps=0.1                   got  2.689414213700e-01  expect  2.689414213700e-01  err 1.7e-16
+[PASS] asym k_d = -(1/L) dtheta/ds      eps=0.1                   got  6.960158220327e-02  expect  6.960158220330e-02  err 2.5e-14
+[PASS] asym e_d = -(1/L) dtheta/dg      eps=0.1                   got  1.295577472222e-01  expect  1.295577472220e-01  err 2.1e-13
+[PASS] asym k0 vs full basis theta      eps=0.1                   got -1.033708329503e-01  expect -1.033708329503e-01  err 2.1e-15
+[PASS] [lnZ(600)-lnZ(300)]/300 = theta_d eps=0.1                  got -7.975350098950e-02  expect -7.975350098950e-02  err 1.1e-15
+[PASS] asym eps=1 g=0: theta_d = L ln(1+mu(s)), s=0.1             got -3.016929622300e-01  expect -3.016929622300e-01  err 1.2e-15
+[PASS] asym eps=1 g=0: theta_d = L ln(1+mu(s)), s=-0.2            got  6.806915172006e-01  expect  6.806915172006e-01  err 6.7e-16
+[PASS] asym eps=1 g=0: theta_d = L ln(1+mu(s)), s=0.5             got -1.257285643198e+00  expect -1.257285643198e+00  err 1.6e-15
+[PASS] MCS row sums to 1 from x=0                                 got  1.000000000000e+00  expect  1.000000000000e+00  err 4.4e-16
+[PASS] MCS row nonnegative from x=0
+[PASS] MCS row sums to 1 from x=5                                 got  1.000000000000e+00  expect  1.000000000000e+00  err 3.3e-16
+[PASS] MCS row nonnegative from x=5
+[PASS] MCS row sums to 1 from x=42                                got  1.000000000000e+00  expect  1.000000000000e+00  err 0.0e+00
+[PASS] MCS row nonnegative from x=42
+[PASS] MCS row sums to 1 from x=63                                got  1.000000000000e+00  expect  1.000000000000e+00  err 4.4e-16
+[PASS] MCS row nonnegative from x=63
+
+== 11. REUS start-up: seeding unreached windows from reached ones ==
+[PASS] REUS runs although some windows need seeding
+[PASS] at least one window was seeded from another window
+[PASS] seeding source is another valid window
+[PASS] all samples lie inside their windows
+[PASS] final trajectories lie inside their windows
+
+== 12. REUS checkpoint and resume ==
+[PASS] first part stops with a checkpoint (REUS_STOPPED)
+[PASS] second part resumes and stops again
+[PASS] third part resumes and finishes
+[PASS] resumed run: samples (K, E, replica) identical
+[PASS] resumed run: counters, approach and seeding identical
+[PASS] resumed run: final trajectories identical
+[PASS] checkpoint with different s is refused
+
+== summary: 824 passed, 0 failed ==

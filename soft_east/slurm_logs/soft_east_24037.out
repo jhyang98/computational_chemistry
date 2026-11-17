@@ -1,0 +1,27 @@
+[2026-11-16 23:17:19] job 24037 on node3, restart 0, 4 threads, mode all, parameters slurm_jobs/soft_east_20261116_231638_2565636.env
+[2026-11-16 23:17:21] REUS start: reus_n60_p4m/eps0.01_g+0.000/L100_t600_s+0.0180
+east_reus: OpenMP with up to 4 threads
+note: window 10 (K 1082..1298) not reached (K = 1326); restarting from the trajectory of window 9 (K = 1186)
+note: window 21 (K 2273..2488) not reached (K = 3021); restarting from the trajectory of window 20 (K = 2344)
+note: window 27 (K 2922..3137) not reached (K = 3693); restarting from the trajectory of window 26 (K = 2992)
+cycle 25000/405000 (production): round trips so far 0
+cycle 50000/405000 (production): round trips so far 0
+cycle 75000/405000 (production): round trips so far 0
+cycle 100000/405000 (production): round trips so far 0
+cycle 125000/405000 (production): round trips so far 0
+cycle 150000/405000 (production): round trips so far 0
+cycle 175000/405000 (production): round trips so far 0
+cycle 200000/405000 (production): round trips so far 0
+cycle 225000/405000 (production): round trips so far 0
+cycle 250000/405000 (production): round trips so far 0
+cycle 275000/405000 (production): round trips so far 0
+cycle 300000/405000 (production): round trips so far 0
+cycle 325000/405000 (production): round trips so far 0
+cycle 350000/405000 (production): round trips so far 0
+cycle 375000/405000 (production): round trips so far 0
+cycle 400000/405000 (production): round trips so far 0
+[2026-11-17 03:19:31] REUS done: summary in reus_n60_p4m/eps0.01_g+0.000/L100_t600_s+0.0180/summary.dat
+[2026-11-17 04:36:13] MBAR done: reus_n60_p4m/eps0.01_g+0.000/L100_t600_s+0.0180/mbar.dat, reus_n60_p4m/eps0.01_g+0.000/L100_t600_s+0.0180/mbar_hist.dat
+# s_equal g 0 s* nan kcut nan err nan (0/30 replicas)  (no two-peak valley or not bracketed by target_s)
+# peaks 0 nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan 0
+[2026-11-17 04:36:13] finished with exit status 0

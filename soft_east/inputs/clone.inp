@@ -1,0 +1,14 @@
+# east_clone input
+L         100
+T         1
+eps       0.01
+s         0.0:0.005:0.04   # list: a,b,c or start:step:end
+g         0.0
+n_clones  1000
+tobs      600       # cloning steps (MCS)
+t_skip    100       # first steps left out of all estimates
+t_tail    100       # last steps left out of the k, e histories
+n_runs    10        # independent runs for error bars
+seed      0
+print_runs 0
+output    clone.dat

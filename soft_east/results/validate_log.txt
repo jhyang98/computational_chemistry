@@ -1,0 +1,108 @@
+statistical validation (fixed seeds); pass if |z| <= 4
+
+== 1. one-sweep kernel (L = 5, eps = 0.2, 2000000 sweeps per start) ==
+[PASS] x0=0  chi2 =    23.31 for 30 dof (z -0.85)
+[PASS] mean flips per sweep from x0=0                       est  3.04592000e-01 +- 4.25e-04  exact  3.04255835e-01  z  +0.79
+[PASS] x0=5  chi2 =    23.35 for 31 dof (z -0.98)
+[PASS] mean flips per sweep from x0=5                       est  1.00458800e+00 +- 7.02e-04  exact  1.00329309e+00  z  +1.84
+[PASS] x0=26 chi2 =    22.87 for 31 dof (z -1.05)
+[PASS] mean flips per sweep from x0=26                      est  1.49790150e+00 +- 7.21e-04  exact  1.49867791e+00  z  -1.08
+[PASS] x0=31 chi2 =    34.81 for 31 dof (z +0.55)
+[PASS] mean flips per sweep from x0=31                      est  2.58526000e+00 +- 6.16e-04  exact  2.58492941e+00  z  +0.54
+
+== 2. TPS vs exact finite-tobs moments (L = 8, tobs = 40) ==
+[PASS] <K>   eps=0.1 s=0 g=0                                est  4.30299333e+01 +- 4.71e-02  exact  4.30403692e+01  z  -0.22
+[PASS] <E>   eps=0.1 s=0 g=0                                est  8.81961833e+01 +- 8.65e-02  exact  8.82127862e+01  z  -0.19
+[PASS] Var K eps=0.1 s=0 g=0                                est  1.52454612e+02 +- 8.32e-01  exact  1.54008380e+02  z  -1.87
+[PASS] Var E eps=0.1 s=0 g=0                                est  5.91597755e+02 +- 3.27e+00  exact  5.96123388e+02  z  -1.38
+[PASS] Cov   eps=0.1 s=0 g=0                                est  2.56945093e+02 +- 1.49e+00  exact  2.59801324e+02  z  -1.92
+[PASS] <K>   eps=0.1 s=0.03 g=0.05                          est  2.54568333e+01 +- 7.21e-02  exact  2.53993424e+01  z  +0.80
+[PASS] <E>   eps=0.1 s=0.03 g=0.05                          est  5.01513500e+01 +- 1.62e-01  exact  4.99885469e+01  z  +1.01
+[PASS] Var K eps=0.1 s=0.03 g=0.05                          est  1.28893052e+02 +- 8.18e-01  exact  1.28364464e+02  z  +0.65
+[PASS] Var E eps=0.1 s=0.03 g=0.05                          est  5.45617803e+02 +- 3.46e+00  exact  5.41360371e+02  z  +1.23
+[PASS] Cov   eps=0.1 s=0.03 g=0.05                          est  2.38274180e+02 +- 1.63e+00  exact  2.36839994e+02  z  +0.88
+[PASS] <K>   eps=0.01 s=0.02 g=0                            est  2.97286000e+01 +- 1.00e-01  exact  2.95718523e+01  z  +1.56
+[PASS] <E>   eps=0.01 s=0.02 g=0                            est  7.74165167e+01 +- 2.59e-01  exact  7.69962449e+01  z  +1.62
+[PASS] Var K eps=0.01 s=0.02 g=0                            est  2.59822439e+02 +- 1.55e+00  exact  2.62516425e+02  z  -1.74
+[PASS] Var E eps=0.01 s=0.02 g=0                            est  1.45015633e+03 +- 1.05e+01  exact  1.47413729e+03  z  -2.29
+[PASS] Cov   eps=0.01 s=0.02 g=0                            est  5.74971225e+02 +- 4.00e+00  exact  5.83580365e+02  z  -2.15
+[PASS] <K>   eps=0.01 s=-0.02 g=0.1                         est  1.94325000e+00 +- 3.84e-02  exact  1.89772412e+00  z  +1.19
+[PASS] <E>   eps=0.01 s=-0.02 g=0.1                         est  4.59315000e+00 +- 9.61e-02  exact  4.50854333e+00  z  +0.88
+[PASS] Var K eps=0.01 s=-0.02 g=0.1                         est  2.22104329e+01 +- 8.06e-01  exact  2.09162940e+01  z  +1.60
+[PASS] Var E eps=0.01 s=-0.02 g=0.1                         est  1.30031990e+02 +- 4.98e+00  exact  1.24186269e+02  z  +1.17
+[PASS] Cov   eps=0.01 s=-0.02 g=0.1                         est  5.12821826e+01 +- 1.94e+00  exact  4.85184686e+01  z  +1.43
+
+== 3. cloning vs exact long-time limit (L = 8) ==
+[PASS] theta_d eps=0.1 s=0.05 g=0                           est -4.83619842e-02 +- 3.29e-05  exact -4.83548798e-02  z  -0.22
+[PASS] k_d     eps=0.1 s=0.05 g=0                           est  1.07386917e-01 +- 3.25e-04  exact  1.07372291e-01  z  +0.04
+[PASS] e_d     eps=0.1 s=0.05 g=0                           est  2.20047469e-01 +- 7.72e-04  exact  2.19704035e-01  z  +0.44
+[PASS] theta_d eps=0.1 s=0 g=0.1                            est -1.30337420e-01 +- 1.26e-04  exact -1.30125189e-01  z  -1.68
+[PASS] k_d     eps=0.1 s=0 g=0.1                            est  4.59249896e-02 +- 7.29e-04  exact  4.72598949e-02  z  -1.83
+[PASS] e_d     eps=0.1 s=0 g=0.1                            est  7.60360312e-02 +- 1.19e-03  exact  7.81694801e-02  z  -1.79
+[PASS] theta_d eps=0.01 s=0.02 g=0.05                       est -2.02043340e-02 +- 6.16e-05  exact -2.02444222e-02  z  +0.65
+[PASS] k_d     eps=0.01 s=0.02 g=0.05                       est  1.08906250e-03 +- 1.11e-04  exact  1.05824424e-03  z  +0.28
+[PASS] e_d     eps=0.01 s=0.02 g=0.05                       est  2.29000000e-03 +- 2.39e-04  exact  2.24116826e-03  z  +0.20
+[PASS] theta_d eps=0.01 s=-0.05 g=0                         est  5.46914707e-02 +- 3.87e-05  exact  5.46800367e-02  z  +0.30
+[PASS] k_d     eps=0.01 s=-0.05 g=0                         est  1.56418656e-01 +- 2.05e-04  exact  1.56908918e-01  z  -2.40
+[PASS] e_d     eps=0.01 s=-0.05 g=0                         est  3.65485323e-01 +- 4.71e-04  exact  3.66569103e-01  z  -2.30
+
+== 4. MBAR over TPS windows vs exact (L = 8, tobs = 40, eps = 0.01) ==
+[PASS] MBAR <K>  at s=0.005 (between windows)               est  3.34485331e+01 +- 4.15e-02  exact  3.34811020e+01  z  -0.78
+[PASS] MBAR <E>  at s=0.005 (between windows)               est  8.54491526e+01 +- 1.00e-01  exact  8.55065629e+01  z  -0.57
+[PASS] MBAR VarK at s=0.005 (between windows)               est  2.58058855e+02 +- 9.23e-01  exact  2.57522764e+02  z  +0.58
+[PASS] MBAR <K>  at s=0.015 (between windows)               est  3.08433851e+01 +- 4.28e-02  exact  3.08826750e+01  z  -0.92
+[PASS] MBAR <E>  at s=0.015 (between windows)               est  7.98147624e+01 +- 1.07e-01  exact  7.98902755e+01  z  -0.70
+[PASS] MBAR VarK at s=0.015 (between windows)               est  2.62454040e+02 +- 8.97e-01  exact  2.61664310e+02  z  +0.88
+[PASS] MBAR <K>  at s=0.025 (between windows)               est  2.82110967e+01 +- 4.52e-02  exact  2.82590614e+01  z  -1.06
+[PASS] MBAR <E>  at s=0.025 (between windows)               est  7.39599931e+01 +- 1.16e-01  exact  7.40581137e+01  z  -0.84
+[PASS] MBAR VarK at s=0.025 (between windows)               est  2.63362837e+02 +- 8.57e-01  exact  2.62438698e+02  z  +1.08
+[PASS] MBAR <K>  at s=0.035 (between windows)               est  2.55898277e+01 +- 4.80e-02  exact  2.56471711e+01  z  -1.19
+[PASS] MBAR <E>  at s=0.035 (between windows)               est  6.79741871e+01 +- 1.26e-01  exact  6.80968768e+01  z  -0.97
+[PASS] MBAR VarK at s=0.035 (between windows)               est  2.60173832e+02 +- 7.95e-01  exact  2.59243451e+02  z  +1.17
+
+== 5. umbrella sampling in K (L = 8, tobs = 100, eps = 0.003, s = 0.03, 8 windows) ==
+     exact: valley cut K = 27.1, s*(auto) = 0.033597
+     exact at s*: <K> 3.632 | 69.439, <E> 10.192 | 185.591 (K < cut | K >= cut)
+[PASS] umbrella <K>  at s=0                                 est  8.55770665e+01 +- 3.10e-01  exact  8.52932757e+01  z  +0.92
+[PASS] umbrella VarK at s=0                                 est  1.14344957e+03 +- 1.33e+01  exact  1.15393624e+03  z  -0.79
+[PASS] umbrella <K>  at s=0.03                              est  4.22848444e+01 +- 5.95e-01  exact  4.17301413e+01  z  +0.93
+[PASS] umbrella VarK at s=0.03                              est  1.49114539e+03 +- 6.00e+00  exact  1.48917398e+03  z  +0.33
+[PASS] umbrella <K>  at s=0.045                             est  2.32937692e+01 +- 4.59e-01  exact  2.28637308e+01  z  +0.94
+[PASS] umbrella VarK at s=0.045                             est  1.00094968e+03 +- 1.38e+01  exact  9.88761360e+02  z  +0.88
+[PASS] umbrella <K>  at s=0.06                              est  1.21178982e+01 +- 2.64e-01  exact  1.18637437e+01  z  +0.96
+[PASS] umbrella VarK at s=0.06                              est  5.21396663e+02 +- 1.13e+01  exact  5.11315183e+02  z  +0.89
+[PASS] umbrella P(K < 27.1) at s=0.03                       est  4.33047880e-01 +- 7.92e-03  exact  4.40247882e-01  z  -0.91
+[PASS] umbrella P(K < 60.5) at s=0.03                       est  6.41689312e-01 +- 5.93e-03  exact  6.46900499e-01  z  -0.88
+[PASS] umbrella P(K < 120.5) at s=0.03                      est  9.81399189e-01 +- 4.54e-04  exact  9.81805188e-01  z  -0.89
+[PASS] umbrella equal-weight s* (fixed cut at exact valley) est  3.40398681e-02 +- 4.88e-04  exact  3.35967314e-02  z  +0.91
+[PASS] umbrella equal-weight s* (automatic valley cut)      est  3.40398681e-02 +- 4.88e-04  exact  3.35967314e-02  z  +0.91
+[PASS] umbrella <K> inactive peak at exact s*, cut          est  3.67388110e+00 +- 3.74e-02  exact  3.63195770e+00  z  +1.12
+[PASS] umbrella <K> active peak at exact s*, cut            est  6.95194206e+01 +- 1.61e-01  exact  6.94387151e+01  z  +0.50
+[PASS] umbrella <E> inactive peak at exact s*, cut          est  1.02955584e+01 +- 1.07e-01  exact  1.01919938e+01  z  +0.97
+[PASS] umbrella <E> active peak at exact s*, cut            est  1.85813492e+02 +- 3.77e-01  exact  1.85591116e+02  z  +0.59
+
+== 6. replica-exchange umbrella sampling in K (L = 8, tobs = 100, eps = 0.003, s = 0.03, 8 windows) ==
+     exact: valley cut K = 27.1, s*(auto) = 0.033597
+     exact at s*: <K> 3.632 | 69.439, <E> 10.192 | 185.591 (K < cut | K >= cut)
+[PASS] REUS round trips > 20 (got 461)
+[PASS] REUS min swap acceptance > 0.01 (got 0.042)
+[PASS] REUS max overlap KS distance < 0.1 (got 0.012)
+[PASS] REUS <K>  at s=0                                     est  8.52099131e+01 +- 2.76e-01  exact  8.52932757e+01  z  -0.30
+[PASS] REUS VarK at s=0                                     est  1.16373788e+03 +- 1.10e+01  exact  1.15393624e+03  z  +0.89
+[PASS] REUS <K>  at s=0.03                                  est  4.15472236e+01 +- 4.74e-01  exact  4.17301413e+01  z  -0.39
+[PASS] REUS VarK at s=0.03                                  est  1.48400747e+03 +- 6.06e+00  exact  1.48917398e+03  z  -0.85
+[PASS] REUS <K>  at s=0.045                                 est  2.27729665e+01 +- 3.61e-01  exact  2.28637308e+01  z  -0.25
+[PASS] REUS VarK at s=0.045                                 est  9.83111857e+02 +- 1.10e+01  exact  9.88761360e+02  z  -0.51
+[PASS] REUS <K>  at s=0.06                                  est  1.18319240e+01 +- 2.09e-01  exact  1.18637437e+01  z  -0.15
+[PASS] REUS VarK at s=0.06                                  est  5.09023845e+02 +- 8.75e+00  exact  5.11315183e+02  z  -0.26
+[PASS] REUS P(K < 27.1) at s=0.03                           est  4.41492502e-01 +- 6.42e-03  exact  4.40247882e-01  z  +0.19
+[PASS] REUS P(K < 60.5) at s=0.03                           est  6.49915366e-01 +- 4.59e-03  exact  6.46900499e-01  z  +0.66
+[PASS] REUS P(K < 120.5) at s=0.03                          est  9.81688541e-01 +- 3.84e-04  exact  9.81805188e-01  z  -0.30
+[PASS] REUS equal-weight s* (fixed cut at exact valley)     est  3.35294473e-02 +- 3.95e-04  exact  3.35967314e-02  z  -0.17
+[PASS] REUS equal-weight s* (automatic valley cut)          est  3.35294473e-02 +- 3.95e-04  exact  3.35967314e-02  z  -0.17
+[PASS] REUS <K> inactive peak at exact s*, cut              est  3.62993476e+00 +- 3.41e-02  exact  3.63195770e+00  z  -0.06
+[PASS] REUS <K> active peak at exact s*, cut                est  6.92609666e+01 +- 1.41e-01  exact  6.94387151e+01  z  -1.26
+[PASS] REUS <E> inactive peak at exact s*, cut              est  1.01967199e+01 +- 9.35e-02  exact  1.01919938e+01  z  +0.05
+[PASS] REUS <E> active peak at exact s*, cut                est  1.85232871e+02 +- 3.41e-01  exact  1.85591116e+02  z  -1.05
+
+== summary: 89 passed, 0 failed ==

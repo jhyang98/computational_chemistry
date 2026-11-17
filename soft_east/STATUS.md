@@ -1,0 +1,170 @@
+# 작업 현황 (2026-11-17 갱신)
+
+응용계산화학실습 과제: (s, g) 편향 softened East 모델의 공존선과 임계 softness ε_c(g).
+프로그램 사용법은 `README.md`, 이 파일은 지금까지 한 일과 남은 일, 서버 작업 방법을 정리한 것입니다.
+
+## 0. 최근 작업
+
+- SLURM 작업 24061: ε = 0.003 공존 여부 확인 REUS, 2026-11-17 07:14 실행 시작
+  - 2026-11-17 13:02 정상 완료(종료 코드 0). 총 5시간 48분, requeue 없음
+  - node3 한 대, 4코어, OpenMP 4스레드
+  - 조건: `g=0`, `L=100`, `t_obs=600`, `S=0.007`, `NWIN=60`, `N_EQUIL=200000`, `N_PROD=4000000`
+  - 분석: `S_TARGET=0.002:0.0001:0.015`, `HIST_S=0.005,0.007,0.009`
+  - ε = 0.01 작업의 창별 최종 궤적 60개를 초기값으로 사용
+  - 매개변수: `slurm_jobs/soft_east_20261117_071335_3088047.env`
+  - 로그: `slurm_logs/soft_east_24061.out`
+  - 결과: `reus_eps0003_n60_p4m/eps0.003_g+0.000/L100_t600_s+0.0070/`
+  - 결과: round trips = 8이지만 공존 두 봉우리는 검출되지 않음
+- SLURM 작업 24037: 작업 24003의 혼합 품질 개선 재실행, 2026-11-16 제출
+  - 상태: 2026-11-17 04:36 정상 완료(종료 코드 0). 총 5시간 19분, 24시간 안에 끝나 requeue 없음
+  - 조건: `NWIN=60`, `N_PROD=4000000`, `N_EQUIL=50000`, `PROGRESS=25000`
+  - 매개변수: `slurm_jobs/soft_east_20261116_231638_2565636.env`
+  - 로그: `slurm_logs/soft_east_24037.out`
+  - 결과: `reus_n60_p4m/eps0.01_g+0.000/L100_t600_s+0.0180/`
+  - 낮은 k 교환 병목과 round trips = 0 개선이 목적이었으나 round trips는 여전히 0
+- SLURM 작업 24003: 기본 본 계산 REUS (ε = 0.01, g = 0, L = 100, t_obs = 600), 2026-11-16 완료
+- node3, 4코어, 41분 8초, `COMPLETED`, 종료 코드 0
+- 매개변수: `slurm_jobs/soft_east_20261116_174441_2195604.env`
+- 로그: `slurm_logs/soft_east_24003.out`
+- 결과: `reus/eps0.01_g+0.000/L100_t600_s+0.0180/`
+- 24시간 전에 끝나 requeue는 발생하지 않았음. `Requeue=1` 설정만 확인했고 실제 checkpoint/requeue/resume 동작은 아직 확인하지 못함
+- 이 서버는 SLURM accounting storage가 꺼져 있어 `sacct`를 쓸 수 없음. `scontrol show job`과 작업 로그로 종료 상태를 확인함
+
+## 1. 모델과 규약 (확정)
+
+- 궤적 무게 e^{−sK − gE}. K는 모든 뒤집힘 수, E는 시간 적분한 들뜸 수
+- 뒤집힘 속도 w(0→1) = c·C_i, w(1→0) = (1−c)·C_i, C_i = n_{i−1} + ε(1 − n_{i−1}), c = 1/(1 + e^{1/T})
+- θ = tilted generator의 최대 고유값(계 전체, 단위 시간당). k = −(1/L)∂θ/∂s, e = −(1/L)∂θ/∂g
+- 이산시간(MCS): 한 MCS = 무작위 격자점(복원 추출) L번 시도, 왼쪽 이웃이 촉진. t_obs = MCS 수, E는 t_obs+1개 시간 조각 합
+- 가설
+  - 1: ε_c는 g가 커질수록 커진다
+  - 2: softened 공존선 ≈ strict 공존선 + ε/[2c(1−c)] (T = 1에서 2.54ε)
+  - 3: ε_c에서 Δk, Δe → 0
+
+## 2. 코드 (C99, 외부 라이브러리 없음)
+
+| 프로그램 | 내용 |
+|---|---|
+| `east_ed` | 연속시간 정확 대각화 (θ, k, e, χ, s\*, strict 공존선) |
+| `east_edan` | ED 표로 가설 1–3 분석 |
+| `east_tps`, `east_reus` | 이산시간 TPS, K 창 replica-exchange umbrella sampling |
+| `east_mbar` | 창 결합, 공존점(같은 무게), 봉우리별 k, e |
+| `east_tm`, `east_clone` | 작은 L 정확해, cloning (검증용) |
+| `east_test`, `east_validate` | 결정론적 824개, 통계 89개 검증 — 모두 통과 |
+
+## 3. 지금까지 결과
+
+**ED (연속시간, L = 8–18, T = 1)** — 자세한 표는 README 8장, `results/analysis/`
+
+- 가설 2
+  - g = 0, ε → 0: Δs\*/ε = 2.54–2.55 (예측 2.543과 일치)
+  - g ≠ 0이면 계수가 달라짐: g = 0.15에서 2.03, g = −0.1에서 3.3–3.4
+  - ε가 크면 선형보다 작음: g = 0, ε = 0.01에서 1.80 (s\* ≈ 0.0180)
+- 가설 1: 어떤 판정 기준이든 경계 ε가 g와 함께 커짐(경향 지지). 값은 기준에 따라 약 10배 차이 → ε_c 값은 시뮬레이션으로 정해야 함
+- 가설 3: ED로는 판정 불가 → REUS 봉우리별 Δk, Δe로 검정
+- χ_KK 최댓값이 s 격자 가장자리면 s\* = nan (ε = 0.02, 0.03, g = −0.15)
+
+**시뮬레이션 (이산시간, ε = 0.01, g = 0, L = 100, t_obs = 600)**
+
+- 보통 TPS는 L ≥ 50, t_obs ≥ 400에서 이력 현상 → 사용 불가
+- 창마다 따로 돌린 umbrella는 이웃 창끼리 맞지 않음 → REUS로 해결
+- 예비 REUS (창 22개, k 0–0.08, 창당 10⁵회): s\* = 0.0175 ± 0.0002, Δk = 0.031 ± 0.001, Δe = 0.078 ± 0.002
+  - 활동 봉우리가 k = 0.08에서 잘려 있어 동작 확인용
+- 본 계산 REUS (창 30개, k 0–0.11, 창당 10⁶회, 작업 24003): 계산과 MBAR는 정상 종료했지만 공존 결과는 얻지 못함
+  - round trips = 0. 최저 swap_acc는 00–01의 0.0102, 최대 KS는 03–04의 0.085
+  - 가장 작은 창별 N_eff는 창 3의 86. 모든 창은 이웃 궤적 복사 없이 시작함(`from = -1`)
+  - MBAR는 max |grad|/N = 4.09×10⁻¹²로 수렴했고 `<K>_raw`와 `<K>_mbar`의 최대 차이는 1.374 K (k로 2.29×10⁻⁵)
+  - χ_KK 최댓값은 s = 0.021에서 격자 내부에 있지만, P(k)는 검사 범위에서 두 봉우리로 갈라지지 않음. `s*`, Δk, Δe와 부트스트랩 오차는 모두 산출 불가(`nan`, 0/30 replicas)
+  - 활동 분포 꼬리는 k = 0.11 전에 충분히 0으로 감소하므로 K 상한 부족이 주원인은 아님
+  - 다음 계산은 낮은 k 구간의 창을 촘촘히 하고 `N_PROD`를 늘려 왕복을 확보하는 방향으로 재실행. 품질 개선 재실행은 사용자 동의를 다시 묻지 않고 제출
+- 품질 개선 REUS (창 60개, k 0–0.11, 창당 4×10⁶회, 작업 24037): 계산과 MBAR는 정상 종료했지만 공존 결과는 다시 얻지 못함
+  - round trips = 0. 최저 swap_acc와 최대 KS는 모두 00–01에서 각각 0.0062, 0.054. 가장 작은 창별 N_eff는 654
+  - 창 10, 21, 27은 처음에 못 들어가 각각 이웃 창 9, 20, 26의 궤적으로 정상 재시작
+  - MBAR는 max |grad|/N = 2.24×10⁻¹¹로 수렴했고 `<K>_raw`와 `<K>_mbar`의 최대 차이는 0.137 K (k로 2.28×10⁻⁶)
+  - χ_KK 최댓값은 s = 0.0205에서 격자 내부. P(k)는 여전히 한 봉우리이고 `s*`, Δk, Δe는 산출 불가(`nan`, 0/30 replicas)
+  - 작업 24003보다 샘플 수를 8배 늘려 N_eff와 KS는 개선됐지만 같은 단일 봉우리 결론이 재현됨. 같은 조건의 추가 재실행보다 ε를 낮춘 새 과학적 조건으로 공존 여부를 확인하는 것이 우선
+
+**시뮬레이션 (이산시간, ε = 0.003, g = 0, L = 100, t_obs = 600)**
+
+- REUS (창 60개, k 0–0.11, 창당 4×10⁶회, 작업 24061): 계산과 MBAR 정상 종료
+  - round trips = 8. 최저 swap_acc는 00–01의 0.0728, 최대 KS는 29–30의 0.006, 가장 작은 창별 N_eff는 3429
+  - 모든 창이 ε = 0.01의 같은 K 창 궤적에서 시작했고 이웃 창 복사 재시작은 없었음
+  - MBAR는 max |grad|/N = 1.88×10⁻¹¹로 수렴했고 `<K>_raw`와 `<K>_mbar`의 최대 차이는 0.099 K (k로 1.65×10⁻⁶)
+  - χ_KK 최댓값은 s = 0.0091에서 격자 내부. P(k)는 한 봉우리이고 `s*`, Δk, Δe는 산출 불가(`nan`, 0/30 replicas)
+  - 왕복·교환·창별 유효표본이 충분하므로 두 봉우리 부재를 단순한 replica 혼합 실패로 설명하기 어려움
+  - 현재 조건에서는 ε = 0.003도 공존을 보이지 않음. 더 낮은 ε 또는 더 긴 t_obs 중 다음 검정 방향을 정해야 함
+
+## 4. 서버 작업 순서 (SLURM)
+
+정해진 조건
+- SLURM으로 제출, 계산노드 3만 사용
+- 동시에 최대 4코어: 작업당 4코어, `soft_east` 이름의 작업은 한 번에 하나씩(singleton)
+- 한 번 실행은 최대 24시간. SLURM 파티션의 최대 시간이 더 짧으면 제출 스크립트가 그 시간을 사용하며, 그 안에 안 끝나면 체크포인트를 남기고 자동 requeue되어 이어서 계산
+
+처음 한 번
+```bash
+# 새 zip에서 src/, Makefile, scripts/submit_reus.sh, scripts/slurm_reus.sh, scripts/run_reus.sh 복사
+#   (예전 run_reus.sh에서 바꾼 값이 있으면, 이제는 제출할 때 KEY=VALUE로 주면 됨)
+make OMP=1
+sinfo -N -l          # 서버 구성이 바뀌었으면 계산노드 3이 node3인지 다시 확인
+```
+
+제출과 확인
+```bash
+bash scripts/submit_reus.sh --dry-run          # 내용 확인
+bash scripts/submit_reus.sh                    # 본 계산 (ε = 0.01, g = 0, L = 100, t_obs = 600)
+squeue -u $USER -n soft_east
+tail -n 30 slurm_logs/soft_east_<작업번호>.out
+```
+
+- 다른 조합은 `bash scripts/submit_reus.sh EPS=… G=… TOBS=…`처럼 제출합니다. 여러 개를 넣어도 한 번에 하나씩 돕니다.
+- 분석만 다시: `bash scripts/submit_reus.sh MODE=mbar <같은 매개변수>`
+- 결과 폴더(기본값): `reus/eps0.01_g+0.000/L100_t600_s+0.0180/`
+- 실행 중인 작업이 쓰는 `scripts/`, `bin/`은 덮어쓰지 않기 (bash가 실행 중에 스크립트를 읽음)
+- 자세한 내용은 README 4장 "SLURM 제출"
+
+## 5. 끝나면 확인할 것
+
+| 순서 | 파일 / 줄 | 정상 | 문제일 때 |
+|---|---|---|---|
+| 1 | `summary.dat` round trips | 0보다 큼, 많을수록 좋음 | 0이면 `N_PROD` 늘리기 |
+| 2 | `summary.dat` 쌍별 `swap_acc` | 0에 가까운 쌍 없음 | 그 구간 창을 촘촘히 (`NWIN` 증가) |
+| 3 | `summary.dat` 쌍별 `KS`, `n1`, `n2` | 다른 쌍보다 튀는 쌍 없음 | 그 구간 샘플 부족 |
+| 4 | `summary.dat` `from` | 대부분 −1 | 복사로 시작한 창이 있다는 뜻 (정상 동작) |
+| 5 | `mbar.dat` 머리말 | max \|grad\|/N ≤ 1e-10, `<K>_raw` ≈ `<K>_mbar` | 창 파일 확인 |
+| 6 | `mbar_hist.dat` (s = 0.015, 0.0175, 0.020) | s ≈ 0.0175에서 두 봉우리, 활동 봉우리가 k = 0.11 전에 0으로 감 | 0.11에 걸치면 `KMAX_ALL`과 `NWIN`을 같은 비율로 늘림 |
+| 7 | `# s_equal` 줄 | s\* 값, `(30/30 replicas)` | nan이면 `S_TARGET` 범위를 넓히거나 P(k) 확인 |
+| 8 | `# peaks` 줄 | dk가 sdk_in, sdk_act보다 충분히 큼 | |
+
+```bash
+D=reus/eps0.01_g+0.000/L100_t600_s+0.0180
+tail -3 $D/summary.dat
+grep -E "s_equal|^# peaks " $D/mbar.dat
+```
+
+에러가 날 때
+- `error: window … not reached …, also not from the trajectory of window …`: 이웃 궤적에서도 못 들어감
+  - `N_APPROACH`를 늘리거나, `INIT`에 예전 umbrella 궤적 패턴(`umb/…/w%02d.traj`)을 지정
+- `warning: MBAR did not converge`: 창 파일과 `skip` 확인
+- 로그에 `not requeued: already requeued …`: requeue 횟수 한도. `bash scripts/submit_reus.sh --from slurm_jobs/<파일>.env`로 다시 제출하면 체크포인트에서 이어짐
+- `error: checkpoint … was written with different parameters`: 같은 결과 폴더에 다른 매개변수의 체크포인트가 있음. `OUT_ROOT`를 바꾸거나 체크포인트를 지움
+- `error: … holds a finished REUS run with other parameters`: 같은 폴더에 다른 매개변수로 끝난 결과가 있음. `OUT_ROOT`를 바꿈
+
+## 6. 남은 일
+
+1. 다음 과학적 검정 방향 결정: ε를 0.001 이하로 낮출지, ε = 0.003에서 t_obs를 600보다 늘릴지 선택
+2. 다른 (ε, g, L, t_obs) REUS — 가설 1, 3 검정용
+   - 같은 ε, g에서 t_obs = 200, 400, 600을 비교 (유한 t_obs 효과: k_in이 0보다 꽤 큼)
+3. 시뮬레이션에서 ε_c 판정 기준 정하기 (아직 미정)
+4. Elmatad–Jack (T = 4/3), Monthus 2022 비교 — 논문 필요
+5. ε = 0 (strict East) REUS: 빈 궤적에서 빠져나올 수 없어 별도 처리 필요
+
+## 7. 지금까지 정한 것
+
+- `kcut auto`: 평활한 P(k)의 두 봉우리 사이 최저점을 경계로 사용
+  - 평활: 각 구간을 앞뒤 round(n/(2m))개 구간과 평균 (n = `hist_bins`, m = `smooth_res`)
+- ED peak 모드: χ_KK 최댓값이 s 격자 가장자리면 nan
+- REUS 시작 단계: 못 들어간 창은 이웃 궤적 복사로 시작
+- 서버: SLURM, 계산노드 3, 동시에 최대 4코어(작업당 4코어, 한 번에 한 작업), 실행당 최대 24시간(파티션 제한이 더 짧으면 그 값), 안 끝나면 체크포인트에서 이어지도록 자동 requeue
+- 자원 상한: 동시에 실행 중인 모든 작업의 사용 노드 합계도 4개 이하. REUS는 node3 한 대만 사용
+- 품질 문제 해결을 위한 재실행은 별도 동의 없이 새 결과 폴더에 제출

@@ -1,0 +1,16 @@
+# east_tps input (keyword value; '#' starts a comment)
+L            100        # lattice size (periodic)
+T            1          # temperature, J = 1 (fractions such as 4/3 allowed)
+eps          0.01       # softness: C_i = n_{i-1} + eps (1 - n_{i-1})
+s            0.02       # activity bias, weight exp(-s K - g E)
+g            0.0        # energy bias
+tobs         400        # observation time in MCS (slices 0..tobs)
+seed         0          # 0: from the clock; any other value is reproducible
+n_equil      20000      # shooting moves before sampling
+n_prod       1000000    # shooting moves while sampling
+sample_every 10         # record K, E every this many moves
+init         equilibrium   # or a trajectory file saved by a previous run
+save         last.traj  # final trajectory (use as init of the next window)
+output       tps_samples.dat
+nblocks      20         # blocks for jackknife error bars
+progress     0          # print K, E to stderr every this many moves (0: off)

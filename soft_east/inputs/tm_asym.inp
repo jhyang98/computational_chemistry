@@ -1,0 +1,10 @@
+# east_tm input: long-time limit (largest eigenvalue of the tilted sweep matrix)
+mode    asym
+L       8
+T       1
+eps     0.01
+s       -0.02:0.002:0.06
+g       0.0
+fd_h    1e-4      # step for chi_KK = -dk/ds (0: skip)
+basis   k0
+output  tm_asym.dat

@@ -1,0 +1,9 @@
+# east_ed 0.1.0
+# command: ./bin/east_ed peak -L 16 --eps 0.03 --g 0.05 --s -0.103826:0.001:-0.053826 --out results/tmp_ed_fine/L16_e0.03_g0.05.dat
+# T = 1, c = 0.26894142137, basis = k0 (zero-momentum sector)
+# weight exp(-s K - g E); theta = largest eigenvalue (whole system, per unit time)
+# k = -(1/L) dtheta/ds, e = -(1/L) dtheta/dg, chi_XY = (1/L) d2theta/dXdY
+#   L        eps            g           s_star         chi_KK_max              theta            gap                k                e           chi_KE           chi_EE          rho edge  ok
+# edge = 1: the largest chi_KK on the s grid is at its boundary; s* is then
+#           not defined and the row is nan (the result depends on the s range)
+   16       0.03         0.05    -0.0838178441   1.6119402630e+00  -4.5861459500e-02   4.607928e-02 8.7823904805e-02 1.8606553412e-01 3.2924044032e+00 7.1664313228e+00   0.96869538    0   1

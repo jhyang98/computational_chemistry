@@ -1,0 +1,17 @@
+# east_mbar input: combine TPS windows
+window    tps/s+0.000_g+0.000.dat
+window    tps/s+0.010_g+0.000.dat
+window    tps/s+0.020_g+0.000.dat
+window    tps/s+0.030_g+0.000.dat
+window    tps/s+0.040_g+0.000.dat
+target_s  0.0:0.001:0.04
+target_g  0.0
+skip      0          # samples dropped at the start of every window file
+n_boot    100        # moving-block bootstrap replicas (0: no error bars)
+block     100        # bootstrap block length in samples
+seed      1
+# kcut    0.05       # optional: s where P(k < kcut) = 1/2
+# hist_s  0.02,0.025 # optional: reweighted P(k) at these s
+hist_bins 60
+hist_output mbar_hist.dat
+output    mbar.dat
