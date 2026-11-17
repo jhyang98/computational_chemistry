@@ -324,6 +324,22 @@ scancel <작업번호>                                     # 취소 (체크포�
 
 이 서버는 현재 SLURM accounting storage가 비활성화되어 `sacct`가 실패합니다. 작업 종료 직후에는 `scontrol show job <작업번호>`의 `JobState`, `ExitCode`, `Restarts`를 확인합니다.
 
+**로그아웃 뒤 무인 감시**
+
+`scripts/monitor_reus_codex.sh`는 5분마다 SLURM 상태를 확인하는 가벼운 셸 감시기입니다. 정상 진행 중에는 Codex를 반복 호출하지 않고, 로그가 90분 이상 바뀌지 않거나 작업이 비정상 종료되거나 정상 완료됐을 때만 `codex exec`를 실행합니다. 정상 완료 시 `STATUS.md`와 `README.md`를 갱신하고, 검증이 끝난 뒤 `scripts/sync_github_soft_east.sh`로 GitHub 저장소의 `soft_east/` 폴더만 동기화합니다.
+
+```bash
+tmux new-session -d -s soft-east-watch-<작업번호> \
+  'bash scripts/monitor_reus_codex.sh <작업번호> slurm_jobs/<매개변수파일>.env'
+tail -f monitor_logs/reus_<작업번호>.log
+tmux attach -t soft-east-watch-<작업번호>
+```
+
+- 감시기는 자동 requeue를 같은 작업번호로 계속 추적합니다.
+- requeue 한도에 도달하면 저장된 매개변수 파일로 같은 결과 폴더의 체크포인트를 이어서 제출합니다.
+- 명시된 복구 절차로 해결할 수 없는 과학적 조건 변경은 자동 제출하지 않고 `STATUS.md`에 막힌 이유를 남깁니다.
+- tmux 세션, Codex 로그인, GitHub 인증이 유지되어야 최종 문서 갱신과 업로드까지 무인으로 끝납니다. 제출 직후 `monitor_logs/`에 시작 기록이 생겼는지 확인합니다.
+
 ## 5. `east_tm` — 이산시간 정확해 (작은 L)
 
 | 키워드 | 설명 |
@@ -588,7 +604,10 @@ scripts/run_umbrella.sh      K 창 umbrella sampling + MBAR + 공존점
 scripts/run_reus.sh          K 창 replica-exchange umbrella sampling + MBAR + 공존점 (체크포인트로 이어서 계산)
 scripts/submit_reus.sh       run_reus.sh를 SLURM 작업으로 제출 (노드, 코어, 시간 제한, 자동 requeue)
 scripts/slurm_reus.sh        SLURM 작업 스크립트 (submit_reus.sh가 씀)
+scripts/monitor_reus_codex.sh SLURM 상태 감시, 오류·완료 시 Codex 진단과 결과 정리 호출
+scripts/sync_github_soft_east.sh GitHub computational_chemistry의 soft_east/만 동기화
 slurm_jobs/, slurm_logs/     제출할 때 생김: 작업별 매개변수, 제출 목록, 작업 로그
+monitor_logs/         무인 감시 상태와 Codex 실행 로그
 results/              ED 계산 결과, results/analysis/ 가설 분석 결과
 src/model, basis, tgen, eig_dense, lanczos, cg, ed, cli_util   연속시간 ED
 src/rng       xoshiro256** 난수
