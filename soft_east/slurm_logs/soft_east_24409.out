@@ -1,0 +1,3 @@
+[2026-11-19 14:21:26] job 24409 on node3, restart 0, 4 threads, mode all, parameters slurm_jobs/soft_east_20261119_103126_1325996.env
+[2026-11-19 14:21:27] REUS start: reus_B_g015_eps0001_t600_n120_p4m/eps0.001_g+0.150/L100_t600_s-0.3100
+east_reus: OpenMP with up to 4 threads
