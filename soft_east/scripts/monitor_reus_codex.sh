@@ -97,13 +97,15 @@ Work autonomously on completed soft_east SLURM job $JOB_ID.
 Read AGENTS.md, STATUS.md, and README.md first. The frozen parameter file is $JOB_ENV,
 the scheduler log is slurm_logs/soft_east_${JOB_ID}.out, and the result directory is $out.
 Follow the completed-run checklist in STATUS.md exactly. Validate summary.dat, mbar.dat,
-and mbar_hist.dat; rerun only the same-parameter MBAR analysis if needed. Interpret whether
-P(k) has one or two peaks, compare the result with the t_obs=600 epsilon=0.001 run, and
-report chi_KK, its s location, s_equal, delta k, delta e, round trips, worst swap acceptance,
-worst KS, minimum N_eff, elapsed time, requeue behavior, and any caveat. Update STATUS.md and
-README.md in Korean with stable results and next-step implications. Do not submit a new
-scientific condition. Do not perform any Git operation; the monitor synchronizes GitHub after
-you finish. Keep code, comments, and command output in English.
+and mbar_hist.dat; rerun only the same-parameter MBAR analysis if needed. Read the frozen
+parameters to identify the campaign condition and compare it with the scientifically relevant
+completed runs. Interpret whether P(k) has one or two peaks. At the chi_KK maximum, report
+chi_KK, its s location, the width of P(k), and Binder U when the available samples or histogram
+support it. Also report s_equal, delta k, delta e, round trips, worst swap acceptance, worst KS,
+minimum N_eff, elapsed time, requeue behavior, and any caveat. Update STATUS.md and README.md
+in Korean with stable results and next-step implications. Do not submit a new scientific
+condition. Do not perform any Git operation; the monitor synchronizes GitHub after you finish.
+Keep code, comments, and command output in English.
 EOF
 )
     run_codex finalize "$prompt" || return 1
