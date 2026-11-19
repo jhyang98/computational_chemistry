@@ -38,7 +38,7 @@ run_codex() {
     local purpose=$1 prompt=$2 attempt rc=1
     for ((attempt = 1; attempt <= CODEX_RETRIES; attempt++)); do
         record "starting Codex $purpose attempt $attempt of $CODEX_RETRIES"
-        if codex exec -C . --skip-git-repo-check --approve-for-me -s workspace-write \
+        if codex exec -C . --skip-git-repo-check --approve-for-me \
             --add-dir /tmp \
             -o "$LOG_DIR/reus_${JOB_ID}_${purpose}_last.txt" "$prompt" \
             >> "$CODEX_LOG" 2>&1; then
@@ -195,7 +195,10 @@ while :; do
     if [ -f "$log_file" ] && grep -q 'finished with exit status 0' "$log_file" && \
        [ -f "$OUT_DIR/reus.done" ] && [ -f "$OUT_DIR/mbar.dat" ]; then
         record "job completed successfully"
-        finalize_job "$OUT_DIR"
+        if ! finalize_job "$OUT_DIR"; then
+            record "finalization failed; manual intervention required"
+            exit 1
+        fi
         record "monitor finished"
         exit 0
     fi

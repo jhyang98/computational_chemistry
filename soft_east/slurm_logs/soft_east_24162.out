@@ -1,0 +1,24 @@
+[2026-11-18 12:53:50] job 24162 on node3, restart 0, 4 threads, mode all, parameters slurm_jobs/soft_east_20261117_220442_3851760.env
+[2026-11-18 12:53:52] REUS start: reus_eps0001_t1200_n71_p4m/eps0.001_g+0.000/L100_t1200_s+0.0050
+east_reus: OpenMP with up to 4 threads
+cycle 25000/420000 (production): round trips so far 0
+cycle 50000/420000 (production): round trips so far 0
+cycle 75000/420000 (production): round trips so far 0
+cycle 100000/420000 (production): round trips so far 1
+cycle 125000/420000 (production): round trips so far 1
+cycle 150000/420000 (production): round trips so far 3
+cycle 175000/420000 (production): round trips so far 4
+cycle 200000/420000 (production): round trips so far 6
+cycle 225000/420000 (production): round trips so far 8
+cycle 250000/420000 (production): round trips so far 11
+cycle 275000/420000 (production): round trips so far 12
+cycle 300000/420000 (production): round trips so far 15
+cycle 325000/420000 (production): round trips so far 17
+cycle 350000/420000 (production): round trips so far 19
+cycle 375000/420000 (production): round trips so far 22
+cycle 400000/420000 (production): round trips so far 28
+[2026-11-18 23:11:03] REUS done: summary in reus_eps0001_t1200_n71_p4m/eps0.001_g+0.000/L100_t1200_s+0.0050/summary.dat
+[2026-11-19 00:38:59] MBAR done: reus_eps0001_t1200_n71_p4m/eps0.001_g+0.000/L100_t1200_s+0.0050/mbar.dat, reus_eps0001_t1200_n71_p4m/eps0.001_g+0.000/L100_t1200_s+0.0050/mbar_hist.dat
+# s_equal g 0 s* nan kcut nan err nan (0/30 replicas)  (no two-peak valley or not bracketed by target_s)
+# peaks 0 nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan 0
+[2026-11-19 00:38:59] finished with exit status 0
