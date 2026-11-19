@@ -1,1 +1,10 @@
 [2026-11-19 10:32:52] monitor started for job 24409, output reus_B_g015_eps0001_t600_n120_p4m/eps0.001_g+0.150/L100_t600_s-0.3100
+[2026-11-19 15:52:53] job is active but its log is stale: RUNNING|1:32:01|node3
+[2026-11-19 15:52:53] starting Codex diagnose attempt 1 of 3
+[2026-11-19 15:56:27] Codex diagnose completed
+[2026-11-19 18:11:28] job is active but its log is stale: RUNNING|3:50:36|node3
+[2026-11-19 18:11:28] starting Codex diagnose attempt 1 of 3
+[2026-11-19 18:14:16] Codex diagnose completed
+[2026-11-19 20:29:17] job is active but its log is stale: RUNNING|6:08:25|node3
+[2026-11-19 20:29:17] starting Codex diagnose attempt 1 of 3
+[2026-11-19 20:32:32] Codex diagnose completed
