@@ -28,7 +28,7 @@
 ## SLURM 규칙 (사용자가 정한 조건)
 
 - 계산은 모두 SLURM으로 제출합니다. 로그인 노드에서는 빌드와 짧은 테스트(`make`, `make test`)만 합니다.
-  - `make validate`(약 2분)나 다른 계산은 `srun --nodelist=<NODE> --cpus-per-task=4 --time=00:30:00 make validate`처럼 계산노드에서 돌립니다.
+  - `make validate`(약 2분)나 다른 계산은 `srun --nodelist=<NODE> --cpus-per-task=4 --time=00:30:00 --export=ALL,OMP_NUM_THREADS=4 make validate OMP=1`처럼 계산노드에서 돌립니다. OpenMP 빌드에서는 할당 코어 수와 같은 `OMP_NUM_THREADS`를 반드시 지정합니다.
 - 계산노드 3만 씁니다. `scripts/submit_reus.sh`의 `NODE`가 비어 있으면 `sinfo -N -l`로 노드 이름을 찾고, 사용자에게 맞는지 확인받은 뒤 채웁니다.
 - 작업당 `CPUS=4`를 사용하고 동시에 합계 최대 12코어, 즉 REUS 세 작업까지 허용합니다. `srun`으로 다른 계산을 돌릴 때도 같은 시각에 쓰는 코어 합계가 12개를 넘지 않게 합니다.
 - 동시에 실행 중인 모든 작업이 사용하는 노드 수의 합은 4개를 넘기지 않습니다. 이 프로젝트의 REUS는 작업마다 node3 한 대만 요청하므로 동시에 최대 세 작업입니다.
@@ -54,7 +54,7 @@
   - 이미 제출된 작업의 이어서 계산(자동 requeue, `--from`으로 다시 제출)은 동의 없이 해도 됩니다.
 - 코드를 고친 뒤에는 항상 다음을 확인하고, 실패하면 결과를 쓰지 않습니다.
   - `make`: 경고 없이 빌드
-  - `make test`: 824개 통과 (약 15초)
+  - `make test`: 826개 통과 (약 15초)
   - 시뮬레이션·MBAR 코드를 고쳤으면 `make validate`: 89개 통과 (약 2분)
   - 테스트를 추가했으면 위 개수와 `README.md`, `STATUS.md`의 개수를 함께 고칩니다.
 - 결과나 동작이 바뀌면 `STATUS.md`(현황)와 `README.md`(사용법)를 한국어로 갱신합니다.

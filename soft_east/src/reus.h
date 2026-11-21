@@ -16,15 +16,15 @@
  * Each replica first enters its starting window (approach phase of
  * tps_shoot, at most n_approach moves). A replica that does not get there
  * restarts from a copy of the trajectory of a replica that did, the one whose
- * K is closest to the missing window, and approaches again; this is repeated
- * until every window is reached or three rounds in a row bring no new window
- * in. Then n_equil moves
+ * K is closest to the nearest missing frontier, and approaches again; this is
+ * repeated until every window is reached or three rounds in a row bring no
+ * new window in. Then n_equil moves
  * with swaps, then n_prod moves with swaps while the (K, E) of the replica in
  * each window is recorded every sample_every moves.
  *
  * Checkpoints (optional): with a checkpoint file set, the full state
  * (trajectories, random-number states, window assignment, counters and the
- * samples so far) is written after the approach phase, every
+ * samples so far) is written during and after the approach phase, every
  * checkpoint_every seconds of wall time, and when the run is asked to stop
  * (stop_after seconds elapsed, or SIGTERM / SIGUSR1). reus_run then returns
  * REUS_STOPPED; called again with the same parameters it resumes from the
@@ -56,6 +56,7 @@ typedef struct {
     const char *checkpoint;  /* checkpoint file (NULL or "": none) */
     double checkpoint_every; /* seconds of wall time between checkpoints (0: only on stop) */
     double stop_after;       /* write a checkpoint and stop after this many seconds (0: never) */
+    long stop_approach_round; /* testing: stop after this many approach retry rounds (0: never) */
     long stop_cycle;         /* testing: checkpoint and stop once this many cycles are done (0: never) */
 } REUSParams;
 

@@ -29,9 +29,18 @@ if [ -n "$unrelated" ]; then
     exit 1
 fi
 
-git -C "$SYNC_CLONE" pull --rebase origin "$SYNC_BRANCH"
+git -C "$SYNC_CLONE" fetch origin "$SYNC_BRANCH"
+git -C "$SYNC_CLONE" reset --hard "origin/$SYNC_BRANCH"
 mkdir -p "$SYNC_CLONE/soft_east"
-rsync -a --delete --exclude='.git/' "$project_dir/" "$SYNC_CLONE/soft_east/"
+rsync -a --delete --exclude='.git/' --exclude='*.ckpt' --exclude='*.ckpt.*' \
+    "$project_dir/" "$SYNC_CLONE/soft_east/"
+
+large_files=$(find "$SYNC_CLONE/soft_east" -type f -size +99M -print)
+if [ -n "$large_files" ]; then
+    echo "error: files above the GitHub size limit remain after synchronization" >&2
+    printf '%s\n' "$large_files" >&2
+    exit 1
+fi
 git -C "$SYNC_CLONE" add -- soft_east
 
 if git -C "$SYNC_CLONE" diff --cached --quiet; then

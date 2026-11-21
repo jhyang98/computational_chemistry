@@ -2,6 +2,7 @@
 #include "rng.h"
 #include "tps.h"
 
+#include <limits.h>
 #include <math.h>
 #include <signal.h>
 #include <stdio.h>
@@ -279,11 +280,15 @@ static long window_gap(long K, long Kmin, long Kmax)
 
 /* Approach phase of tps_shoot until K is in [Kmin, Kmax]; returns the moves used. */
 static long approach(Replica *r, const Dyn *d, double s, double g, long Kmin, long Kmax,
-                     long nmax)
+                     long nmax, time_t deadline)
 {
     long m;
     int dir;
     for (m = 0; m < nmax && !stop_requested; m++) {
+        if (deadline && (m & 1023L) == 0 && time(NULL) >= deadline) {
+            stop_requested = 1;
+            break;
+        }
         if (r->tr.K >= Kmin && r->tr.K <= Kmax) break;
         tps_shoot(&r->tr, &r->sh, d, s, g, 1, Kmin, Kmax, &r->rng, &dir);
     }
@@ -299,10 +304,12 @@ int reus_run(const REUSParams *p, REUSResult *res)
     int *rep_of_win = NULL;
     double *ws = NULL, *wg = NULL;
     long ncyc_eq, ncyc_pr, c, c0 = 0;
-    int samp_cyc, i, fail = 0, stopped = 0;
+    int samp_cyc, i, fail = 0, stopped = 0, approach_stall = 0;
     const int ck_on = p->checkpoint && p->checkpoint[0];
     int resume = 0;
-    time_t t_start = time(NULL), t_ck;
+    time_t t_start = time(NULL), t_ck = t_start;
+    const time_t approach_deadline =
+        p->stop_after > 0.0 ? t_start + (time_t)p->stop_after : (time_t)0;
 
     memset(res, 0, sizeof(*res));
     if (W < 2 || p->swap_every < 1 || p->sample_every < p->swap_every ||
@@ -389,28 +396,41 @@ int reus_run(const REUSParams *p, REUSResult *res)
             fail = 1;
             goto done;
         }
-        fprintf(stderr, "east_reus: resumed from %s at cycle %ld of %ld\n", p->checkpoint, c0,
-                ncyc_eq + ncyc_pr);
-        goto cycles;
-    }
-
-    /* approach: every replica enters its own window */
+        if (c0 >= 0) {
+            fprintf(stderr, "east_reus: resumed from %s at cycle %ld of %ld\n", p->checkpoint,
+                    c0, ncyc_eq + ncyc_pr);
+            goto cycles;
+        }
+        if (c0 < -3) {
+            fprintf(stderr, "error: checkpoint %s has an invalid approach state\n", p->checkpoint);
+            fail = 1;
+            goto done;
+        }
+        approach_stall = (int)(-c0 - 1);
+        fprintf(stderr, "east_reus: resumed from %s during the approach phase\n", p->checkpoint);
+    } else {
+        /* approach: every replica enters its own window */
 #ifdef _OPENMP
 #pragma omp parallel for schedule(dynamic, 1)
 #endif
-    for (i = 0; i < W; i++)
-        res->approach[i] = approach(&rep[i], &d, ws[i], wg[i], res->Kmin[i], res->Kmax[i],
-                                    p->n_approach);
+        for (i = 0; i < W; i++)
+            res->approach[i] =
+                approach(&rep[i], &d, ws[i], wg[i], res->Kmin[i], res->Kmax[i],
+                         p->n_approach, approach_deadline);
+    }
 
     /*
      * A replica that did not reach its window restarts from a copy of the
      * trajectory of a replica that did: the one whose K is closest to the
-     * missing window (neighbouring windows overlap, so this is usually inside
-     * it or close by), ties going to the nearest window index. Repeated until
-     * every window is reached or three rounds in a row bring no new window in.
+     * nearest missing frontier (neighbouring windows overlap, so this is
+     * usually inside it or close by), ties going to the nearest window index.
+     * Retrying only the nearest frontier avoids spending a full approach on
+     * every distant window before the intervening windows have been reached.
+     * Repeated until every window is reached or three rounds in a row bring no
+     * new window in.
      */
     {
-        int stall = 0;
+        long approach_round = 0;
         int *in = (int *)malloc(sizeof(int) * (size_t)W);
         int *src = (int *)malloc(sizeof(int) * (size_t)W);
         if (!in || !src) {
@@ -422,6 +442,18 @@ int reus_run(const REUSParams *p, REUSResult *res)
         }
         for (;;) {
             int nmiss = 0, nin = 0, nnew = 0;
+            long nearest_gap = LONG_MAX;
+            time_t now = time(NULL);
+            if (ck_on && !stop_requested && p->checkpoint_every > 0.0 &&
+                difftime(now, t_ck) >= p->checkpoint_every) {
+                if (ck_write(p->checkpoint, p, res, rep, rep_of_win, &master,
+                             -1 - approach_stall, 0) != 0) {
+                    fail = 1;
+                    goto done;
+                }
+                fprintf(stderr, "east_reus: checkpoint written during the approach phase\n");
+                t_ck = now;
+            }
             if (stop_requested) break;
             for (i = 0; i < W; i++) {
                 in[i] = rep[i].tr.K >= res->Kmin[i] && rep[i].tr.K <= res->Kmax[i];
@@ -444,6 +476,15 @@ int reus_run(const REUSParams *p, REUSResult *res)
                     }
                 }
                 src[i] = best;
+                if (bgap < nearest_gap) nearest_gap = bgap;
+            }
+            for (i = 0; i < W; i++) {
+                int best = src[i];
+                if (best < 0) continue;
+                if (window_gap(rep[best].tr.K, res->Kmin[i], res->Kmax[i]) != nearest_gap) {
+                    src[i] = -1;
+                    continue;
+                }
                 fprintf(stderr,
                         "note: window %d (K %ld..%ld) not reached (K = %ld); restarting from the "
                         "trajectory of window %d (K = %ld)\n",
@@ -457,19 +498,35 @@ int reus_run(const REUSParams *p, REUSResult *res)
             for (i = 0; i < W; i++)
                 if (src[i] >= 0)
                     res->approach[i] += approach(&rep[i], &d, ws[i], wg[i], res->Kmin[i],
-                                                 res->Kmax[i], p->n_approach);
+                                                 res->Kmax[i], p->n_approach,
+                                                 approach_deadline);
             for (i = 0; i < W; i++)
                 if (src[i] >= 0 && rep[i].tr.K >= res->Kmin[i] && rep[i].tr.K <= res->Kmax[i])
                     nnew++;
-            stall = (nnew == 0) ? stall + 1 : 0;
-            if (stall == 3) break; /* no progress */
+            approach_round++;
+            if (p->stop_approach_round > 0 &&
+                approach_round >= p->stop_approach_round)
+                stop_requested = 1;
+            approach_stall = (nnew == 0) ? approach_stall + 1 : 0;
+            if (approach_stall == 3) break; /* no progress */
         }
         free(in);
         free(src);
     }
-    if (stop_requested) { /* asked to stop before the first checkpoint: start over next time */
-        fprintf(stderr, "east_reus: stop requested during the approach phase; no checkpoint\n");
-        stopped = 1;
+    if (stop_requested) {
+        if (ck_on) {
+            if (ck_write(p->checkpoint, p, res, rep, rep_of_win, &master,
+                         -1 - approach_stall, 0) != 0) {
+                fail = 1;
+            } else {
+                fprintf(stderr,
+                        "east_reus: checkpoint written during the approach phase; stopping\n");
+                stopped = 1;
+            }
+        } else {
+            fprintf(stderr, "east_reus: stop requested during the approach phase; no checkpoint\n");
+            stopped = 1;
+        }
         goto done;
     }
     for (i = 0; i < W; i++) {
@@ -484,6 +541,7 @@ int reus_run(const REUSParams *p, REUSResult *res)
         }
     }
     if (fail) goto done;
+    c0 = 0;
     if (ck_on && ck_write(p->checkpoint, p, res, rep, rep_of_win, &master, 0, 0) != 0) {
         fail = 1;
         goto done;

@@ -829,6 +829,23 @@ static void test_reus_checkpoint(void)
     }
     p.checkpoint = ck;
     p.checkpoint_every = 0.0;
+    p.stop_approach_round = 1;
+    rc1 = reus_run(&p, &b);
+    p.stop_approach_round = 0;
+    rc2 = reus_run(&p, &b);
+    check_true("approach phase stops with a checkpoint", rc1 == REUS_STOPPED);
+    same = rc2 == 0 && a.nsamp == b.nsamp &&
+           memcmp(a.K, b.K, sizeof(double) * (size_t)a.nwin * (size_t)a.nsamp) == 0 &&
+           memcmp(a.E, b.E, sizeof(double) * (size_t)a.nwin * (size_t)a.nsamp) == 0 &&
+           memcmp(a.rep, b.rep, sizeof(int) * (size_t)a.nwin * (size_t)a.nsamp) == 0 &&
+           same_long(a.approach, b.approach, a.nwin) &&
+           memcmp(a.seeded_from, b.seeded_from, sizeof(int) * (size_t)a.nwin) == 0;
+    check_true("approach checkpoint resumes bit-identically", same);
+    if (rc2 == 0) reus_result_free(&b);
+    remove(ck);
+
+    p.checkpoint = ck;
+    p.checkpoint_every = 0.0;
     p.stop_cycle = 3; /* during equilibration (4 cycles) */
     rc1 = reus_run(&p, &b);
     p.stop_cycle = 25; /* during production */

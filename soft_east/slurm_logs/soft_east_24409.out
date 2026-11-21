@@ -138,3 +138,95 @@ note: window 116 (K 14381..14628) not reached (K = 9199); restarting from the tr
 note: window 117 (K 14505..14752) not reached (K = 9186); restarting from the trajectory of window 74 (K = 9178)
 note: window 118 (K 14629..14876) not reached (K = 9211); restarting from the trajectory of window 74 (K = 9178)
 note: window 119 (K 14753..15000) not reached (K = 9182); restarting from the trajectory of window 74 (K = 9178)
+note: window 75 (K 9298..9545) not reached (K = 9194); restarting from the trajectory of window 74 (K = 9178)
+note: window 76 (K 9422..9669) not reached (K = 9360); restarting from the trajectory of window 74 (K = 9178)
+note: window 77 (K 9546..9793) not reached (K = 9186); restarting from the trajectory of window 74 (K = 9178)
+note: window 78 (K 9670..9917) not reached (K = 9210); restarting from the trajectory of window 74 (K = 9178)
+note: window 79 (K 9794..10041) not reached (K = 9185); restarting from the trajectory of window 74 (K = 9178)
+note: window 80 (K 9918..10165) not reached (K = 9183); restarting from the trajectory of window 74 (K = 9178)
+note: window 81 (K 10042..10289) not reached (K = 9367); restarting from the trajectory of window 74 (K = 9178)
+note: window 82 (K 10166..10413) not reached (K = 9182); restarting from the trajectory of window 74 (K = 9178)
+note: window 83 (K 10290..10537) not reached (K = 9197); restarting from the trajectory of window 74 (K = 9178)
+note: window 84 (K 10414..10661) not reached (K = 9188); restarting from the trajectory of window 74 (K = 9178)
+note: window 85 (K 10538..10785) not reached (K = 9272); restarting from the trajectory of window 74 (K = 9178)
+note: window 86 (K 10662..10909) not reached (K = 9359); restarting from the trajectory of window 74 (K = 9178)
+note: window 87 (K 10786..11033) not reached (K = 9193); restarting from the trajectory of window 74 (K = 9178)
+note: window 88 (K 10910..11157) not reached (K = 9216); restarting from the trajectory of window 74 (K = 9178)
+note: window 89 (K 11034..11280) not reached (K = 9300); restarting from the trajectory of window 74 (K = 9178)
+note: window 90 (K 11158..11404) not reached (K = 9195); restarting from the trajectory of window 74 (K = 9178)
+note: window 91 (K 11281..11528) not reached (K = 9274); restarting from the trajectory of window 74 (K = 9178)
+note: window 92 (K 11405..11652) not reached (K = 9202); restarting from the trajectory of window 74 (K = 9178)
+note: window 93 (K 11529..11776) not reached (K = 9186); restarting from the trajectory of window 74 (K = 9178)
+note: window 94 (K 11653..11900) not reached (K = 9212); restarting from the trajectory of window 74 (K = 9178)
+note: window 95 (K 11777..12024) not reached (K = 9186); restarting from the trajectory of window 74 (K = 9178)
+note: window 96 (K 11901..12148) not reached (K = 9198); restarting from the trajectory of window 74 (K = 9178)
+note: window 97 (K 12025..12272) not reached (K = 9194); restarting from the trajectory of window 74 (K = 9178)
+note: window 98 (K 12149..12396) not reached (K = 9322); restarting from the trajectory of window 74 (K = 9178)
+note: window 99 (K 12273..12520) not reached (K = 9199); restarting from the trajectory of window 74 (K = 9178)
+note: window 100 (K 12397..12644) not reached (K = 9190); restarting from the trajectory of window 74 (K = 9178)
+note: window 101 (K 12521..12768) not reached (K = 9208); restarting from the trajectory of window 74 (K = 9178)
+note: window 102 (K 12645..12892) not reached (K = 9202); restarting from the trajectory of window 74 (K = 9178)
+note: window 103 (K 12769..13016) not reached (K = 9203); restarting from the trajectory of window 74 (K = 9178)
+note: window 104 (K 12893..13140) not reached (K = 9197); restarting from the trajectory of window 74 (K = 9178)
+note: window 105 (K 13017..13264) not reached (K = 9377); restarting from the trajectory of window 74 (K = 9178)
+note: window 106 (K 13141..13388) not reached (K = 9191); restarting from the trajectory of window 74 (K = 9178)
+note: window 107 (K 13265..13512) not reached (K = 9193); restarting from the trajectory of window 74 (K = 9178)
+note: window 108 (K 13389..13636) not reached (K = 9325); restarting from the trajectory of window 74 (K = 9178)
+note: window 109 (K 13513..13760) not reached (K = 9181); restarting from the trajectory of window 74 (K = 9178)
+note: window 110 (K 13637..13884) not reached (K = 9206); restarting from the trajectory of window 74 (K = 9178)
+note: window 111 (K 13761..14008) not reached (K = 9195); restarting from the trajectory of window 74 (K = 9178)
+note: window 112 (K 13885..14132) not reached (K = 9284); restarting from the trajectory of window 74 (K = 9178)
+note: window 113 (K 14009..14256) not reached (K = 9223); restarting from the trajectory of window 74 (K = 9178)
+note: window 114 (K 14133..14380) not reached (K = 9288); restarting from the trajectory of window 74 (K = 9178)
+note: window 115 (K 14257..14504) not reached (K = 9209); restarting from the trajectory of window 74 (K = 9178)
+note: window 116 (K 14381..14628) not reached (K = 9200); restarting from the trajectory of window 74 (K = 9178)
+note: window 117 (K 14505..14752) not reached (K = 9190); restarting from the trajectory of window 74 (K = 9178)
+note: window 118 (K 14629..14876) not reached (K = 9321); restarting from the trajectory of window 74 (K = 9178)
+note: window 119 (K 14753..15000) not reached (K = 9213); restarting from the trajectory of window 74 (K = 9178)
+error: window 75 (K 9298..9545) not reached (K = 9214), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 76 (K 9422..9669) not reached (K = 9302), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 77 (K 9546..9793) not reached (K = 9193), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 78 (K 9670..9917) not reached (K = 9203), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 79 (K 9794..10041) not reached (K = 9195), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 80 (K 9918..10165) not reached (K = 9194), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 81 (K 10042..10289) not reached (K = 9186), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 82 (K 10166..10413) not reached (K = 9183), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 83 (K 10290..10537) not reached (K = 9212), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 84 (K 10414..10661) not reached (K = 9189), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 85 (K 10538..10785) not reached (K = 9302), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 86 (K 10662..10909) not reached (K = 9190), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 87 (K 10786..11033) not reached (K = 9189), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 88 (K 10910..11157) not reached (K = 9207), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 89 (K 11034..11280) not reached (K = 9196), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 90 (K 11158..11404) not reached (K = 9202), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 91 (K 11281..11528) not reached (K = 9220), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 92 (K 11405..11652) not reached (K = 9191), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 93 (K 11529..11776) not reached (K = 9278), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 94 (K 11653..11900) not reached (K = 9201), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 95 (K 11777..12024) not reached (K = 9289), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 96 (K 11901..12148) not reached (K = 9199), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 97 (K 12025..12272) not reached (K = 9192), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 98 (K 12149..12396) not reached (K = 9221), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 99 (K 12273..12520) not reached (K = 9207), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 100 (K 12397..12644) not reached (K = 9282), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 101 (K 12521..12768) not reached (K = 9203), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 102 (K 12645..12892) not reached (K = 9201), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 103 (K 12769..13016) not reached (K = 9183), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 104 (K 12893..13140) not reached (K = 9202), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 105 (K 13017..13264) not reached (K = 9198), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 106 (K 13141..13388) not reached (K = 9298), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 107 (K 13265..13512) not reached (K = 9183), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 108 (K 13389..13636) not reached (K = 9190), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 109 (K 13513..13760) not reached (K = 9232), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 110 (K 13637..13884) not reached (K = 9194), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 111 (K 13761..14008) not reached (K = 9197), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 112 (K 13885..14132) not reached (K = 9237), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 113 (K 14009..14256) not reached (K = 9207), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 114 (K 14133..14380) not reached (K = 9191), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 115 (K 14257..14504) not reached (K = 9200), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 116 (K 14381..14628) not reached (K = 9308), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 117 (K 14505..14752) not reached (K = 9189), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 118 (K 14629..14876) not reached (K = 9288), also not from the trajectory of window 74; 3000000 moves per attempt
+error: window 119 (K 14753..15000) not reached (K = 9327), also not from the trajectory of window 74; 3000000 moves per attempt
+[2026-11-20 01:57:16] REUS failed (exit status 1)
+[2026-11-20 01:57:16] finished with exit status 1

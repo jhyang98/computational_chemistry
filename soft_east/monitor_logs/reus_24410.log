@@ -1,1 +1,213 @@
 [2026-11-19 10:32:52] monitor started for job 24410, output reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031
+[2026-11-20 19:00:58] job completed successfully
+[2026-11-20 19:00:58] starting Codex finalize attempt 1 of 3
+[2026-11-20 19:10:23] Codex finalize completed
+[2026-11-20 19:10:23] starting GitHub sync attempt 1 of 5
+From https://github.com/jhyang98/computational_chemistry
+ * branch            master     -> FETCH_HEAD
+Current branch master is up to date.
+[master 6bc0c7c] Complete REUS job 24410 analysis
+ 161 files changed, 28587584 insertions(+), 17 deletions(-)
+ create mode 100644 soft_east/monitor_logs/reus_24410_codex.log
+ create mode 100644 soft_east/monitor_logs/reus_24410_finalize_last.txt
+ create mode 100644 soft_east/monitor_logs/reus_24575_codex.log
+ create mode 100644 soft_east/monitor_logs/reus_24575_diagnose_last.txt
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/mbar.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/mbar.inp
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/mbar_hist.dat
+ delete mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/reus.ckpt
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/reus.done
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/summary.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w00.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w00.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w01.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w01.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w02.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w02.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w03.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w03.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w04.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w04.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w05.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w05.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w06.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w06.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w07.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w07.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w08.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w08.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w09.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w09.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w10.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w10.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w11.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w11.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w12.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w12.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w13.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w13.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w14.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w14.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w15.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w15.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w16.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w16.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w17.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w17.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w18.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w18.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w19.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w19.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w20.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w20.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w21.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w21.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w22.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w22.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w23.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w23.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w24.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w24.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w25.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w25.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w26.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w26.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w27.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w27.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w28.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w28.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w29.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w29.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w30.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w30.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w31.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w31.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w32.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w32.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w33.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w33.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w34.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w34.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w35.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w35.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w36.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w36.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w37.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w37.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w38.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w38.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w39.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w39.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w40.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w40.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w41.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w41.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w42.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w42.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w43.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w43.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w44.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w44.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w45.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w45.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w46.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w46.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w47.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w47.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w48.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w48.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w49.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w49.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w50.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w50.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w51.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w51.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w52.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w52.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w53.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w53.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w54.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w54.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w55.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w55.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w56.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w56.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w57.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w57.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w58.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w58.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w59.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w59.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w60.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w60.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w61.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w61.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w62.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w62.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w63.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w63.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w64.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w64.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w65.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w65.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w66.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w66.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w67.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w67.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w68.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w68.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w69.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w69.traj
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w70.dat
+ create mode 100644 soft_east/reus_C_eps0001_t2400_n71_p4m/eps0.001_g+0.000/L100_t2400_s+0.0031/w70.traj
+ create mode 100644 soft_east/slurm_logs/soft_east_24575.out
+error: RPC failed; HTTP 408 curl 22 The requested URL returned error: 408
+fatal: the remote end hung up unexpectedly
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
+[2026-11-20 19:13:39] GitHub sync attempt 1 failed
+[2026-11-20 19:15:39] starting GitHub sync attempt 2 of 5
+From https://github.com/jhyang98/computational_chemistry
+ * branch            master     -> FETCH_HEAD
+Current branch master is up to date.
+[master d7343bf] Complete REUS job 24410 analysis
+ 1 file changed, 164 insertions(+)
+error: RPC failed; HTTP 408 curl 22 The requested URL returned error: 408
+fatal: the remote end hung up unexpectedly
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
+[2026-11-20 19:18:49] GitHub sync attempt 2 failed
+[2026-11-20 19:20:49] starting GitHub sync attempt 3 of 5
+From https://github.com/jhyang98/computational_chemistry
+ * branch            master     -> FETCH_HEAD
+Current branch master is up to date.
+[master 414ac54] Complete REUS job 24410 analysis
+ 1 file changed, 11 insertions(+)
+error: RPC failed; HTTP 408 curl 22 The requested URL returned error: 408
+fatal: the remote end hung up unexpectedly
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
+[2026-11-20 19:24:00] GitHub sync attempt 3 failed
+[2026-11-20 19:26:00] starting GitHub sync attempt 4 of 5
+From https://github.com/jhyang98/computational_chemistry
+ * branch            master     -> FETCH_HEAD
+Current branch master is up to date.
+[master 3ddc35e] Complete REUS job 24410 analysis
+ 1 file changed, 11 insertions(+)
+error: RPC failed; HTTP 408 curl 22 The requested URL returned error: 408
+fatal: the remote end hung up unexpectedly
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
+[2026-11-20 19:29:15] GitHub sync attempt 4 failed
+[2026-11-20 19:31:15] starting GitHub sync attempt 5 of 5
+From https://github.com/jhyang98/computational_chemistry
+ * branch            master     -> FETCH_HEAD
+Current branch master is up to date.
+[master fc42bf5] Complete REUS job 24410 analysis
+ 1 file changed, 11 insertions(+)
+error: RPC failed; HTTP 408 curl 22 The requested URL returned error: 408
+fatal: the remote end hung up unexpectedly
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
+[2026-11-20 19:34:29] GitHub sync attempt 5 failed
+[2026-11-20 19:36:29] finalization failed; manual intervention required

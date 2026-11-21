@@ -1,0 +1,29 @@
+[2026-11-19 21:39:30] job 24411 on node3, restart 0, 4 threads, mode all, parameters slurm_jobs/soft_east_20261119_103126_1326080.env
+[2026-11-19 21:39:31] REUS start: reus_D_eps00005_t1200_n76_p4m/eps0.0005_g+0.000/L100_t1200_s+0.0035
+east_reus: OpenMP with up to 4 threads
+note: window 71: no usable trajectory 'reus_eps0001_t1200_n71_p4m/eps0.001_g+0.000/L100_t1200_s+0.0050/w71.traj', starting empty
+note: window 72: no usable trajectory 'reus_eps0001_t1200_n71_p4m/eps0.001_g+0.000/L100_t1200_s+0.0050/w72.traj', starting empty
+note: window 73: no usable trajectory 'reus_eps0001_t1200_n71_p4m/eps0.001_g+0.000/L100_t1200_s+0.0050/w73.traj', starting empty
+note: window 74: no usable trajectory 'reus_eps0001_t1200_n71_p4m/eps0.001_g+0.000/L100_t1200_s+0.0050/w74.traj', starting empty
+note: window 75: no usable trajectory 'reus_eps0001_t1200_n71_p4m/eps0.001_g+0.000/L100_t1200_s+0.0050/w75.traj', starting empty
+cycle 25000/420000 (production): round trips so far 0
+cycle 50000/420000 (production): round trips so far 0
+cycle 75000/420000 (production): round trips so far 3
+cycle 100000/420000 (production): round trips so far 4
+cycle 125000/420000 (production): round trips so far 8
+cycle 150000/420000 (production): round trips so far 13
+cycle 175000/420000 (production): round trips so far 14
+cycle 200000/420000 (production): round trips so far 15
+cycle 225000/420000 (production): round trips so far 22
+cycle 250000/420000 (production): round trips so far 28
+cycle 275000/420000 (production): round trips so far 37
+cycle 300000/420000 (production): round trips so far 39
+cycle 325000/420000 (production): round trips so far 46
+cycle 350000/420000 (production): round trips so far 54
+cycle 375000/420000 (production): round trips so far 61
+cycle 400000/420000 (production): round trips so far 69
+[2026-11-20 08:01:23] REUS done: summary in reus_D_eps00005_t1200_n76_p4m/eps0.0005_g+0.000/L100_t1200_s+0.0035/summary.dat
+[2026-11-20 09:25:59] MBAR done: reus_D_eps00005_t1200_n76_p4m/eps0.0005_g+0.000/L100_t1200_s+0.0035/mbar.dat, reus_D_eps00005_t1200_n76_p4m/eps0.0005_g+0.000/L100_t1200_s+0.0035/mbar_hist.dat
+# s_equal g 0 s* nan kcut nan err nan (0/30 replicas)  (no two-peak valley or not bracketed by target_s)
+# peaks 0 nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan 0
+[2026-11-20 09:26:00] finished with exit status 0

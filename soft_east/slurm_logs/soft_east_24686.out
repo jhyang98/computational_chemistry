@@ -1,0 +1,57 @@
+[2026-11-20 21:14:16] job 24686 on node3, restart 0, 4 threads, mode all, parameters slurm_jobs/soft_east_20261120_205301_2760299.env
+[2026-11-20 21:14:17] REUS start: reus_B_g015_eps0001_t600_n120_p4m/eps0.001_g+0.150/L100_t600_s-0.3100
+east_reus: OpenMP with up to 4 threads
+east_reus: checkpoint written during the approach phase
+note: window 73 (K 9050..9297) not reached (K = 8977); restarting from the trajectory of window 72 (K = 8928)
+note: window 74 (K 9174..9421) not reached (K = 9025); restarting from the trajectory of window 73 (K = 9050)
+note: window 74 (K 9174..9421) not reached (K = 9064); restarting from the trajectory of window 73 (K = 9050)
+east_reus: checkpoint written during the approach phase
+note: window 74 (K 9174..9421) not reached (K = 9064); restarting from the trajectory of window 73 (K = 9050)
+error: window 74 (K 9174..9421) not reached (K = 9081), also not from the trajectory of window 73; 5000000 moves per attempt
+error: window 75 (K 9298..9545) not reached (K = 9274); 5000000 moves per attempt
+error: window 76 (K 9422..9669) not reached (K = 8911); 5000000 moves per attempt
+error: window 77 (K 9546..9793) not reached (K = 9202); 5000000 moves per attempt
+error: window 78 (K 9670..9917) not reached (K = 9024); 5000000 moves per attempt
+error: window 79 (K 9794..10041) not reached (K = 8678); 5000000 moves per attempt
+error: window 80 (K 9918..10165) not reached (K = 9162); 5000000 moves per attempt
+error: window 81 (K 10042..10289) not reached (K = 9159); 5000000 moves per attempt
+error: window 82 (K 10166..10413) not reached (K = 9209); 5000000 moves per attempt
+error: window 83 (K 10290..10537) not reached (K = 9015); 5000000 moves per attempt
+error: window 84 (K 10414..10661) not reached (K = 8871); 5000000 moves per attempt
+error: window 85 (K 10538..10785) not reached (K = 9142); 5000000 moves per attempt
+error: window 86 (K 10662..10909) not reached (K = 8896); 5000000 moves per attempt
+error: window 87 (K 10786..11033) not reached (K = 8996); 5000000 moves per attempt
+error: window 88 (K 10910..11157) not reached (K = 9138); 5000000 moves per attempt
+error: window 89 (K 11034..11280) not reached (K = 8873); 5000000 moves per attempt
+error: window 90 (K 11158..11404) not reached (K = 9159); 5000000 moves per attempt
+error: window 91 (K 11281..11528) not reached (K = 9031); 5000000 moves per attempt
+error: window 92 (K 11405..11652) not reached (K = 8991); 5000000 moves per attempt
+error: window 93 (K 11529..11776) not reached (K = 9063); 5000000 moves per attempt
+error: window 94 (K 11653..11900) not reached (K = 9240); 5000000 moves per attempt
+error: window 95 (K 11777..12024) not reached (K = 8951); 5000000 moves per attempt
+error: window 96 (K 11901..12148) not reached (K = 9143); 5000000 moves per attempt
+error: window 97 (K 12025..12272) not reached (K = 9092); 5000000 moves per attempt
+error: window 98 (K 12149..12396) not reached (K = 9146); 5000000 moves per attempt
+error: window 99 (K 12273..12520) not reached (K = 9173); 5000000 moves per attempt
+error: window 100 (K 12397..12644) not reached (K = 9179); 5000000 moves per attempt
+error: window 101 (K 12521..12768) not reached (K = 9229); 5000000 moves per attempt
+error: window 102 (K 12645..12892) not reached (K = 9136); 5000000 moves per attempt
+error: window 103 (K 12769..13016) not reached (K = 9162); 5000000 moves per attempt
+error: window 104 (K 12893..13140) not reached (K = 8847); 5000000 moves per attempt
+error: window 105 (K 13017..13264) not reached (K = 9064); 5000000 moves per attempt
+error: window 106 (K 13141..13388) not reached (K = 9324); 5000000 moves per attempt
+error: window 107 (K 13265..13512) not reached (K = 9129); 5000000 moves per attempt
+error: window 108 (K 13389..13636) not reached (K = 8931); 5000000 moves per attempt
+error: window 109 (K 13513..13760) not reached (K = 8754); 5000000 moves per attempt
+error: window 110 (K 13637..13884) not reached (K = 9189); 5000000 moves per attempt
+error: window 111 (K 13761..14008) not reached (K = 8840); 5000000 moves per attempt
+error: window 112 (K 13885..14132) not reached (K = 9134); 5000000 moves per attempt
+error: window 113 (K 14009..14256) not reached (K = 9096); 5000000 moves per attempt
+error: window 114 (K 14133..14380) not reached (K = 8907); 5000000 moves per attempt
+error: window 115 (K 14257..14504) not reached (K = 8760); 5000000 moves per attempt
+error: window 116 (K 14381..14628) not reached (K = 8793); 5000000 moves per attempt
+error: window 117 (K 14505..14752) not reached (K = 8763); 5000000 moves per attempt
+error: window 118 (K 14629..14876) not reached (K = 9398); 5000000 moves per attempt
+error: window 119 (K 14753..15000) not reached (K = 9285); 5000000 moves per attempt
+[2026-11-21 02:12:02] REUS failed (exit status 1)
+[2026-11-21 02:12:02] finished with exit status 1

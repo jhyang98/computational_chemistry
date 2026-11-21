@@ -1,0 +1,6 @@
+[2026-11-20 20:55:23] Codex submitted replacement job 24686
+[2026-11-20 22:45:24] job is active but its log is stale: RUNNING|1:31:43|node3
+[2026-11-20 22:45:24] starting Codex diagnose attempt 1 of 3
+[2026-11-20 22:47:57] Codex diagnose completed
+[2026-11-21 02:15:58] starting Codex diagnose attempt 1 of 3
+[2026-11-21 02:20:52] Codex diagnose completed
