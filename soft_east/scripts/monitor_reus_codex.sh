@@ -13,6 +13,7 @@ POLL_SECONDS=${POLL_SECONDS:-300}
 STALE_SECONDS=${STALE_SECONDS:-5400}
 CODEX_RETRIES=${CODEX_RETRIES:-3}
 SYNC_RETRIES=${SYNC_RETRIES:-5}
+SYNC_RETRY_SECONDS=${SYNC_RETRY_SECONDS:-900}
 LOG_DIR=monitor_logs
 
 cd "$(dirname "$0")/.."
@@ -32,6 +33,17 @@ job_line() {
 
 output_dir() {
     awk -v id="$JOB_ID" '$1 == id { print $5; exit }' slurm_jobs/jobs.txt
+}
+
+window_failure_count() {
+    local out=$1 id count=0
+    while read -r id; do
+        if [ -n "$id" ] && [ -f "slurm_logs/soft_east_${id}.out" ] && \
+           grep -Eq 'error: window [0-9]+ not reached' "slurm_logs/soft_east_${id}.out"; then
+            count=$((count + 1))
+        fi
+    done < <(awk -v out="$out" '$5 == out { print $1 }' slurm_jobs/jobs.txt)
+    printf '%s\n' "$count"
 }
 
 run_codex() {
@@ -120,20 +132,50 @@ EOF
         record "GitHub sync attempt $attempt failed"
         sleep 120
     done
-    return 1
+    prompt=$(cat <<EOF
+Diagnose only the repeated GitHub synchronization failure after completed soft_east job $JOB_ID.
+Read AGENTS.md and inspect scripts/sync_github_soft_east.sh and $MONITOR_LOG. Do not submit or
+modify any SLURM job, do not rerun a calculation, and do not delete result files. Fix a clear
+synchronization implementation or repository-state error if it can be fixed safely. Do not run
+the synchronization script or any Git command; this monitor will keep retrying after you finish.
+Keep code, comments, and command output in English.
+EOF
+)
+    record "GitHub sync failed repeatedly; starting one recovery diagnosis"
+    run_codex sync-recovery "$prompt" || true
+    attempt=0
+    while :; do
+        attempt=$((attempt + 1))
+        record "starting deferred GitHub sync attempt $attempt"
+        if bash scripts/sync_github_soft_east.sh "Complete REUS job $JOB_ID analysis" \
+            >> "$MONITOR_LOG" 2>&1; then
+            record "GitHub sync completed"
+            touch "$LOG_DIR/reus_${JOB_ID}.finalized"
+            return 0
+        fi
+        record "deferred GitHub sync attempt $attempt failed; retrying in $SYNC_RETRY_SECONDS seconds"
+        sleep "$SYNC_RETRY_SECONDS"
+    done
 }
 
 diagnose_job() {
-    local out=$1 reason=$2 prompt
+    local out=$1 reason=$2 prompt failures retry_rule
+    failures=$(window_failure_count "$out")
+    if [ "$failures" -ge 2 ]; then
+        retry_rule="This output directory has already had $failures window-not-reached failures. Do not submit another replacement solely by increasing N_APPROACH. Record the run as blocked pending an algorithmic or scientific redesign."
+    else
+        retry_rule="A documented same-condition operational recovery may be submitted when it does not repeat an already failed remedy."
+    fi
     prompt=$(cat <<EOF
 Diagnose soft_east SLURM job $JOB_ID autonomously because the monitor observed: $reason.
 Read AGENTS.md, STATUS.md, and README.md first. Inspect $JOB_ENV,
 slurm_logs/soft_east_${JOB_ID}.out, squeue/scontrol, and $out. Follow the documented recovery
-rules. You may resume the same frozen parameters, rerun same-parameter MBAR, fix a clear
-implementation or operational error, and submit a documented recoverable continuation without
-asking. Never change the scientific parameters or delete results. If a new scientific decision
-is required, stop without submitting it and record the blocking reason in STATUS.md. If you
-submit a replacement job, use bash scripts/submit_reus.sh and keep the same output directory.
+rules. You may resume the same frozen parameters, rerun same-parameter MBAR, and fix a clear
+implementation or operational error. $retry_rule Never change the scientific parameters or
+delete results. If a new scientific decision is required, stop without submitting it and record
+the blocking reason in STATUS.md. If you submit a replacement job, use
+bash scripts/submit_reus.sh and keep the same output directory. Do not start another monitor or
+tmux session; this monitor automatically adopts the replacement job.
 Do not perform any Git operation; the monitor handles synchronization after final completion.
 Keep code, comments, and command output in English.
 EOF
