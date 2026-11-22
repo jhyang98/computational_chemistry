@@ -293,7 +293,7 @@ bash scripts/run_reus.sh params                # 실제로 쓸 매개변수 출�
 | `MARGIN` | 1800 | 시간 제한보다 이만큼(초) 먼저 REUS가 체크포인트를 쓰고 멈춤 |
 | `SIGNAL_LEAD` | 600 | 시간 제한보다 이만큼(초) 먼저 SLURM이 작업 스크립트에 SIGUSR1을 보냄 |
 
-현재 자원 규칙은 작업당 4코어, 동시 합계 최대 12코어(최대 세 작업)입니다. 제출 스크립트는 아직 안전한 기본값으로 singleton을 사용합니다. 작업 24410과 24411은 실행 중인 스크립트를 바꾸지 않고 SLURM dependency만 제거해 병렬 실행할 수 있게 했고, 두 작업 모두 정상 완료했습니다.
+현재 자원 규칙은 작업당 4코어, 동시 합계 최대 4코어입니다. `JOB_NAME=soft_east`의 singleton을 유지해 한 번에 한 작업만 실행합니다. 작업 24410과 24411은 과거에 사용자가 일시적으로 동시 12코어를 허용했을 때만 dependency를 제거해 병렬 실행했고, 두 작업 모두 정상 완료했습니다.
 
 ```bash
 bash scripts/submit_reus.sh                              # run_reus.sh 기본값으로 제출

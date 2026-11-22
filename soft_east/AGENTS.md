@@ -30,9 +30,8 @@
 - 계산은 모두 SLURM으로 제출합니다. 로그인 노드에서는 빌드와 짧은 테스트(`make`, `make test`)만 합니다.
   - `make validate`(약 2분)나 다른 계산은 `srun --nodelist=<NODE> --cpus-per-task=4 --time=00:30:00 --export=ALL,OMP_NUM_THREADS=4 make validate OMP=1`처럼 계산노드에서 돌립니다. OpenMP 빌드에서는 할당 코어 수와 같은 `OMP_NUM_THREADS`를 반드시 지정합니다.
 - 계산노드 3만 씁니다. `scripts/submit_reus.sh`의 `NODE`가 비어 있으면 `sinfo -N -l`로 노드 이름을 찾고, 사용자에게 맞는지 확인받은 뒤 채웁니다.
-- 작업당 `CPUS=4`를 사용하고 동시에 합계 최대 12코어, 즉 REUS 세 작업까지 허용합니다. `srun`으로 다른 계산을 돌릴 때도 같은 시각에 쓰는 코어 합계가 12개를 넘지 않게 합니다.
-- 동시에 실행 중인 모든 작업이 사용하는 노드 수의 합은 4개를 넘기지 않습니다. 이 프로젝트의 REUS는 작업마다 node3 한 대만 요청하므로 동시에 최대 세 작업입니다.
-- `scripts/submit_reus.sh`는 아직 `JOB_NAME=soft_east`와 singleton을 기본으로 사용합니다. 실행 중인 작업 때문에 스크립트를 바꾸지 말고, 현재 캠페인의 작업 24410·24411은 사용자가 동시 12코어를 허용한 뒤 SLURM dependency만 제거했습니다.
+- 동시에 최대 4코어입니다. `CPUS=4`, `JOB_NAME=soft_east`(singleton으로 한 번에 한 작업)를 바꾸지 않습니다. `srun`으로 다른 계산을 돌릴 때도 같은 시각에 쓰는 코어가 합쳐서 4개를 넘지 않게 합니다.
+- 동시에 실행 중인 모든 작업이 사용하는 노드 수의 합도 4개를 넘기지 않습니다. 이 프로젝트의 REUS는 singleton 작업 하나만 node3 한 대에서 실행합니다.
 - 한 번 실행은 최대 24시간(`TIME=24:00:00`)입니다. 제출할 때 선택한 SLURM 파티션의 최대 시간이 더 짧으면 그 시간을 자동으로 사용합니다. 안 끝나면 REUS가 체크포인트를 남기고 작업이 자동으로 requeue됩니다(`scripts/slurm_reus.sh`).
 - REUS는 항상 `bash scripts/submit_reus.sh [KEY=VALUE …]`로 제출합니다. `scripts/run_reus.sh` 파일을 고쳐서 매개변수를 바꾸지 않습니다.
 - 확인 명령
